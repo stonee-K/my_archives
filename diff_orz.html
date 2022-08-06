@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta charset="UTF-8" />
+  <title>差分表示乙 (diff_orz)</title>
+<script type="text/javascript">
+'use strict';
+(function(window, document) {
+//==================================================================================================
+let $ = e => document.getElementById(e);
+//==================================================================================================
+var DIFF_ORZ = {};
+DIFF_ORZ.EscapeHTML = s => s.replace(/&/g, "&amp;").replace(/\"/g, "&quot;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+DIFF_ORZ.isBlank = Symbol("DIFF_ORZ.isBlank");
+String.prototype[DIFF_ORZ.isBlank] = function() {
+	for (let i = this.length - 1; i >= 0; i--) {
+		let n = this.charCodeAt(i);
+		if (!((n === 0x9) || (n === 0x20) || (n === 0xD) || (n === 0xA))) { return false; }
+	}
+	return true;
+}
+DIFF_ORZ.GEN = Symbol("DIFF_ORZ.GEN");
+String.prototype[DIFF_ORZ.GEN] = function *() {
+	const it = this[Symbol.iterator]();
+	for (let v = it.next(); !v.done; v = it.next()) {
+		yield v.value.codePointAt(0);
+	}
+	return;
+}
+DIFF_ORZ.Compare = function(s1, s2, flgIgnoreBlank) {
+	const _isWhite = n => ((n === 0x9) || (n === 0x20) || (n === 0xD) || (n === 0xA));
+	const g1 = s1[this.GEN](), g2 = s2[this.GEN]();
+	let v1 = g1.next(), v2 = g2.next();
+	const skip_white = function(_isWhite, v1, v2) {
+		for (; !v1.done && _isWhite(v1.value); v1 = g1.next()) {}
+		for (; !v2.done && _isWhite(v2.value); v2 = g2.next()) {}
+		return [v1, v2];
+	}.bind(this, _isWhite);
+	if (flgIgnoreBlank != 0) {
+		[v1, v2] = skip_white(v1, v2);
+	} else if (s1.length != s2.length) {
+		return false;
+	}
+	for ( ; !v1.done && !v2.done; v1 = g1.next(), v2 = g2.next()) {
+		if ((flgIgnoreBlank == 1) && (_isWhite(v1.value) != _isWhite(v2.value))) { return false; }
+		if (flgIgnoreBlank != 0) { [v1, v2] = skip_white(v1, v2); }
+		if (v1.done || v2.done) { break; }
+		if (v1.value != v2.value) { return false; }
+	}
+	if (flgIgnoreBlank != 0) { [v1, v2] = skip_white(v1, v2); }
+	return (v1.done && v2.done);
+}
+DIFF_ORZ.CalcIndent = function(s1) {
+	for (let i = 0, nDepth = 0, len1 = s1.length; i < len1; i++) {
+		switch (s1.charCodeAt(i)) {
+			case 0x20:
+				nDepth += 1;
+				break;
+			case 0x9:
+				nDepth += (8 - (nDepth % 8));
+				break;
+			case 0xD:
+			case 0xA:
+				break;
+			default:
+				return nDepth;
+		}
+	}
+	return 0;
+}
+DIFF_ORZ.do_diff = function() {
+	$("result").innerHTML = "";
+	let oDiff = DiffEngine;
+	oDiff.bIgnoreCase = $("chkIgnoreCase").checked;
+	oDiff.flgIgnoreBlank = $("rdIgnoreBlank_c").checked ? 1 : ($("rdIgnoreBlank_a").checked ? 2 : 0);
+	oDiff.bDetectMovedBlock = $("chkDetectMovedBlock").checked;
+	oDiff.bDetectSimilarLine = $("chkDetectSimilarLine").checked;
+	oDiff.bWord = $("chkWord").checked;
+	let vResult = oDiff.Diff($("txtOld").value, $("txtNew").value), vTable = ['<table>'];
+
+	const int2str = v => ((v == 0) ? "" : (v + ""));
+	const do_lineDiff = (oDiff, x, y) => {
+		let oLDiff = new LineDiffEngine(oDiff, x, y), o, sOut_L = "", sOut_R = "", sWork = "", sWork2 = "";
+		for (let v = oLDiff.Diff(), i = 0; o = v[i]; ) {
+			if (o.op == "-") {
+				for (sWork2 = "<del>"; v[i]?.op == "-"; i++) {
+					sWork2 += this.EscapeHTML(oLDiff.vLeft[v[i].x]);
+				}
+				sOut_L += sWork2 + "</del>";
+				sOut_R += sWork2 + "</del>";
+			} else if (o.op == "+") {
+				for (sWork += "<ins>"; v[i]?.op == "+"; i++) {
+					sWork += this.EscapeHTML(oLDiff.vRight[v[i].y]);
+				}
+				sWork += "</ins>";
+			} else {
+				sOut_L += sWork + this.EscapeHTML(oLDiff.vLeft[o.x]);
+				sOut_R += sWork + this.EscapeHTML(oLDiff.vRight[o.y]);
+				sWork = "";
+				i++;
+			}
+		}
+		return [sOut_L + sWork, sOut_R + sWork];
+	}
+	const status_map = {'-':'minus', '+':'plus', '=':'equal', '!':'similar'};
+	if ($("chkSideBySide").checked) {
+		vTable.push('<colgroup>');
+		vTable.push('<col class="lnum" /><col /><col style="min-width:250px;max-width:600px;" />');
+		vTable.push('<col class="lnum" /><col /><col style="min-width:250px;max-width:600px;" />');
+		vTable.push('</colgroup>');
+		for (const o of vResult) {
+			let [sLine_L, sLine_R] = (o.op == "!") ? do_lineDiff(oDiff, o.x, o.y)
+			 : [(o.op == "+") ? "" : this.EscapeHTML(oDiff.vLeft[o.x]), 
+				(o.op == "-") ? "" : this.EscapeHTML(oDiff.vRight[o.y])];
+			let [sStyle_L, sInfo_R] = ((o.op == "-") && (oDiff.vInfo_L[o.x].status == "#")) ? 
+				["moved", "(" + int2str(oDiff.vInfo_L[o.x].pair + 1) + ")"] : ["", int2str(o.y + 1)];
+			let [sStyle_R, sInfo_L] = ((o.op == "+") && (oDiff.vInfo_R[o.y].status == "#")) ? 
+				["moved", "(" + int2str(oDiff.vInfo_R[o.y].pair + 1) + ")"] : ["", int2str(o.x + 1)];
+			vTable.push(`<tr class="${status_map[o.op]}"><td class="lnum">${sInfo_L}</td><td class="L op ${sStyle_L}">` 
+				+ (((o.op == "+") || (o.op == "=")) ? "&nbsp;" : o.op) + `</td><td class="L ${sStyle_L}"><pre>${sLine_L}</pre></td>` 
+				+ `<td class="lnum">${sInfo_R}</td><td class="R op ${sStyle_R}">` 
+				+ (((o.op == "-") || (o.op == "=")) ? "&nbsp;" : o.op) + `</td><td class="R ${sStyle_R}"><pre>${sLine_R}</pre></td></tr>`);
+		}
+	} else {
+		for (const o of vResult) {
+			let sInfo_L = int2str(o.x + 1), sInfo_R = int2str(o.y + 1), sStyle = "";
+			let sLine = (o.op == "!") ? (do_lineDiff(oDiff, o.x, o.y))[0] : 
+				this.EscapeHTML((o.op != "+") ? oDiff.vLeft[o.x] : oDiff.vRight[o.y]);
+			if ((o.op == "-") && (oDiff.vInfo_L[o.x].status == "#")) {
+				[sStyle, sInfo_R] = ["moved", "(" + int2str(oDiff.vInfo_L[o.x].pair + 1) + ")"];
+			} else if ((o.op == "+") && (oDiff.vInfo_R[o.y].status == "#")) {
+				[sStyle, sInfo_L] = ["moved", "(" + int2str(oDiff.vInfo_R[o.y].pair + 1) + ")"];
+			}
+			vTable.push(`<tr class="${status_map[o.op]}"><td class="lnum">${sInfo_L}</td><td class="lnum">${sInfo_R}` 
+				+ `</td><td class="M op ${sStyle}">` + ((o.op == "=") ? "&nbsp;" : o.op)
+				+ `</td><td class="M ${sStyle}" nowrap="nowrap"><pre>${sLine}</pre></td></tr>`);
+		}
+	}
+	vTable.push('</table>');
+	$("result").innerHTML = vTable.join("\n");
+}
+//==================================================================================================
+class Hunks {
+	constructor() {
+		this.vList = [];
+		this.current = 0;		//current hunk's sequence number
+		this.pos = -1;			//current position
+		this.unlinkedCount = 0;	//num of lines in hunkslist
+	}
+	resetPos() {
+		this.current = 0;
+		return (this.pos = (this.vList[0].start + 1));
+	}
+	currentHunk() { return this.vList[this.current]; }
+	hunk_size(i) { return (this.vList[i].end - this.vList[i].start - 1); }
+	gap(i) { return ((i == 0) ? (this.vList[i].start + 1) : (this.vList[i].start - this.vList[i - 1].end + 1)); }
+	setPos(n, bFit) {
+		for (let i = 0, o; o = this.vList[i]; i++) {
+			if (o.isBlankLines) { continue; }
+			if (n <= o.start) {
+				if (!bFit) { break; }
+				this.current = i;
+				return (this.pos = (o.start + 1));
+			} else if (n < o.end) {
+				this.current = i;
+				return (this.pos = n);
+			}
+		}
+		return -1;
+	}
+	addEntry(start, end, isBlankLines) {
+		this.vList.push({start, end, isBlankLines, shift:0});
+		if (!isBlankLines) { this.unlinkedCount += (end - start - 1); }
+	}
+	addLink() { return --this.unlinkedCount; }
+	nextPos() {
+		if (this.pos < (this.vList[this.current].end - 1)) { return ++this.pos; }
+		do {
+			if (this.current + 1 >= this.vList.length) { return -1; }
+			this.current++;
+		} while (this.vList[this.current].isBlankLines);
+		return (this.pos = (this.vList[this.current].start + 1));
+	}
+	searchNeighborHunk(o_L) {
+		return {start:(this.vList[Math.max(0, o_L.current - 2)].start + 1), 
+				end:(this.vList[Math.min(this.vList.length - 1, o_L.current + 2)].end - 1)};
+	}
+	cleanup() {
+		for (let o of this.vList) {
+			if (o.shift > 0) { [o.start, o.end] = [o.start - o.shift, o.end - o.shift]; }
+		}
+	}
+}
+//==================================================================================================
+const DiffEngine = {
+	bIgnoreCase: false,
+	flgIgnoreBlank: 1,	//0:compare 1:ignore change 2:ignore all
+	bDetectMovedBlock: true,
+	bIndentHeuristic: true,
+	bDetectSimilarLine: true,
+	bWord: true,
+	bSemanticCleanup: true,
+	vLeft: [],
+	vRight: [],
+	vInfo_L: [],
+	vInfo_R: [],
+	threshold: 0.5,			//0(loose) < threshold < 1(strict)
+	threshold_min: 0.25,	//0 < threshold_min < threshold
+	BLANK_PATTERN: /[\s\t]+/g,
+
+	CompareStr(x, y, bStrict) {
+		if (this.vInfo_L[x].isBlank != this.vInfo_R[y].isBlank) { return 0; }
+		let s1 = this.vLeft[x], s2 = this.vRight[y];
+		if (this.vInfo_L[x].isBlank) {
+			return ((this.flgIgnoreBlank != 0) || (s1 == s2)) ? 2 : (bStrict ? 0 : 1);
+		}
+		if (bStrict && (this.vInfo_L[x].hash != this.vInfo_R[y].hash)) { return 0; }
+		if (this.bIgnoreCase) { [s1, s2] = [s1.toLowerCase(), s2.toLowerCase()]; }
+		if ((this.vInfo_L[x].hash == this.vInfo_R[y].hash) && DIFF_ORZ.Compare(s1, s2, this.flgIgnoreBlank)) { return 2; }
+		if (bStrict || (this.vInfo_L[x].UniquePair >= 0) || (this.vInfo_R[y].UniquePair >= 0)) { return 0; }
+		[s1, s2] = [s1.replace(this.BLANK_PATTERN, ""), s2.replace(this.BLANK_PATTERN, "")];
+		const len1 = s1.length, len2 = s2.length;
+		return ((len1 > len2) ? this.CalcScore(s2, s1, len2, len1) : this.CalcScore(s1, s2, len1, len2));
+	},
+	CalcScore(s1, s2, len1, len2) {
+		const len12 = len1 + len2;
+		let t_temp = this.threshold;
+		if (len12 > 1024) {
+			t_temp -= ((Math.min(len12, 4096) - 1024) * (t_temp - this.threshold_min) / 3072)
+		}
+		const pmax = len1 + 1 - t_temp * len2, _max = Math.max;
+		if (pmax < 1) { return 0; }		//optimize
+		let y, p = 0, fp = (new Int32Array(len1 + len2 + 3)).fill(-1);
+		for (; (p < pmax) && (fp[len2 + 1] != len2); p++) {
+			for (let k = len1 - p; k < len2; k++) {
+				for (y = _max(fp[k] + 1, fp[k + 2]);
+					(y < k) && (s1.charCodeAt(y - k + len1) == s2.charCodeAt(y));
+					y++) {}
+				fp[k + 1] = y;
+			}
+			for (let k = len2 + p; k >= len2; k--) {
+				for (y = _max(fp[k] + 1, fp[k + 2]);
+					(y < len2) && (s1.charCodeAt(y - k + len1) == s2.charCodeAt(y));
+					y++) {}
+				fp[k + 1] = y;
+			}
+		}
+		return (1 - (len2 - len1 + p - 1) / len2) > t_temp ? 0.75 : 0.25;	//distance score
+	},
+	IsDuplicated(v, vInfo, i, j, bIgnoreCase, flgIgnoreBlank) {
+		if ((vInfo[i].isBlank != vInfo[j].isBlank) || (vInfo[i].hash != vInfo[j].hash)) { return false; }
+		return (bIgnoreCase ? DIFF_ORZ.Compare(v[i].toLowerCase(), v[j].toLowerCase(), flgIgnoreBlank) 
+			: DIFF_ORZ.Compare(v[i], v[j], flgIgnoreBlank));
+	},
+	InitInfo(len1, len2) {
+		const bIgnoreCase = this.bIgnoreCase, isBlank_ = DIFF_ORZ.isBlank;
+		const hash = function(bIgnoreCase, BLANK_PATTERN, s_org) {
+			let s = s_org.trim().replace(BLANK_PATTERN, ""), len = s.length;
+			if (len == 0) { return 0; }
+			if (bIgnoreCase) { s = s.toLowerCase(); }
+			return [...s].reduce((v, c) => { return (c.codePointAt(0) ^ (v << 2)); }, len);
+		}.bind(this, bIgnoreCase, this.BLANK_PATTERN);
+		this.vInfo_L = this.vLeft.map(s => { return {status:"+", pair:-1, isBlank:s[isBlank_](), hash:hash(s), UniquePair:-1}; });
+		this.vInfo_R = this.vRight.map(s => { return {status:"+", pair:-1, isBlank:s[isBlank_](), hash:hash(s), UniquePair:-1}; });
+		if (!this.bDetectSimilarLine && !this.bDetectMovedBlock) { return; }
+		let [vIsUnique_L, vIsUnique_R] = [this.vInfo_L.map(o => !o.isBlank), this.vInfo_R.map(o => !o.isBlank)];
+		for (let i = 0; i < len1; i++) {
+			if (!(vIsUnique_L[i])) { continue; }
+			for (let j = len1 - 1; j > i; j--) {
+				if (!(this.vInfo_L[j].isBlank) && this.IsDuplicated(this.vLeft, this.vInfo_L, i, j, bIgnoreCase, 2)) {
+					vIsUnique_L[i] = vIsUnique_L[j] = false;
+					break;
+				}
+			}
+		}
+		for (let i = 0; i < len2; i++) {
+			if (!(vIsUnique_R[i])) { continue; }
+			for (let j = len2 - 1; j > i; j--) {
+				if (!(this.vInfo_R[j].isBlank) && this.IsDuplicated(this.vRight, this.vInfo_R, i, j, bIgnoreCase, 2)) {
+					vIsUnique_R[i] = vIsUnique_R[j] = false;
+					break;
+				}
+			}
+			if (!(vIsUnique_R[i])) { continue; }
+			for (let j = 0; j < len1; j++) {
+				if (vIsUnique_L[j] && (this.vInfo_L[j].UniquePair < 0) && (this.CompareStr(j, i, true) > 1)) {
+					[this.vInfo_R[i].UniquePair, this.vInfo_L[j].UniquePair] = [j, i];
+					break;
+				}
+			}
+		}
+	},
+	Diff(s1, s2) {
+		this.vLeft = s1.split(s1.match(/\r\n|\n|\r/) ?? "\n");
+		this.vRight = s2.split(s2.match(/\r\n|\n|\r/) ?? "\n");
+		let len1 = this.vLeft.length, len2 = this.vRight.length, vResult = [], vResult2 = [], vWork = [];
+		this.InitInfo(len1, len2);
+		for (let o = (len1 > len2) ? this.Diff_(len2, len1, true) : this.Diff_(len1, len2, false); o; o = o.prev) {
+			vResult.unshift(o);
+			if (o.op == "-" || o.op == "+") { continue; }
+			this.vInfo_L[o.x].status = this.vInfo_R[o.y].status = o.op;
+			[this.vInfo_L[o.x].pair, this.vInfo_R[o.y].pair] = [o.y, o.x];
+		}
+
+		let o_L = new Hunks(), o_R = new Hunks();
+		this.CreateHunksList(len1, len2, o_L, o_R, vResult);
+		if (this.bIndentHeuristic) { this.IndentHeuristic(len1, len2, o_L, o_R, vResult); }
+
+		if (o_L.unlinkedCount > 0 && o_R.unlinkedCount > 0 && this.bDetectMovedBlock) {
+			this.DetectMovedBlock(len1, len2, o_L, o_R);
+			for (let x = len1 - 1; x >= 0; x--) {
+				if ((this.vInfo_L[x].status != "#") || !this.vInfo_L[x].isBlank) { continue; }
+				if ((x == (len1 - 1)) || (this.vInfo_L[x + 1].status != "#") 
+					|| (this.vInfo_L[x].pair != (this.vInfo_L[x + 1].pair - 1))) {
+					Object.assign(this.vInfo_R[this.vInfo_L[x].pair], {status:"+", pair:-1});
+					Object.assign(this.vInfo_L[x], {status:"+", pair:-1});
+				}
+			}
+		}
+
+		for (const o of vResult) {
+			if ((o.op != "+") && (o.op != "-") && (vWork.length > 0)) {
+				vResult2 = vResult2.concat(vWork);
+				vWork = [];
+			}
+			((o.op == "+") ? vWork : vResult2).push(o);
+		}
+		if (vWork.length > 0) { vResult2 = vResult2.concat(vWork); }
+		return vResult2;
+	},
+	Diff_(len1, len2, bReverse) {
+		const bStrict = !this.bDetectSimilarLine, threshold = this.threshold, _max = Math.max;
+		let n = len1 + len2 + 3, fp = (new Int32Array(n)).fill(-1), ed = (new Array(n)).fill(null);
+		for (let p = 0; fp[len2 + 1] != len2; p++) {
+			for (let k = len1 - p; k < len2; k++) {
+				let y = _max(fp[k] + 1, fp[k + 2]), x = y - k + len1, bIsBlank, y0, org, score;
+				let [x1, y1, k_plus, k_minus] = (bReverse ? [y, x, k + 2, k] : [x, y, k, k + 2]);
+				if (bReverse ? (y == fp[k + 2]) : ((y == (fp[k] + 1)) && (fp[k + 2] != 0))) {
+					if (y1 > 0) { ed[k + 1] = {op:'+', x:-1, y:y1 - 1, prev:ed[k_plus]}; }
+				} else {
+					if (x1 > 0) { ed[k + 1] = {op:'-', x:x1 - 1, y:-1, prev:ed[k_minus]}; }
+				}
+				for (bIsBlank = true, y0 = y, org = ed[k + 1]; x < len1; x1++, y1++, x++, y++) {
+					if ((score = this.CompareStr(x1, y1, bStrict)) <= threshold) { break; }
+					if (!this.vInfo_L[x1].isBlank) { bIsBlank = false; }
+					ed[k + 1] = {op:((score > 1) ? '=' : '!'), x:x1, y:y1, prev:ed[k + 1]};
+				}
+				if (bIsBlank && ((x < (len1 - 1)) || (y < (len2 - 1)))) { [y, ed[k + 1]] = [y0, org]; }
+				fp[k + 1] = y;
+			}
+			for (let k = len2 + p; k >= len2; k--) {
+				let y = _max(fp[k] + 1, fp[k + 2]), x = y - k + len1, bIsBlank, y0, org, score;
+				let [x1, y1, k_plus, k_minus] = (bReverse ? [y, x, k + 2, k] : [x, y, k, k + 2]);
+				if (bReverse ? (y == fp[k + 2]) : ((y == (fp[k] + 1)) && (fp[k + 2] != 0))) {
+					if (y1 > 0) { ed[k + 1] = {op:'+', x:-1, y:y1 - 1, prev:ed[k_plus]}; }
+				} else {
+					if (x1 > 0) { ed[k + 1] = {op:'-', x:x1 - 1, y:-1, prev:ed[k_minus]}; }
+				}
+				for (bIsBlank = true, y0 = y, org = ed[k + 1]; y < len2; x1++, y1++, x++, y++) {
+					if ((score = this.CompareStr(x1, y1, bStrict)) <= threshold) { break; }
+					if (!this.vInfo_L[x1].isBlank) { bIsBlank = false; }
+					ed[k + 1] = {op:((score > 1) ? '=' : '!'), x:x1, y:y1, prev:ed[k + 1]};
+				}
+				if (bIsBlank && ((x < (len1 - 1)) || (y < (len2 - 1)))) { [y, ed[k + 1]] = [y0, org]; }
+				fp[k + 1] = y;
+			}
+		}
+		return ed[len2 + 1];
+	},
+	CreateHunksList(len1, len2, o_L, o_R, vResult) {
+		let o, x = 0, y = 0, bIsBlank, op_bak = "";
+		for (let i = 0; o = vResult[i]; op_bak = o.op) {
+			if (o.op == "-") {			//left block
+				for (bIsBlank = true; (x < len1) && (vResult[i]?.op == "-"); i++, x++) {
+					if (!this.vInfo_L[vResult[i].x].isBlank) { bIsBlank = false; }
+				}
+				o_L.addEntry(o.x - 1, x, bIsBlank);
+			} else if (o.op == "+") {	//right block
+				if (op_bak != "-") { o_L.addEntry(x - 1, x, true); }
+				for (bIsBlank = true; (y < len2) && (vResult[i]?.op == "+"); i++, y++) {
+					if (!this.vInfo_R[vResult[i].y].isBlank) { bIsBlank = false; }
+				}
+				o_R.addEntry(o.y - 1, y, bIsBlank);
+			} else {	//common
+				if (op_bak == "-") { o_R.addEntry(o.y - 1, o.y, true); }
+				for (op_bak = o.op; vResult[i]?.op == op_bak; i++, x++, y++) {}
+			}
+		}
+		if (op_bak == "-") { o_R.addEntry(len2 - 1, len2, true); }
+	},
+	makePair_(x, y, o_L, o_R) {
+		this.vInfo_L[x].status = this.vInfo_R[y].status = "#";
+		[this.vInfo_L[x].pair, this.vInfo_R[y].pair] = [y, x];
+		o_L.addLink();
+		return o_R.addLink();
+	},
+	IndentHeuristic(len1, len2, o_L, o_R, vResult) {
+		const IsDuplicated = (v, vInfo, i, j) => this.IsDuplicated(v, vInfo, i, j, this.bIgnoreCase, this.flgIgnoreBlank);
+		for (let n = 0, nLen = o_L.vList.length; n < nLen; n++) {
+			if (!o_L.vList[n].isBlankLines) {
+				let x1 = o_L.vList[n].start, x = x1, hunk_size = o_L.hunk_size(n);
+				if (hunk_size > 1) {
+					const x_min = (o_R.hunk_size(n) > 0) ? x1 : x1 - Math.min(hunk_size, o_L.gap(n));
+					for (; (x > x_min) && (this.vInfo_L[x].status == "="); x--) {
+						if (!(IsDuplicated(this.vLeft, this.vInfo_L, x, x + hunk_size))) { break; }
+					}
+					let indent_prev = DIFF_ORZ.CalcIndent(this.vLeft[x1 + 1]);
+					for (let indent = 0; (x1 > x) && !(this.vInfo_L[x1].isBlank); x1--, indent_prev = indent) {
+						if ((indent = DIFF_ORZ.CalcIndent(this.vLeft[x1])) > indent_prev) { break; }
+						o_L.vList[n].shift = o_L.vList[n].start - x1 + 1;
+					}
+				}
+			}
+			if (!o_R.vList[n].isBlankLines) {
+				let y1 = o_R.vList[n].start, y = y1, hunk_size = o_R.hunk_size(n);
+				if (hunk_size > 1) {
+					const y_min = (o_L.hunk_size(n) > 0) ? y1 : y1 - Math.min(hunk_size, o_R.gap(n));
+					for (; (y > y_min) && (this.vInfo_R[y].status == "="); y--) {
+						if (!(IsDuplicated(this.vRight, this.vInfo_R, y, y + hunk_size))) { break; }
+					}
+					let indent_prev = DIFF_ORZ.CalcIndent(this.vRight[y1 + 1]);
+					for (let indent = 0; (y1 > y) && !(this.vInfo_R[y1].isBlank); y1--, indent_prev = indent) {
+						if ((indent = DIFF_ORZ.CalcIndent(this.vRight[y1])) > indent_prev) { break; }
+						o_R.vList[n].shift = o_R.vList[n].start - y1 + 1;
+					}
+				}
+			}
+		}
+		if (o_L.vList.length <= 0) { return; }
+		o_L.resetPos();
+		o_R.resetPos();
+
+		for (let i = 0, shift = 0, o = null; o = vResult[i]; i++) {
+			if (o.op == "+") {
+				if (o_R.pos < o.y) { o_R.nextPos(); }
+				if (((shift = o_R.currentHunk().shift) > 0) && ((o_R.pos - o_R.currentHunk().start) <= shift)) {
+					let hunk_size = o_R.hunk_size(o_R.current), i_max = i + hunk_size;
+					for (i = i_max - shift; i < i_max; i++, o_R.nextPos()) {
+						let [x, y] = [vResult[i - hunk_size].x, vResult[i].y];
+						if ((x < 0) || (y < 0)) { i = i_max; break; }
+						[vResult[i - hunk_size].op, vResult[i - hunk_size].x] = ["+", -1];
+						[this.vInfo_R[y - hunk_size].status, this.vInfo_R[y - hunk_size].pair] = ["+", -1];
+						this.vInfo_L[x].status = this.vInfo_R[y].status = vResult[i].op = "=";
+						[this.vInfo_L[x].pair, this.vInfo_R[y].pair, vResult[i].x] = [y, x, x];
+					}
+					o_R.pos += hunk_size - shift;
+				}
+			} else if (o.op == "-") {
+				if (o_L.pos < o.x) { o_L.nextPos(); }
+				if (((shift = o_L.currentHunk().shift) > 0) && ((o_L.pos - o_L.currentHunk().start) <= shift)) {
+					let hunk_size = o_L.hunk_size(o_L.current), i_max = i + hunk_size;
+					for (i = i_max - shift; i < i_max; i++, o_L.nextPos()) {
+						let [x, y] = [vResult[i].x, vResult[i - hunk_size].y];
+						if ((x < 0) || (y < 0)) { i = i_max; break; }
+						[vResult[i - hunk_size].op, vResult[i - hunk_size].y] = ["-", -1];
+						[this.vInfo_L[x - hunk_size].status, this.vInfo_L[x - hunk_size].pair] = ["+", -1];
+						this.vInfo_L[x].status = this.vInfo_R[y].status = vResult[i].op = "=";
+						[this.vInfo_L[x].pair, this.vInfo_R[y].pair, vResult[i].y] = [y, x, y];
+					}
+					o_L.pos += hunk_size - shift;
+				}
+			}
+		}
+		o_L.cleanup();
+		o_R.cleanup();
+	},
+	DetectMovedBlock(len1, len2, o_L, o_R) {
+		let x0, x, y0, y;
+		for (x = o_L.resetPos(); (0 <= x) && (x < len1); x = o_L.setPos(x, true)) {
+			for (y0 = -1, x0 = x; x0 > -1; x0 = o_L.nextPos()) {
+				if ((this.vInfo_L[x0].status == "+") && (this.vInfo_L[x0].UniquePair >= 0)) {
+					y0 = o_R.setPos(this.vInfo_L[x0].UniquePair, false);
+					break;
+				}
+			}
+			if (y0 == -1) { break; }
+			if (this.makePair_(x0, y0, o_L, o_R) == 0) { return; }
+			//backward
+			for (x = x0 - 1, y = y0 - 1; (this.vInfo_L[x]?.status === "+") && (this.vInfo_R[y]?.status === "+"); x--, y--) {
+				if (this.CompareStr(x, y, true) < 2) { break; }
+				if (this.makePair_(x, y, o_L, o_R) == 0) { return; }
+			}
+			//forward
+			for (x = x0 + 1, y = y0 + 1; (x < len1) && (y < len2); x++, y++) {
+				if ((o_L.setPos(x, false) < 0) 
+				|| (this.vInfo_L[x].status != "+") || (this.vInfo_R[y].status != "+")
+				|| (this.CompareStr(x, y, true) < 2)) {
+					break;
+				}
+				if (this.makePair_(x, y, o_L, o_R) == 0) { return; }
+			}
+		}
+		if (o_L.unlinkedCount <= 0 || o_R.unlinkedCount <= 0) { return; }
+
+		for (x = o_L.resetPos(); x > -1; x = o_L.nextPos()) {
+			if (this.vInfo_L[x].status != "+") {
+			} else if (!this.vInfo_L[x].isBlank) {
+				let oHunk = o_R.searchNeighborHunk(o_L);
+				if (oHunk.start < 0) { continue; }
+				for (y = o_R.setPos(oHunk.start, true); y > -1; y = o_R.nextPos()) {
+					if ((this.vInfo_R[y].status == "+") && this.CompareStr(x, y, true)) {
+						if (this.makePair_(x, y, o_L, o_R) == 0) { return; }
+						break;
+					}
+					if (y >= oHunk.end) { break; }
+				}
+			} else if ((x > 0) && (this.vInfo_L[x - 1].status == "#")) {
+				y = this.vInfo_L[x - 1].pair + 1;
+				if ((y < len2) && (this.vInfo_R[y].status == "+") && this.CompareStr(x, y, true)) {
+					if (this.makePair_(x, y, o_L, o_R) == 0) { return; }
+				}
+			}
+		}
+	}
+}//DiffEngine
+//==================================================================================================
+var LineDiffEngine = function(oDiff, x, y) {
+	const [vChar1, vChar2] = [[...oDiff.vLeft[x]], [...oDiff.vRight[y]]];
+	[this.vLeft, this.vRight] = (oDiff.bWord ? [this.constructor.SplitWord(vChar1), this.constructor.SplitWord(vChar2)] : [vChar1, vChar2]);
+	({bIgnoreCase:this.bIgnoreCase, flgIgnoreBlank:this.flgIgnoreBlank, bWord:this.bWord} = oDiff);
+	this.bSemanticCleanup = this.bWord && oDiff.bSemanticCleanup;
+};
+LineDiffEngine.CHAR_BLOCK = {
+	  LETTER : 0
+	, WHITE : 2
+	, BREAK : 3
+	, LATIN : 4
+	, LEFT_BRACKET : 5
+	, HIRAGANA : 11
+	, KATAKANA : 12
+	, INHERITED_KANA : 13	//ー゛゜
+	, INHERITED : 14
+	, KANJI : 15
+	, HANKANA : 16
+	, HANGUL : 20
+	, GREEK : 21
+	, CYRILLIC : 22
+	, HEBREW : 23
+	, ARABIC : 24
+	, VARIATION : 999	//Variation Selector
+};
+LineDiffEngine.DetectCharBlock = function(c) {
+	const n = c.charCodeAt(0), CB = this.CHAR_BLOCK;
+	if (n < 0x0250) {
+		if ((0x0061 <= n && n < 0x007B) || (0x0041 <= n && n < 0x005B) || (0x0030 <= n && n < 0x003A) || (n == 0x005F)) {
+			return CB.LATIN;	//[a-zA-Z0-9_]
+		}
+		if (n == 0x0009 || n == 0x0020) { return CB.WHITE; }
+		//if ((n == 0x00AA) || (n == 0x00B5) || (n == 0x00BA)) { return CB.LATIN; }
+		return ((n < 0x00C0) || (n == 0x00D7) || (n == 0x00F7)) ? CB.BREAK : CB.LATIN;	//×÷
+	} else if (0x2000 <= n && n < 0x3040) {
+		if (0x2E80 <= n) { return ((n < 0x3000) || "々〆〇〻".includes(c)) ? CB.KANJI : CB.BREAK; }
+		if (0x2C60 <= n && n < 0x2C80) { return CB.LATIN; }	//2C60-2C7F Latin Extended-C
+		if (0x2DE0 <= n && n < 0x2E00) { return CB.CYRILLIC; }	//2DE0-2DFF Cyrillic Extended-A
+		if ((0x2800 <= n && n < 0x2900) || ((0x2C00 <= n && n < 0x2DE0) && !c.match(/[\u2cf9-\u2cfc\u2cfe\u2cff\u2d70]/))) {
+			return CB.LETTER;
+		}
+		return CB.BREAK;	//General Punctuation etc.
+	} else if (0x3040 <= n && n < 0x3200) {
+		if (n < 0x3100 || 0x31F0 <= n) {
+			if (n == 0x30FB) { return CB.BREAK; }	//・
+			if ((n == 0x30FC) || (n == 0x309B) || (n == 0x309C)) { return CB.INHERITED_KANA; }	//ー゛゜
+			return ((n >= 0x30A0) ? CB.KATAKANA : CB.HIRAGANA);
+		}
+		if (0x3130 <= n && n < 0x3190) { return CB.HANGUL; }	//3130-318F Hangul Compatibility Jamo
+		return ((0x3190 <= n && n < 0x31A0) || (0x31C0 <= n)) ? CB.KANJI : CB.BREAK;
+	} else if ((0x3200 <= n && n < 0xA000) || (0xF900 <= n && n < 0xFB00)) {
+		//3400-9FFF CJK Unified Ideographs Extension A, Yijing Hexagram Symbols, CJK Unified Ideographs
+		if (0x3400 <= n) { return CB.KANJI; }
+		return (((0x3280 <= n) || (0x3220 <= n && n < 0x3260)) ? CB.BREAK : CB.HANGUL);
+	} else if (0xFF00 <= n && n < 0xFFF0) {		//Halfwidth and Fullwidth Forms
+		if (0xFF61 <= n && n < 0xFFA0) { return CB.HANKANA; }
+		if ((0xFF10 <= n && n < 0xFF1A) || (0xFF21 <= n && n < 0xFF3B) || (0xFF41 <= n && n < 0xFF5B)) {
+			return CB.KANJI;	//０-９Ａ-Ｚａ-ｚ
+		}
+		return (0xFFA0 < n && n < 0xFFE0) ? CB.HANGUL : CB.BREAK;	//FFA0 hungul space
+	} else if (0xD800 <= n && n < 0xDC00) {		//surrogate pair
+		const trail = c.charCodeAt(1);
+		if (trail < 0xDC00 || 0xDFFF < trail) { return CB.LETTER; }	//illegal
+		const cp = (((n - 0xD800) << 10) + (trail - 0xDC00) + 0x10000);
+		if (0xD840 <= n && n < 0xD880) {
+			if (cp == 0x2A708) { return CB.KATAKANA; }	//片仮名合字「トモ」
+			return CB.KANJI;	//20000-2FFFF CJK Unified Ideographs Extension B-F, CJK Compatibility Ideographs Supplement
+		} else if ((n == 0xDB40) && (0xDD00 <= trail && trail < 0xDDF0)) {
+			return CB.VARIATION;	//E0100-E01EF Variation Selectors Supplement
+		} else if ((n == 0xD82C) && (trail < 0xDD30)) {
+			return (trail == 0xDC00) ? CB.KATAKANA : CB.HIRAGANA;
+		}
+		if (0x1B150 <= cp && cp <= 0x1B152) { return CB.HIRAGANA; }	//「ゐゑを」小文字
+		if (0x1B164 <= cp && cp <= 0x1B167) { return CB.KATAKANA; }	//「ヰヱヲン」小文字
+		if (0x30000 <= cp && cp <= 0x3134F) { return CB.KANJI; }	//CJK Unified Ideographs Extension G
+		return ((0x1F000 <= cp && cp < 0x1FC00) ? CB.BREAK : CB.LETTER);	//1F000-1FBFF Pictographs etc.
+	} else if ((0x1100 <= n && n < 0x1200) || (0xA960 <= n && n < 0xD800 && (n < 0xA980 || 0xAC00 <= n))) {
+		return CB.HANGUL;
+	} else if ((0x0400 <= n && n < 0x0530) || (0xA640 <= n && n < 0xA6A0) || (0x1C80 <= n && n < 0x1C90)) {
+		return ((n == 0xA673) || (n == 0xA67E)) ? CB.BREAK : CB.CYRILLIC;
+	} else if ((0x0370 <= n && n < 0x0400) || (0x1F00 <= n && n < 0x2000)) {
+		return ((n == 0x037E) || (n == 0x0387)) ? CB.BREAK : CB.GREEK;
+	} else if ((0x0590 <= n && n < 0x0600) || (0xFB1D <= n && n < 0xFB50)) {
+		return ((n == 0x05C0) || (n == 0x05C3) || (n == 0x05C6) || (n == 0x05F3) || (n == 0x05F4)) ? CB.BREAK : CB.HEBREW;
+	} else if (0xFE00 <= n && n < 0xFE70) {
+		return ((n < 0xFE10) ? CB.VARIATION : CB.BREAK);
+	} else if ((0x0600 <= n && n < 0x0780 && (n < 0x0700 || 0x074F < n)) || (0x08A0 <= n && n < 0x0900) || (0xFB50 <= n && n < 0xFF00)) {
+		return ((n == 0x060C) || (n == 0x060D) || (n == 0x061B) || (n == 0x061E) || (n == 0x061F) || (0x066A <= n && n <= 0x066D) || (n == 0x06D4)) ?
+			CB.BREAK : CB.ARABIC;
+	} else if ((0x1DC0 <= n && n < 0x1F00) || (0xA720 <= n && n < 0xAB70 && (n < 0xA800 || 0xAB30 <= n)) || (0xFB00 <= n && n < 0xFB07)
+	|| (0x0300 <= n && n < 0x0370)) {
+		return (0x0300 <= n && n < 0x0370) ? CB.INHERITED : CB.LATIN;
+	} else if (0x1D00 <= n && n < 0x1D80) {	//1D00-1D7F Phonetic Extensions
+		if ((0x1D26 <= n && n <= 0x1D2A) || (0x1D5D <= n && n <= 0x1D61) || (0x1D66 <= n && n <= 0x1D6A)) {
+			return CB.GREEK;
+		}
+		return (n == 0x1D2B) ? CB.CYRILLIC : CB.LATIN;	//1D2B Cyrillic Letter Small Capital El
+	}
+	//return CB.LETTER;
+	return c.match(/[\u055A-\u055F\u0589\u0700-\u070D\u07F7-\u07F9\u0830-\u083E\u085E\u0964\u0965\u0970\u0AF0\u0DF4\u0E4F\u0E5A\u0E5B\u0F04-\u0F12\u0F14\u0F85\u0FD0-\u0FD4\u0FD9\u0FDA\u104A-\u104F\u10FB\u1360-\u1368\u166D\u166E\u16EB-\u16ED\u1735\u1736\u17D4-\u17D6\u17D8-\u17DA\u1800-\u1805\u1807-\u180A\u1944\u1945\u1A1E\u1A1F\u1AA0-\u1AA6\u1AA8-\u1AAD\u1B5A-\u1B60\u1BFC-\u1BFF\u1C3B-\u1C3F\u1C7E\u1C7F\u1CC0-\u1CC7\u1CD3\uA4FE\uA4FF\uA60D-\uA60F\uA6F2-\uA6F7\uA874-\uA877\uA8CE\uA8CF\uA8F8-\uA8FA\uA92E\uA92F\uA95F\uA9C1-\uA9CD\uA9DE\uA9DF\uAA5C-\uAA5F\uAADE\uAADF\uAAF0\uAAF1\uABEB]/) ?
+		CB.BREAK : CB.LETTER;
+};
+LineDiffEngine.SplitWord = function(vChar) {
+	let vResult = [], sWord = "", bDifferent, CB = this.CHAR_BLOCK, cb_prev = CB.LETTER;
+	for (const c of vChar) {
+		let cb = this.DetectCharBlock(c);
+		switch (cb) {
+			case CB.HIRAGANA:
+			case CB.KATAKANA:
+				bDifferent = ((cb_prev != cb) && (cb_prev != CB.INHERITED_KANA));
+				break;
+			case CB.INHERITED_KANA:
+				bDifferent = ((cb_prev != CB.HIRAGANA) && (cb_prev != CB.KATAKANA) && (cb_prev != cb));
+				if (!bDifferent) { cb = cb_prev; }
+				break;
+			case CB.VARIATION:
+			case CB.INHERITED:
+				bDifferent = false;
+				cb = cb_prev;
+				break;
+			default:
+				bDifferent = (cb != cb_prev);
+				break;
+		}
+		if (bDifferent) {
+			if (sWord != "") {
+				vResult.push(sWord);
+				sWord = "";
+			}
+			cb_prev = cb;
+		}
+		if ((c == "/") && (sWord == "") && (vResult.length > 0) && (vResult[vResult.length - 1] == "<")) {
+			vResult[vResult.length - 1] = "</";		//for html
+		} else {
+			switch (cb) {
+				case CB.KANJI:
+				case CB.BREAK:
+				case CB.WHITE:
+					vResult.push(c);
+					break;
+				default:
+					sWord += c;
+					break;
+			}
+		}
+	}
+	if (sWord != "") { vResult.push(sWord); }
+	return vResult;
+};
+LineDiffEngine.prototype.CompareStr = function(x, y, bIgnoreCase, flgIgnoreBlank) {
+	return (bIgnoreCase ? 
+		  DIFF_ORZ.Compare(this.vLeft[x].toLowerCase(), this.vRight[y].toLowerCase(), flgIgnoreBlank)
+		: DIFF_ORZ.Compare(this.vLeft[x], this.vRight[y], flgIgnoreBlank));
+};
+LineDiffEngine.prototype.Diff = function() {
+	let len1 = this.vLeft.length, len2 = this.vRight.length, vResult = [], vWork = [], vWork2 = [], cb;
+	let o = ((len1 > len2) ? this.Diff_(len2, len1, true) : this.Diff_(len1, len2, false));
+	const CB = this.constructor.CHAR_BLOCK;
+	const DetectCB_ = function(s) {
+		if (s.length != 1) { return this.CHAR_BLOCK.LETTER; }
+		return (("<([{【「＜『［｛".indexOf(s) >= 0) ? this.CHAR_BLOCK.LEFT_BRACKET : this.DetectCharBlock(s));
+	}.bind(LineDiffEngine);
+	if (!this.bWord || !this.bSemanticCleanup) {
+		for ( ; o; o = o.prev) {
+			vResult.unshift(o);
+		}
+		return vResult;
+	}
+	for ( ; o; o = o.prev) {
+		if (o.op == "-") {
+			vWork.unshift(o);
+		} else if (o.op == "+") {
+			for (vWork2 = []; (o?.op == "+"); o = o.prev) {
+				vWork2.unshift(o);
+				if (o.prev?.op != "+") { break; }
+			}
+			for (let i = vWork2.length - 1; (o.prev?.op == "=") && (this.vRight[o.prev.y] == this.vRight[vWork2[i].y]); ) {
+				if ((cb = DetectCB_(this.vRight[vWork2[i].y])) == CB.BREAK) { break; }
+				if (cb == CB.WHITE) {
+					if ((i <= 0) || !o.prev.prev) { break; }
+					if ((o.prev.prev.op == "=") && (this.vRight[o.prev.prev.y] != this.vRight[vWork2[i - 1].y])) { break; }
+				}
+				o = o.prev;
+				[vWork2[i].x, vWork2[i].op, o.x, o.op] = [o.x, "=", -1, "+"];
+				vResult.unshift(vWork2.pop());
+				vWork2.unshift(o);
+			}
+			vResult = vWork2.concat(vResult);
+		} else {
+			if (vWork.length > 0) {
+				for (let i = vWork.length - 1; (o?.op == "=") && (this.vLeft[o.x] == this.vLeft[vWork[i].x]); o = o.prev) {
+					if ((cb = DetectCB_(this.vLeft[vWork[i].x])) == CB.BREAK) { break; }
+					if (cb == CB.WHITE) {
+						if ((i <= 0) || !o.prev) { break; }
+						if ((o.prev.op == "=") && (this.vLeft[o.prev.x] != this.vLeft[vWork[i - 1].x])) { break; }
+					}
+					[vWork[i].y, vWork[i].op, o.y, o.op] = [o.y, "=", -1, "-"];
+					vResult.unshift(vWork.pop());
+					vWork.unshift(o);
+				}
+				vResult = vWork.concat(vResult);
+				vWork = [];
+			}
+			if (o) { vResult.unshift(o); }
+		}
+	}
+	return (vWork.length > 0) ? vWork.concat(vResult) : vResult;
+};
+LineDiffEngine.prototype.Diff_ = function(len1, len2, bReverse) {
+	let n = len1 + len2 + 3, fp = (new Int32Array(n)).fill(-1), ed = (new Array(n)).fill(null);
+	const {bIgnoreCase, flgIgnoreBlank, bWord} = this;
+	const _max = Math.max, isBlank_ = DIFF_ORZ.isBlank;
+	for (let p = 0; fp[len2 + 1] != len2; p++) {
+		for (let k = len1 - p; k < len2; k++) {
+			let y = _max(fp[k] + 1, fp[k + 2]), x = y - k + len1;
+			let [x1, y1, k_plus, k_minus] = (bReverse ? [y, x, k + 2, k] : [x, y, k, k + 2]);
+			if (bReverse ? (y == fp[k + 2]) : ((y == (fp[k] + 1)) && (fp[k + 2] != 0))) {
+				if (y1 > 0) { ed[k + 1] = {op:'+', x:-1, y:y1 - 1, prev:ed[k_plus]}; }
+			} else {
+				if (x1 > 0) { ed[k + 1] = {op:'-', x:x1 - 1, y:-1, prev:ed[k_minus]}; }
+			}
+			if (bWord && ((y > 0) || (x > 0))) {
+				let bIsBlank = true, y0 = y, org = ed[k + 1];
+				for (; (x < len1) && this.CompareStr(x1, y1, bIgnoreCase, flgIgnoreBlank); x1++, y1++, x++, y++) {
+					if (!(this.vLeft[x1][isBlank_]())) { bIsBlank = false; }
+					ed[k + 1] = {op:'=', x:x1, y:y1, prev:ed[k + 1]};
+				}
+				if (bIsBlank && ((x < (len1 - 1)) || (y < (len2 - 1)))) { [y, ed[k + 1]] = [y0, org]; }
+			} else {
+				for (; (x < len1) && this.CompareStr(x1, y1, bIgnoreCase, flgIgnoreBlank); x1++, y1++, x++, y++) {
+					ed[k + 1] = {op:'=', x:x1, y:y1, prev:ed[k + 1]};
+				}
+			}
+			fp[k + 1] = y;
+		}
+		for (let k = len2 + p; k >= len2; k--) {
+			let y = _max(fp[k] + 1, fp[k + 2]), x = y - k + len1;
+			let [x1, y1, k_plus, k_minus] = (bReverse ? [y, x, k + 2, k] : [x, y, k, k + 2]);
+			if (bReverse ? (y == fp[k + 2]) : ((y == (fp[k] + 1)) && (fp[k + 2] != 0))) {
+				if (y1 > 0) { ed[k + 1] = {op:'+', x:-1, y:y1 - 1, prev:ed[k_plus]}; }
+			} else {
+				if (x1 > 0) { ed[k + 1] = {op:'-', x:x1 - 1, y:-1, prev:ed[k_minus]}; }
+			}
+			if (bWord && ((y > 0) || (x > 0))) {
+				let bIsBlank = true, y0 = y, org = ed[k + 1];
+				for (; (y < len2) && this.CompareStr(x1, y1, bIgnoreCase, flgIgnoreBlank); x1++, y1++, x++, y++) {
+					if (!(this.vLeft[x1][isBlank_]())) { bIsBlank = false; }
+					ed[k + 1] = {op:'=', x:x1, y:y1, prev:ed[k + 1]};
+				}
+				if (bIsBlank && ((x < (len1 - 1)) || (y < (len2 - 1)))) { [y, ed[k + 1]] = [y0, org]; }
+			} else {
+				for (; (y < len2) && this.CompareStr(x1, y1, bIgnoreCase, flgIgnoreBlank); x1++, y1++, x++, y++) {
+					ed[k + 1] = {op:'=', x:x1, y:y1, prev:ed[k + 1]};
+				}
+			}
+			fp[k + 1] = y;
+		}
+	}
+	return ed[len2 + 1];
+};
+//==================================================================================================
+function getExt(sFile) { return (sFile.match(/(.*)(?:\.([^.]+$))/))?.[2] || ""; }
+function DetectEncoding(data, sExt) {
+	let len = Math.min(data?.length || 0, 512), pattern = "", i_max = len, bHTML = false;
+	if (len <= 2) { return ""; }
+	if ((data[0] === 0xFF) && (data[1] === 0xFE)) { return "utf-16"; }
+	if ((data[0] === 0xFE) && (data[1] === 0xFF)) { return "utf16-BE"; }
+	if ((data[0] === 0xEF) && (data[1] === 0xBB) && (data[2] === 0xBF)) { return "utf-8"; }
+	if (sExt == "css") {
+		pattern = /@charset[\s\t]*\"?([a-zA-Z0-9_\-]+)/i;		//@charset "foo";
+	} else if (len < 20) {
+	} else if ((data[0] === 0x3C) && (data[1] === 0x3F) 
+	&& (data[2] === 0x78) && (data[3] === 0x6D) && (data[4] === 0x6C)) {	//"<?xml"
+		for (let i = 6; i < len; i++) {
+			if ((data[i - 1] === 0x3F) && (data[i] === 0x3E)) {	//"?>"
+				i_max = i - 1;
+				pattern = /[\s\t\r\n]encoding[\s\t\r\n]*=[\s\t\r\n]*\"([a-zA-Z0-9_\-]+)\"/;
+				break;
+			}
+		}
+	} else if (["htm", "html", "asp", "aspx"].includes(sExt)) {
+		bHTML = true;
+		pattern = /<meta[\s\t\r\n]+[^>]*charset[\s\t]*=[\s\t]*\"?([a-zA-Z0-9_\-]+)/i;
+	}
+	if (pattern === "") { return ""; }
+	let sTemp = String.fromCharCode.apply(null, data.slice(0, i_max));
+	if (bHTML) { sTemp = sTemp.replace(/<!--[\s\S]*?-->/g, ""); }
+	return (sTemp.match(pattern))?.[1] ?? "utf-8";
+}
+//==================================================================================================
+window.onload = function() {
+	const onDrop = function(ev1) {
+		ev1.stopPropagation();
+		ev1.preventDefault();
+		let oFile = ev1.dataTransfer.files[0];
+		new Promise((resolve, reject) => {
+			let reader = new FileReader();
+			reader.addEventListener("load", ev => { resolve(new Uint8Array(ev.target.result)); });
+			reader.addEventListener("error", ev => { return reject(this); });
+			reader.readAsArrayBuffer(oFile);
+		})
+		.then((data) => {
+			let reader = new FileReader();
+			reader.addEventListener("load", ev => { ev1.target.value = ev.target.result; });
+			reader.readAsText(new Blob([data]), DetectEncoding(data, getExt(oFile.name)));
+		});
+	}
+	const onKeyDown = function(ev) {
+		if (((ev.keyCode != 9) && (ev.keyCode != 32)) || ev.ctrlKey || ev.altKey) { return true; }
+		ev.preventDefault();
+		const str = (ev.keyCode == 32) ? " " : "\t", TABWIDTH = 4, CRLF = [13, 10];
+		let e = ev.target, start = e.selectionStart, end = e.selectionEnd, sContents = e.value;
+		if ((start == end) || (sContents.substring(start, end).indexOf("\n") < 0)) {
+			e.setRangeText(str, start, end, "end");
+			return;
+		}
+		if (CRLF.indexOf(sContents.charCodeAt(end - 1)) < 0) {
+			for ( ; end < sContents.length; end++) {
+				if (CRLF.indexOf(sContents.charCodeAt(end)) >= 0) { break; }
+			}
+		}
+		for ( ; start > 0; start--) {
+			if (CRLF.indexOf(sContents.charCodeAt(start - 1)) >= 0) { break; }
+		}
+		let v = sContents.substring(start, end).split("\n");
+		for (let i = 0; i < v.length; i++) {
+			if (v[i] == "") { continue; }
+			if (!ev.shiftKey) {		//indent
+				v[i] = str + v[i];
+			} else {				//unindent
+				if (str == "\t") {
+					for (let j = 0, c = " "; (j < TABWIDTH) && (c == " "); j++) {
+						c = v[i].substring(0, 1);
+						if ((c == " ") || (j == 0 && c == "\t")) { v[i] = v[i].substring(1); }
+					}
+				} else if (v[i].substring(0, 1) == " ") {
+					v[i] = v[i].substring(1);
+				}
+			}
+		}
+		e.setRangeText(v.join("\n"), start, end, "select");
+	}
+	$("txtOld").addEventListener("dragover", ev => { ev.preventDefault(); });
+	$("txtOld").addEventListener("drop", onDrop);
+	$("txtOld").addEventListener("keydown", onKeyDown);
+	$("txtNew").addEventListener("dragover", ev => { ev.preventDefault(); });
+	$("txtNew").addEventListener("drop", onDrop);
+	$("txtNew").addEventListener("keydown", onKeyDown);
+	$("btnDiff").onclick = function() { DIFF_ORZ.do_diff(); }
+	$("btnSwap").onclick = () => {
+		[$("txtOld").value, $("txtNew").value] = [$("txtNew").value, $("txtOld").value];
+		$("btnDiff").click();
+	}
+	$("chkDetectSimilarLine").onclick = ev => {
+		$("chkWord").disabled = !((ev.target || ev.srcElement).checked);
+	}
+}
+//==================================================================================================
+})(window, document);
+</script>
+<style type="text/css">
+ label { margin-right:0px; }
+ input[type="radio"] { margin-left:0px; }
+ input[type="button"] { margin-left:0px;margin-right:1px;display:block;float:left; }
+ td.lnum { width:30px;text-align:right;padding-right:3px;background-color:#eeeeee; }
+ tr.minus > td.L, tr.minus > td.M:not(.moved) { background-color:#ddddff; }
+ tr.plus > td.R, tr.plus > td.M:not(.moved) { background-color:#ffdddd; }
+ tr.minus > td.moved.L, tr.plus > td.moved.R, td.moved.M { background-color:#ead7a4; }
+ tr.equal > td.L, tr.equal > td.R, tr.equal > td.M { color:initial; }
+ tr.similar > td.L, tr.similar > td.R, tr.similar > td.M { background-color:#ddffdd; }
+ tr.plus td.L, tr.minus td.R { background-color:#eeeeee; }
+ #result > table { width:100%;table-layout:fixed; }
+ #result .op { width:20px;text-align:center; }
+ #result { background-color:ivory; }
+ #result pre { padding:0px;margin:0px;word-break:break-all;white-space:pre-wrap;tab-size:4; }
+ #result ins { color:#cc2222; }
+ #result del { background-color:#cccccc; }
+ tr.similar > td.L ins { display:inline-block;width:0px;height:1em;border:solid 1px #cc2222;overflow:hidden;vertical-align:top; }
+ tr.similar > td.R del { display:inline-block;width:0px;height:1em;border:solid 1px #666666;overflow:hidden;vertical-align:top; }
+</style>
+</head>
+<body style="padding-top:0px;margin-top:0px;">
+<table style="width:100%;">
+  <tr>
+    <td colspan="2">
+      <input type="button" id="btnDiff" value="diff" />
+      <input type="button" id="btnSwap" value="swap panes" />&nbsp;
+      <input type="checkbox" id="chkIgnoreCase" value="1" /><label for="chkIgnoreCase">Ignore Case</label>
+      <input type="checkbox" id="chkDetectMovedBlock" value="1" checked /><label for="chkDetectMovedBlock">Detect Moved Block</label>
+      <input type="checkbox" id="chkDetectSimilarLine" value="1" checked /><label for="chkDetectSimilarLine">Detect Similar Line</label>
+      <input type="checkbox" id="chkWord" value="1" checked /><label for="chkWord">Word</label>&nbsp;&nbsp;
+      Ignore Blank:
+      <input type="radio" id="rdIgnoreBlank_c" name="rdIgnoreBlank" value="1" checked /><label for="rdIgnoreBlank_c">Changes</label>
+      <input type="radio" id="rdIgnoreBlank_a" name="rdIgnoreBlank" value="2" /><label for="rdIgnoreBlank_a">All</label>
+      <input type="radio" id="rdIgnoreBlank_n" name="rdIgnoreBlank" value="0" /><label for="rdIgnoreBlank_n">Compare</label>&nbsp;
+      <input type="checkbox" id="chkSideBySide" value="1" /><label for="chkSideBySide">side by side</label>
+    </td>
+  </tr>
+  <tr>
+    <td style="width:50%;"><textarea id="txtOld" rows="15" placeholder="old" style="width:100%;resize:none;"></textarea></td>
+    <td><textarea id="txtNew" rows="15" placeholder="new" style="width:100%;resize:none;"></textarea></td>
+  </tr>
+</table>
+<div id="result"></div>
+</body>
+</html>
