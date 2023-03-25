@@ -89,7 +89,7 @@
                                             "id": "cpsngh2o2gg0",
                                             "created": 1673774262416,
                                             "text": "マンハッタン距離\n(Manhattan distance)",
-                                            "note": "19世紀\nヘルマン・ミンコフスキーによって考案\n",
+                                            "note": "または\ntaxicab distance\n\n19世紀\nヘルマン・ミンコフスキーによって考案\n",
                                             "font-family": "sans-serif",
                                             "layout": null
                                         },
@@ -397,9 +397,33 @@
                                             "created": 1678106846105,
                                             "text": "対数関数 (logarithmic function)",
                                             "font-family": "sans-serif",
-                                            "layout": null
+                                            "layout": null,
+                                            "note": "●底 (base)\n●真数 (antilogarithm)\n"
                                         },
-                                        "children": []
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "creini0v9ao0",
+                                                    "created": 1679651184970,
+                                                    "text": "常用対数 (common logarithm)",
+                                                    "font-family": "sans-serif",
+                                                    "note": "底が 10\n",
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "creinwr3q6g0",
+                                                    "created": 1679651217032,
+                                                    "text": "自然対数 (natural logarithm)",
+                                                    "font-family": "sans-serif",
+                                                    "note": "底が e (=2.7182818...)\n",
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
                                     },
                                     {
                                         "data": {
@@ -825,9 +849,23 @@
                                                             "text": "範囲 (range)",
                                                             "font-family": "sans-serif",
                                                             "note": "最大値 - 最小値\n",
-                                                            "layout": null
+                                                            "layout": null,
+                                                            "expandState": "collapse"
                                                         },
-                                                        "children": []
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "creig99o3940",
+                                                                    "created": 1679650617362,
+                                                                    "text": "外れ値 (Outlier)",
+                                                                    "font-family": "sans-serif",
+                                                                    "hyperlink": "https://datachemeng.com/outlierdetection/",
+                                                                    "hyperlinkTitle": "外れ値検出 (Outlier Detection) もしくは 外れサンプル検出 (Outlier Sample Detection) ～他の値・サンプルと大きく異なる値・サンプルを見つけよう！～",
+                                                                    "layout": null
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
                                                     },
                                                     {
                                                         "data": {
@@ -890,6 +928,19 @@
                                                             },
                                                             {
                                                                 "data": {
+                                                                    "id": "crei4m6eo9c0",
+                                                                    "created": 1679649705093,
+                                                                    "text": "四分位範囲 IQR\n(Interquartile Range)",
+                                                                    "font-family": "sans-serif",
+                                                                    "layout": null,
+                                                                    "note": "Q3 - Q1\n中央50％の範囲\n",
+                                                                    "hyperlink": "https://ebreha.com/interquartile-range/",
+                                                                    "hyperlinkTitle": "やってみると簡単！四分位範囲と箱ひげ図～Rを使うともっと簡単ですよ～"
+                                                                },
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "data": {
                                                                     "id": "cr10xo51vm80",
                                                                     "created": 1678280922511,
                                                                     "text": "箱ひげ図\n(boxplot)",
@@ -929,13 +980,68 @@
                                                                             "text": "標準偏差 SD\n(Standard Deviation)",
                                                                             "note": "分散の(正の)平方根、σ\n\n1σ 区間におさまる確率 → 約68%\n2σ 区間におさまる確率 → 約95%\n3σ 区間におさまる確率 → 約99.7%\n",
                                                                             "font-family": "sans-serif",
-                                                                            "layout": null
+                                                                            "layout": null,
+                                                                            "expandState": "collapse"
                                                                         },
-                                                                        "children": []
+                                                                        "children": [
+                                                                            {
+                                                                                "data": {
+                                                                                    "id": "crdhozjt0340",
+                                                                                    "created": 1679546920418,
+                                                                                    "text": "変動係数 CV\n(Coefficient of Variation)",
+                                                                                    "font-family": "sans-serif",
+                                                                                    "priority": null,
+                                                                                    "note": "標準偏差/平均値\n",
+                                                                                    "layout": null
+                                                                                },
+                                                                                "children": []
+                                                                            }
+                                                                        ]
                                                                     }
                                                                 ]
                                                             }
                                                         ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "crde9kxo9tc0",
+                                                    "created": 1679537249813,
+                                                    "text": "モーメント／積率\n(moment)",
+                                                    "layout": null,
+                                                    "font-family": "sans-serif",
+                                                    "note": "1次の原点周りのモーメント = 平均値 μ\n2次の平均周りのモーメント = 分散 σ^2\n3次の平均周りのモーメント/σ^3 = 歪度\n4次の平均周りのモーメント/σ^4 = 尖度\n\n※分散は標本分散とする\n",
+                                                    "hyperlink": "https://officekaisuiyoku.com/skewkurt/",
+                                                    "hyperlinkTitle": "【統計学】尖度と歪度｜分布の形を調べる",
+                                                    "priority": null
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "crdeatjhqew0",
+                                                            "created": 1679537346911,
+                                                            "text": "歪度 わいど\n(skewness)",
+                                                            "font-family": "sans-serif",
+                                                            "note": "E[(x−μ)^3] / (標準偏差σ)^3\n\n< 0  左のすそが長い (山の頂点が右寄り)\n= 0  正規分布\n\\> 0  右のすそが長い (山の頂点が左寄り)\n",
+                                                            "hyperlink": null,
+                                                            "hyperlinkTitle": null,
+                                                            "layout": null
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "crdebbs5a2o0",
+                                                            "created": 1679537386616,
+                                                            "text": "尖度 せんど\n(kurtosis)",
+                                                            "note": "E[(x−μ)^4] / (標準偏差σ)^4\n\n< 3  平たい (緩尖的 かんせんてき)\n(Platykurtic)\n\n= 3  正規分布 (中尖的)\n(Mesokurtic)\n\n\\> 3  尖ってる (急尖的)\n(Leptokurtic)\n\n\n※Excelの KURT 関数は 3 を引いた値を返す\n",
+                                                            "layout": null,
+                                                            "hyperlink": "https://best-biostatistics.com/summary/waido-sendo.html",
+                                                            "hyperlinkTitle": "歪度と尖度とは？正規分布の判定目安やエクセルでの計算方法を紹介！",
+                                                            "font-family": "sans-serif"
+                                                        },
+                                                        "children": []
                                                     }
                                                 ]
                                             }
@@ -960,6 +1066,7 @@
                                                     "created": 1679123011703,
                                                     "text": "推定\n(estimation)",
                                                     "expandState": "expand",
+                                                    "font-family": "sans-serif",
                                                     "layout": null
                                                 },
                                                 "children": [
@@ -1016,7 +1123,7 @@
                                                                     "layout": null,
                                                                     "hyperlink": "https://cognicull.com/ja/vatgges5",
                                                                     "hyperlinkTitle": "不偏分散とは",
-                                                                    "note": "標本分散(Sample Dispersion)\n"
+                                                                    "note": null
                                                                 },
                                                                 "children": []
                                                             }
@@ -1071,26 +1178,31 @@
                                                     },
                                                     {
                                                         "data": {
-                                                            "id": "cr46zu94t340",
-                                                            "created": 1678602699076,
-                                                            "text": "有意水準\n(significance level)",
-                                                            "font-family": "sans-serif",
-                                                            "layout": null
-                                                        },
-                                                        "children": []
-                                                    },
-                                                    {
-                                                        "data": {
                                                             "id": "cr9llyrlv340",
                                                             "created": 1679151728234,
-                                                            "text": "P値 (P Value)",
+                                                            "text": "P値\n(P Value)",
                                                             "layout": null,
                                                             "hyperlink": "https://www.nri.com/jp/knowledge/glossary/lst/alphabet/p_value",
                                                             "hyperlinkTitle": "P値とは",
                                                             "note": "帰無仮説が正しいという仮定の下で、実際に観測された結果と少なくとも同程度の極端な検定結果が得られる確率\n",
-                                                            "font-family": "sans-serif"
+                                                            "font-family": "sans-serif",
+                                                            "expandState": "expand"
                                                         },
-                                                        "children": []
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "cr46zu94t340",
+                                                                    "created": 1678602699076,
+                                                                    "text": "有意水準\n(significance level)",
+                                                                    "font-family": "sans-serif",
+                                                                    "layout": null,
+                                                                    "note": "「第一種の過誤＝間違って帰無仮説を棄却する」確率\n",
+                                                                    "hyperlink": "https://atarimae.biz/archives/12011",
+                                                                    "hyperlinkTitle": "p値(有意確率)と有意水準を具体例から解説！有意水準を設定するタイミングについて"
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
                                                     },
                                                     {
                                                         "data": {
@@ -1100,7 +1212,8 @@
                                                             "note": "データが特定の分布に従っているという前提での検定\n",
                                                             "hyperlink": "https://best-biostatistics.com/hypo_test/para.html",
                                                             "hyperlinkTitle": "ノンパラメトリック検定とパラメトリック検定とは？意味や種類をわかりやすく",
-                                                            "font-family": "sans-serif"
+                                                            "font-family": "sans-serif",
+                                                            "layout": null
                                                         },
                                                         "children": []
                                                     },
@@ -1110,7 +1223,8 @@
                                                             "created": 1679154332691,
                                                             "text": "ノンパラメトリック検定\n(non-parametric test)",
                                                             "note": "データが特定の分布に従っているかは仮定しない\n",
-                                                            "font-family": "sans-serif"
+                                                            "font-family": "sans-serif",
+                                                            "layout": null
                                                         },
                                                         "children": []
                                                     }
@@ -1273,6 +1387,20 @@
                                                             "layout": null
                                                         },
                                                         "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "crdgmvh22400",
+                                                            "created": 1679543933707,
+                                                            "text": "幾何分布\n(geometric distribution)",
+                                                            "font-family": "sans-serif",
+                                                            "priority": null,
+                                                            "note": "成功確率pの独立なベルヌーイ試行を繰り返す時、初めて成功するまでの試行回数が従う確率分布\n\nまたは、\n\n初めて成功するまでの失敗回数\n＝上の定義 - 1\n",
+                                                            "layout": null,
+                                                            "hyperlink": "https://best-biostatistics.com/summary/kika.html",
+                                                            "hyperlinkTitle": "幾何分布とは？期待値（平均）や分散の証明はどうなるか例題を用いて解説"
+                                                        },
+                                                        "children": []
                                                     }
                                                 ]
                                             },
@@ -1285,8 +1413,7 @@
                                                     "hyperlink": "https://best-biostatistics.com/summary/poisson.html",
                                                     "hyperlinkTitle": "ポアソン分布とは？わかりやすく簡単に例を用いて二項分布との関係も",
                                                     "note": "二項分布において、試行回数大、発生回数少であるときに従う離散確率分布\nある事象が一定の時間内に発生する回数を表す\n",
-                                                    "layout": null,
-                                                    "priority": null
+                                                    "layout": null
                                                 },
                                                 "children": [
                                                     {
@@ -1299,9 +1426,24 @@
                                                             "hyperlink": "https://manabitimes.jp/math/1006",
                                                             "hyperlinkTitle": "指数分布の意味と具体例",
                                                             "note": "ランダムなイベントの発生間隔を表す分布\n",
-                                                            "layout": null
+                                                            "layout": null,
+                                                            "expandState": "collapse"
                                                         },
-                                                        "children": []
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "crepxvfmips0",
+                                                                    "created": 1679671745572,
+                                                                    "text": "ガンマ分布\n(gamma distribution)",
+                                                                    "font-family": "sans-serif",
+                                                                    "priority": null,
+                                                                    "note": "「ある間隔に１回起きる（と、期待される）事象がN回発生するまでの時間」が従う分布\n\nN=1 なら指数分布\n\n●アーラン分布(Erlang distribution)\nNが正の整数に限定される場合のガンマ分布\n",
+                                                                    "hyperlink": "https://hatsudy.com/jp/gmma-distribution.html",
+                                                                    "hyperlinkTitle": "ガンマ分布：確率密度関数での計算や期待値（平均）・分散の公式"
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
                                                     }
                                                 ]
                                             }
@@ -1604,12 +1746,25 @@
                                                     "created": 1679122858334,
                                                     "text": "中心極限定理 CLT\n(central limit theorem)",
                                                     "font-family": "sans-serif",
-                                                    "note": "\n",
+                                                    "note": null,
                                                     "layout": null
                                                 },
                                                 "children": []
                                             }
                                         ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "creo6aw8lb40",
+                                            "created": 1679666763922,
+                                            "text": "自由度\n(degree of freedom)",
+                                            "font-family": "sans-serif",
+                                            "layout": null,
+                                            "hyperlink": "https://www.yodosha.co.jp/smart-lab-life/statics_pitfalls/statics_pitfalls05.html",
+                                            "hyperlinkTitle": "第5回 パラメトリック統計学への登り道② ―自由度とは何か",
+                                            "priority": null
+                                        },
+                                        "children": []
                                     }
                                 ]
                             }
@@ -3767,7 +3922,7 @@
                                         "data": {
                                             "id": "cq01vaq0fnk0",
                                             "created": 1674525839288,
-                                            "text": "GPT-3 (Generative Pre-trained Transformer 3)",
+                                            "text": "GPT-3 (Generative Pre-trained Transformer 3)",
                                             "font-family": "sans-serif",
                                             "layout": null
                                         },
