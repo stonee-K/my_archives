@@ -1140,7 +1140,8 @@
                                                     "layout": null,
                                                     "hyperlink": "http://www3.u-toyama.ac.jp/kkarato/2020/statistics/handout/Statistics[B]-2020-21-0710.pdf",
                                                     "hyperlinkTitle": "統計学 講義 第 21 回",
-                                                    "expandState": "expand"
+                                                    "expandState": "expand",
+                                                    "note": "対応のある-->同じ集団で測定した値を比較\n対応のない-->別の集団で測定した値を比較\n"
                                                 },
                                                 "children": [
                                                     {
@@ -1209,7 +1210,7 @@
                                                             "id": "cr9mizavypc0",
                                                             "created": 1679154315417,
                                                             "text": "パラメトリック検定\n(parametric test)",
-                                                            "note": "データが特定の分布に従っているという前提での検定\n",
+                                                            "note": "データが特定の分布に従っているという前提での検定\n\n●t検定\n●F検定\n等\n",
                                                             "hyperlink": "https://best-biostatistics.com/hypo_test/para.html",
                                                             "hyperlinkTitle": "ノンパラメトリック検定とパラメトリック検定とは？意味や種類をわかりやすく",
                                                             "font-family": "sans-serif",
@@ -1222,9 +1223,21 @@
                                                             "id": "cr9mj78khz40",
                                                             "created": 1679154332691,
                                                             "text": "ノンパラメトリック検定\n(non-parametric test)",
-                                                            "note": "データが特定の分布に従っているかは仮定しない\n",
+                                                            "note": "データが特定の分布に従っているかは仮定しない\n\n●カイ２乗検定\n●メディアン検定\n●U検定\n等\n",
                                                             "font-family": "sans-serif",
                                                             "layout": null
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "crg3kqbz2ao0",
+                                                            "created": 1679811771228,
+                                                            "text": "検定力／検出力\n(statistical power)",
+                                                            "font-family": "sans-serif",
+                                                            "note": "1 - β(第２種の過誤)\n \n対立仮説H1が真の場合に、\n帰無仮説H0を棄却できる確率\n",
+                                                            "hyperlink": "https://datawokagaku.com/power/",
+                                                            "hyperlinkTitle": "検定力についてわかりやすく解説【統計学入門30】"
                                                         },
                                                         "children": []
                                                     }

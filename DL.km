@@ -2332,7 +2332,7 @@
                                                 "data": {
                                                     "id": "cq8mq7vwmbc0",
                                                     "created": 1675397164255,
-                                                    "text": "無相関化 (Decorrelation)",
+                                                    "text": "無相関化\n(Decorrelation)",
                                                     "font-family": "sans-serif",
                                                     "note": null,
                                                     "layout": null,
@@ -2344,13 +2344,26 @@
                                                 "data": {
                                                     "id": "cq8mr6jc42g0",
                                                     "created": 1675397239682,
-                                                    "text": "標準化 (Standardization)",
-                                                    "note": null,
+                                                    "text": "標準化\n(Standardization)",
+                                                    "note": "平均=0、分散=1、標準偏差=1\nになるようデータを変換\n",
                                                     "font-family": "sans-serif",
                                                     "layout": null,
-                                                    "priority": null
+                                                    "priority": null,
+                                                    "hyperlink": "https://atmarkit.itmedia.co.jp/ait/articles/2110/07/news027.html",
+                                                    "hyperlinkTitle": "正規化（Normalization）／標準化（Standardization）とは？"
                                                 },
-                                                "children": []
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "crgaow5xumw0",
+                                                            "created": 1679831845150,
+                                                            "text": "Z値 (Z score)",
+                                                            "font-family": "sans-serif",
+                                                            "note": "(観測値 - 平均値) / 標準偏差\n平均値=0、標準偏差=1 の分布が得られる\n"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
                                             }
                                         ]
                                     },
@@ -2823,7 +2836,7 @@
                                         "data": {
                                             "id": "cpxopxq5ho00",
                                             "created": 1674285624835,
-                                            "text": "グリッドサーチ (Grid Search)",
+                                            "text": "グリッドサーチ\n(Grid Search)",
                                             "font-family": "sans-serif",
                                             "expandState": "expand",
                                             "layout": null,
@@ -5051,7 +5064,7 @@
                             "progress": null,
                             "hyperlink": "https://cvml-expertguide.net/terms/dl/seq2seq-translation/transformer/",
                             "hyperlinkTitle": "",
-                            "note": null,
+                            "note": "2017年 Googleの論文\nAttention is all you need\n",
                             "layout": null
                         },
                         "children": [
