@@ -1141,7 +1141,7 @@
                                                     "hyperlink": "http://www3.u-toyama.ac.jp/kkarato/2020/statistics/handout/Statistics[B]-2020-21-0710.pdf",
                                                     "hyperlinkTitle": "統計学 講義 第 21 回",
                                                     "expandState": "expand",
-                                                    "note": "対応のある-->同じ集団で測定した値を比較\n対応のない-->別の集団で測定した値を比較\n"
+                                                    "note": "対応のある (paired samples)\n-->同じ集団で測定した値を比較\n\n対応のない (independent samples)\n-->別の集団で測定した値を比較\n"
                                                 },
                                                 "children": [
                                                     {
@@ -1237,7 +1237,8 @@
                                                             "font-family": "sans-serif",
                                                             "note": "1 - β(第２種の過誤)\n \n対立仮説H1が真の場合に、\n帰無仮説H0を棄却できる確率\n",
                                                             "hyperlink": "https://datawokagaku.com/power/",
-                                                            "hyperlinkTitle": "検定力についてわかりやすく解説【統計学入門30】"
+                                                            "hyperlinkTitle": "検定力についてわかりやすく解説【統計学入門30】",
+                                                            "layout": null
                                                         },
                                                         "children": []
                                                     }
@@ -1255,7 +1256,7 @@
                                             "hyperlink": "https://spirits.appirits.com/role/engineer/8859/",
                                             "hyperlinkTitle": "ベイズ統計学の世界への誘い",
                                             "progress": null,
-                                            "note": null,
+                                            "note": "標本の背後にある確率分布は不変「ではない」という前提\n\n新たな情報を入手 → 事後確率を再計算\n",
                                             "expandState": "expand",
                                             "priority": null
                                         },
@@ -1264,9 +1265,9 @@
                                                 "data": {
                                                     "id": "cq1144lq8ds0",
                                                     "created": 1674625270093,
-                                                    "text": "事前確率 (prior probability)",
+                                                    "text": "P(A) 事前確率\n(prior probability)",
                                                     "font-family": "sans-serif",
-                                                    "note": "P(A)：事前確率\nBがわかる前のAの確率",
+                                                    "note": "Bがわかる前のAの確率\n",
                                                     "layout": null
                                                 },
                                                 "children": []
@@ -1275,8 +1276,8 @@
                                                 "data": {
                                                     "id": "cq114bhjws80",
                                                     "created": 1674625285078,
-                                                    "text": "事後確率 (posterior probability)",
-                                                    "note": "P(A|B)：事後確率\nBという前提条件の下で、Aという結果が起こる確率\n",
+                                                    "text": "P(A|B) 事後確率\n(posterior probability)",
+                                                    "note": "Bという前提条件の下で、Aという結果が起こる確率\n",
                                                     "layout": null,
                                                     "font-family": "sans-serif"
                                                 },
@@ -1286,12 +1287,12 @@
                                                 "data": {
                                                     "id": "cq11565dyfk0",
                                                     "created": 1674625351822,
-                                                    "text": "尤度 (likelihood)",
+                                                    "text": "P(B|A) 尤度\n(likelihood)",
                                                     "font-family": "sans-serif",
                                                     "layout": null,
                                                     "hyperlink": "https://www.headboost.jp/what-is-likelihood/",
                                                     "hyperlinkTitle": "尤度の意味と計算方法をわかりやすく解説",
-                                                    "note": "P(B|A)：尤度\nAという結果から、前提条件がBであったと推測することの妥当性\n"
+                                                    "note": "Aという結果から、前提条件がBであったと推測することの妥当性\n"
                                                 },
                                                 "children": []
                                             },
@@ -1322,7 +1323,7 @@
                                     "hyperlink": "https://mathwords.net/beta",
                                     "hyperlinkTitle": "ベータ分布と他の分布のおもしろい3つの関係",
                                     "layout": null,
-                                    "note": "●離散型確率分布\n(discrete probability distribution)\n二項分布、ベルヌーイ分布、ポアソン分布、多項分布、幾何分布 etc.\n\n●連続型確率分布\n(continuous probability distribution)\nガンマ分布、ベータ分布、t分布、F分布、ディリクレ分布、指数分布、カイ二乗分布 etc.\n"
+                                    "note": "●離散型確率分布\n(discrete probability distribution)\n二項分布、ベルヌーイ分布、ポアソン分布、多項分布、幾何分布、負の二項分布 etc.\n\n●連続型確率分布\n(continuous probability distribution)\nガンマ分布、ベータ分布、t分布、F分布、ディリクレ分布、指数分布、カイ二乗分布 etc.\n"
                                 },
                                 "children": [
                                     {
@@ -1411,9 +1412,23 @@
                                                             "note": "成功確率pの独立なベルヌーイ試行を繰り返す時、初めて成功するまでの試行回数が従う確率分布\n\nまたは、\n\n初めて成功するまでの失敗回数\n＝上の定義 - 1\n",
                                                             "layout": null,
                                                             "hyperlink": "https://best-biostatistics.com/summary/kika.html",
-                                                            "hyperlinkTitle": "幾何分布とは？期待値（平均）や分散の証明はどうなるか例題を用いて解説"
+                                                            "hyperlinkTitle": "幾何分布とは？期待値（平均）や分散の証明はどうなるか例題を用いて解説",
+                                                            "expandState": "collapse"
                                                         },
-                                                        "children": []
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "crhs66jg2io0",
+                                                                    "created": 1679982718751,
+                                                                    "text": "負の二項分布\n(negative binomial distribution)",
+                                                                    "font-family": "sans-serif",
+                                                                    "priority": null,
+                                                                    "note": "または パスカル分布 (Pascal distribution)\n\nN回成功するまでにK回失敗する確率\nN=1 ならば幾何分布\n",
+                                                                    "layout": null
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
                                                     }
                                                 ]
                                             },
@@ -1452,7 +1467,8 @@
                                                                     "priority": null,
                                                                     "note": "「ある間隔に１回起きる（と、期待される）事象がN回発生するまでの時間」が従う分布\n\nN=1 なら指数分布\n\n●アーラン分布(Erlang distribution)\nNが正の整数に限定される場合のガンマ分布\n",
                                                                     "hyperlink": "https://hatsudy.com/jp/gmma-distribution.html",
-                                                                    "hyperlinkTitle": "ガンマ分布：確率密度関数での計算や期待値（平均）・分散の公式"
+                                                                    "hyperlinkTitle": "ガンマ分布：確率密度関数での計算や期待値（平均）・分散の公式",
+                                                                    "layout": null
                                                                 },
                                                                 "children": []
                                                             }
@@ -1496,7 +1512,8 @@
                                                     "font-family": "sans-serif",
                                                     "hyperlink": "https://toukei.link/probabilitydistributions/chisq-distribution/",
                                                     "hyperlinkTitle": "カイ二乗分布とは何か？確率密度関数、期待値、分散、カイ二乗検定。",
-                                                    "layout": null
+                                                    "layout": null,
+                                                    "note": "標準正規分布に従う互いに独立な確率変数がN個あった場合、二乗和は自由度Nのカイ二乗分布に従う\n"
                                                 },
                                                 "children": []
                                             }
@@ -1508,10 +1525,11 @@
                                 "data": {
                                     "id": "cpp3dh299lk0",
                                     "created": 1673412925231,
-                                    "text": "2変数の相関",
+                                    "text": "多変量解析\n(multivariate analysis)",
                                     "layout": null,
                                     "font-family": "sans-serif",
-                                    "expandState": "expand"
+                                    "expandState": "expand",
+                                    "note": "要約\n予測\n"
                                 },
                                 "children": [
                                     {
@@ -1550,6 +1568,30 @@
                                                     "hyperlink": "https://www.hello-statisticians.com/explain-terms-cat/partial_correlation1.html",
                                                     "hyperlinkTitle": "偏相関(Partial Correlation)係数の定義と導出方法を把握する",
                                                     "note": "3つ以上の変数があるとき、3つ目以降の変数の影響を除いた相関を考える\n"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "crjogheyjeg0",
+                                            "created": 1680175361540,
+                                            "text": "同時分布\n(joint distribution)",
+                                            "font-family": "sans-serif",
+                                            "note": "複数の確率変数があったとき、「特定の値どうしの組み合わせ」が現れる確率の分布\n",
+                                            "layout": null,
+                                            "expandState": "expand"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "crjoguvx6js0",
+                                                    "created": 1680175390863,
+                                                    "text": "周辺分布\n(marginal distribution)",
+                                                    "font-family": "sans-serif",
+                                                    "note": "複数の確率変数があったとき、特定の確率変数に注目した確率分布\n",
+                                                    "layout": null
                                                 },
                                                 "children": []
                                             }
@@ -1678,7 +1720,33 @@
                                     "note": "●「誤差」u\n真の回帰式 - 実際の値\n\n※[真の回帰式] は理論上のものであるため、直接計算することはできない\n\n●「残差」e\n手元にある回帰式 - 実際の値\n残差の総和は0\n\n※こちらは計算可能\n",
                                     "layout": null
                                 },
-                                "children": []
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "crl561x4j8g0",
+                                            "created": 1680324062993,
+                                            "text": "最小二乗法\n(least squares method)",
+                                            "font-family": "sans-serif",
+                                            "layout": null,
+                                            "note": "残差の平方和=0\nになるような回帰直線を算出する方法\n\n正規方程式 (normal equation)\n",
+                                            "hyperlink": "https://math-note.xyz/statistics/least-squares-method/",
+                                            "hyperlinkTitle": "回帰分析の基本｜最小二乗法で回帰直線を導出する方法"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "crm0is0t24w0",
+                                                    "created": 1680412514589,
+                                                    "text": "正規方程式\n(normal equation)",
+                                                    "priority": null,
+                                                    "hyperlink": "https://datawokagaku.com/normal_equation/",
+                                                    "hyperlinkTitle": "正規方程式を完全解説(導出あり)【機械学習入門4】"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
                             },
                             {
                                 "data": {
@@ -2217,7 +2285,7 @@
                                             "id": "cpea5vxho940",
                                             "created": 1672314918927,
                                             "text": "ローブナーコンテスト\n(Loebner Contest)",
-                                            "note": "1991年～\nチューリングテストやるコンテスト",
+                                            "note": "1991年～\nチューリングテストやるコンテスト\n",
                                             "font-family": "sans-serif",
                                             "layout": null,
                                             "hyperlink": "https://akito-fujita.hatenablog.com/entry/2020/06/18/204319",

@@ -772,7 +772,7 @@
                                                     "created": 1675391390462,
                                                     "text": "L1正則化／ラッソ回帰 Lasso",
                                                     "font-family": "sans-serif",
-                                                    "note": "ラッソ回帰 Lasso\nL1ノルム＝重みの絶対値の合計\n※誤差のマンハッタン距離\n",
+                                                    "note": "ラッソ回帰 Lasso\nL1ノルム＝重みの絶対値の合計\n※誤差のマンハッタン距離\n\n※L1(Lasso) / L2(Ridge) の覚え方\nhttps://zenn.dev/dlbsabu/articles/5300da50921070\n",
                                                     "layout": null
                                                 },
                                                 "children": []
@@ -2309,9 +2309,9 @@
                                 "data": {
                                     "id": "cprktodgzo80",
                                     "created": 1673665273755,
-                                    "text": "前処理",
+                                    "text": "前処理\n(preprocessing)",
                                     "expandState": "expand",
-                                    "background": "#eaf1dd",
+                                    "background": "#ffffff",
                                     "font-family": "sans-serif",
                                     "layout": null
                                 },
