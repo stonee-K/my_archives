@@ -855,6 +855,24 @@
                                                         "children": [
                                                             {
                                                                 "data": {
+                                                                    "id": "csjwsqm8mnc0",
+                                                                    "created": 1683855049260,
+                                                                    "text": "最小値 (minimum)",
+                                                                    "font-family": "sans-serif"
+                                                                },
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "data": {
+                                                                    "id": "csjwsm0k1k80",
+                                                                    "created": 1683855039242,
+                                                                    "text": "最大値 (maximum)",
+                                                                    "font-family": "sans-serif"
+                                                                },
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "data": {
                                                                     "id": "creig99o3940",
                                                                     "created": 1679650617362,
                                                                     "text": "外れ値 (Outlier)",
@@ -936,6 +954,20 @@
                                                                     "note": "Q3 - Q1\n中央50％の範囲\n",
                                                                     "hyperlink": "https://ebreha.com/interquartile-range/",
                                                                     "hyperlinkTitle": "やってみると簡単！四分位範囲と箱ひげ図～Rを使うともっと簡単ですよ～"
+                                                                },
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "data": {
+                                                                    "id": "csjwljuc53k0",
+                                                                    "created": 1683854485963,
+                                                                    "text": "五数要約\n(five-number summary)",
+                                                                    "font-family": "sans-serif",
+                                                                    "layout": null,
+                                                                    "priority": null,
+                                                                    "note": "最小値\n第一四分位数\n第二四分位数＝中央値\n第三四分位数\n最大値\n",
+                                                                    "hyperlink": "https://math-life.jp/five-number-summary/",
+                                                                    "hyperlinkTitle": "5数要約とは？求め方と使い方を例題でわかりやすく解説"
                                                                 },
                                                                 "children": []
                                                             },
@@ -1044,6 +1076,61 @@
                                                         "children": []
                                                     }
                                                 ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "csjekw8re4o0",
+                                                    "created": 1683803654614,
+                                                    "text": "グラフ\n(graph)",
+                                                    "font-family": "sans-serif",
+                                                    "layout": null,
+                                                    "hyperlink": "https://www.stat.go.jp/naruhodo/4_graph/graph.html",
+                                                    "hyperlinkTitle": "グラフの種類",
+                                                    "note": "グラフの作り方（上級編）\nグラフの種類\nhttps://www.stat.go.jp/naruhodo/9_graph/graph.html\n"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "crf6tiqn80g0",
+                                                            "created": 1679719363352,
+                                                            "text": "ヒストグラム\n(histogram)",
+                                                            "note": null,
+                                                            "font-family": "sans-serif",
+                                                            "priority": null,
+                                                            "layout": null
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "csjenghdtu00",
+                                                                    "created": 1683803855399,
+                                                                    "text": "階級 (class / bin / bucket)",
+                                                                    "font-family": "sans-serif"
+                                                                },
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "data": {
+                                                                    "id": "csjenjjlg1k0",
+                                                                    "created": 1683803862063,
+                                                                    "text": "度数 (frequency)",
+                                                                    "font-family": "sans-serif"
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "csjem1ezt8g0",
+                                                            "created": 1683803744239,
+                                                            "text": "散布図\n(scatter plot)",
+                                                            "font-family": "sans-serif",
+                                                            "layout": null
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
                                             }
                                         ]
                                     },
@@ -1055,7 +1142,7 @@
                                             "layout": null,
                                             "font-family": "sans-serif",
                                             "expandState": "collapse",
-                                            "note": "母集団から抽出した標本の情報を用いて、母集団の情報を推測すること\n\n●母集団 (population)\n●標本 (sample)\n",
+                                            "note": "母集団から抽出した標本の情報を用いて、母集団の情報を推測すること\n",
                                             "hyperlink": "https://www.stat.go.jp/naruhodo/11_tokusei/suisoku.html",
                                             "hyperlinkTitle": "推測統計"
                                         },
@@ -1265,7 +1352,7 @@
                                                 "data": {
                                                     "id": "cq1144lq8ds0",
                                                     "created": 1674625270093,
-                                                    "text": "P(A) 事前確率\n(prior probability)",
+                                                    "text": "P(A) 事前確率\n(prior probability)",
                                                     "font-family": "sans-serif",
                                                     "note": "Bがわかる前のAの確率\n",
                                                     "layout": null
@@ -1471,6 +1558,21 @@
                                                                     "layout": null
                                                                 },
                                                                 "children": []
+                                                            },
+                                                            {
+                                                                "data": {
+                                                                    "id": "csgmwsdwt400",
+                                                                    "created": 1683522475597,
+                                                                    "text": "ワイブル分布\n(Weibul distribution)",
+                                                                    "font-family": "sans-serif",
+                                                                    "priority": null,
+                                                                    "layout": null,
+                                                                    "note": "故障率をあらわす分布\n時刻によらず故障率が一定であれば指数分布\n",
+                                                                    "hyperlink": "https://gijutsu-keisho.com/technical-commentary/management_engineering-002/",
+                                                                    "hyperlinkTitle": "ワイブル分布と指数分布",
+                                                                    "progress": null
+                                                                },
+                                                                "children": []
                                                             }
                                                         ]
                                                     }
@@ -1497,7 +1599,7 @@
                                                     "created": 1674903384735,
                                                     "text": "t分布\n(t-distribution)",
                                                     "font-family": "sans-serif",
-                                                    "note": "標準正規分布に比べて\n・ベル型の頂点の位置が低く\n・左右に広がる裾が厚い\n\n「自由度」をパラメータに持つ\n自由度が大きくなるほど正規分布に近づく（だいたい自由度30以上で正規分布に近くなる）\n",
+                                                    "note": "標準正規分布に比べて\n・ベル型の頂点の位置が低く\n・左右に広がる裾が厚い\n\n自由度が大きくなるほど正規分布に近づく（だいたい自由度30以上で正規分布に近くなる）\n\n(1)正規分布からN個の標本を抽出\n(2)N個の標本からt値を計算\n  t = (標本平均 - 母平均) * √N\n   / (不偏分散の平方根)\n(3)tは自由度 N-1 のt分布に従う\n",
                                                     "hyperlink": "https://toukei.link/probabilitydistributions/tdistribution/",
                                                     "hyperlinkTitle": "t分布とは何か？",
                                                     "layout": null
@@ -1728,7 +1830,7 @@
                                             "text": "最小二乗法\n(least squares method)",
                                             "font-family": "sans-serif",
                                             "layout": null,
-                                            "note": "残差の平方和=0\nになるような回帰直線を算出する方法\n\n正規方程式 (normal equation)\n",
+                                            "note": "残差の平方和=0\nになるような回帰直線を算出する方法\n",
                                             "hyperlink": "https://math-note.xyz/statistics/least-squares-method/",
                                             "hyperlinkTitle": "回帰分析の基本｜最小二乗法で回帰直線を導出する方法"
                                         },
@@ -1745,6 +1847,68 @@
                                                 "children": []
                                             }
                                         ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cruh2a69vnc0",
+                                    "created": 1681271660432,
+                                    "text": "標本調査\n(sample survey)",
+                                    "priority": null,
+                                    "font-family": "sans-serif",
+                                    "note": "標本調査(sample survey)法の基本トピックまとめ\nhttps://www.hello-statisticians.com/explain-terms-cat/sample_survey1.html\n",
+                                    "hyperlink": "https://www.stat.go.jp/teacher/survey.html",
+                                    "hyperlinkTitle": "標本調査とは？"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cruh4lgdzeo0",
+                                            "created": 1681271841717,
+                                            "text": "<-->全数調査／悉皆(しっかい)調査\n(complete enumeration)",
+                                            "layout": null,
+                                            "font-family": "sans-serif"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cruh3hai3g00",
+                                            "created": 1681271754290,
+                                            "text": "母集団 (population)",
+                                            "font-family": "sans-serif",
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cruh3lbvvmo0",
+                                            "created": 1681271763080,
+                                            "text": "標本 (sample)",
+                                            "font-family": "sans-serif"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cruh2udu5lc0",
+                                            "created": 1681271704425,
+                                            "text": "復元抽出 (sampling with replacement)",
+                                            "font-family": "sans-serif",
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cruh2yo9mwo0",
+                                            "created": 1681271713763,
+                                            "text": "非復元抽出 (sampling without replacement)",
+                                            "font-family": "sans-serif"
+                                        },
+                                        "children": []
                                     }
                                 ]
                             },
@@ -1843,6 +2007,18 @@
                                             "layout": null,
                                             "hyperlink": "https://www.yodosha.co.jp/smart-lab-life/statics_pitfalls/statics_pitfalls05.html",
                                             "hyperlinkTitle": "第5回 パラメトリック統計学への登り道② ―自由度とは何か",
+                                            "priority": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "crqg9h2fgso0",
+                                            "created": 1680863163050,
+                                            "text": "根元事象 (elementary event)",
+                                            "layout": null,
+                                            "font-family": "sans-serif",
+                                            "note": "これ以上分割できない事象",
                                             "priority": null
                                         },
                                         "children": []
