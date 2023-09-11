@@ -1,0 +1,4874 @@
+{
+	"root": {
+		"data": {
+			"id": "cpd5frjk61c0",
+			"created": 1672200027513,
+			"text": "MainTopic",
+			"font-family": "sans-serif",
+			"expandState": "expand"
+		},
+		"children": [
+			{
+				"data": {
+					"id": "cq1sy9zrw740",
+					"created": 1674703802718,
+					"text": "用語・記号・他",
+					"font-family": "sans-serif",
+					"hyperlink": "https://math-fun.net/20201216/7334/",
+					"hyperlinkTitle": "数学の記号、表記法一覧",
+					"note": "数学記号まとめ\nhttps://physnotes.jp/math/math-symbol/\n\n▼知識の点検用に\n\n中学校数学・学習サイト\nhttps://math.005net.com/youten.php\n\n中学生の数学の公式一覧！図形の定理から解の公式まで学年別に分かりやすく解説\nhttps://tsushin.manabitimes.jp/191/\n\n受験辞典 高校数学のまとめ\nhttps://univ-juken.com/\n"
+				},
+				"children": [
+					{
+						"data": {
+							"id": "cuyuzuqt7cg0",
+							"created": 1692685680803,
+							"text": "数学史・数学者",
+							"font-family": "sans-serif",
+							"background": "#eaf1dd",
+							"note": "\n物理数学の歴史\nhttps://shadowacademy.web.fc2.com/history.html\n\n数学史　年表\nhttps://mathsuke.jp/math-chronology/\n\n歴史上の数学者たち\nhttps://historicalmathematicians.blogspot.com/2012/01/blog-post.html\n\n歴史の中の数学史年表\nhttp://shochandas.xsrv.jp/mathematics.htm\n\n数学者の一覧\nhttps://ja.wikipedia.org/wiki/%E6%95%B0%E5%AD%A6%E8%80%85%E3%81%AE%E4%B8%80%E8%A6%A7\n"
+						},
+						"children": []
+					},
+					{
+						"data": {
+							"id": "ctzbc1t919c0",
+							"created": 1689075615876,
+							"text": "定義\n(definition)",
+							"font-family": "sans-serif",
+							"hyperlink": "https://zellij.hatenablog.com/entry/20120827/p1",
+							"hyperlinkTitle": "数理論理学に出てくる用語のまとめ"
+						},
+						"children": [
+							{
+								"data": {
+									"id": "ctzbch850fk0",
+									"created": 1689075649428,
+									"text": "公理\n(axiom)",
+									"font-family": "sans-serif"
+								},
+								"children": [
+									{
+										"data": {
+											"id": "ctzbdcipexs0",
+											"created": 1689075717548,
+											"text": "命題\n(proposition)",
+											"font-family": "sans-serif",
+											"note": "●逆 (converse)\n●裏 (inverse)\n●対偶 (contrapositive)\n\n逆、裏、対偶の意味と具体例\nhttps://mathwords.net/gyakuura\n",
+											"hyperlink": "https://kopende.com/math/logic-proposition/",
+											"hyperlinkTitle": "命題とは？数学に必要な論理のことば（または、ならば、すべてのなど）の使い方"
+										},
+										"children": [
+											{
+												"data": {
+													"id": "ctzbe82abhs0",
+													"created": 1689075786212,
+													"text": "定理\n(theorem)",
+													"font-family": "sans-serif",
+													"note": "ここ四半世紀に証明された定理\nhttps://ikuro-kotaro.sakura.ne.jp/koramu/teiri.htm\n"
+												},
+												"children": [
+													{
+														"data": {
+															"id": "cveyxpcphi80",
+															"created": 1694321756084,
+															"text": "<--> 予想\n(conjecture)",
+															"font-family": "sans-serif",
+															"hyperlink": "https://ja.wikipedia.org/wiki/%E6%95%B0%E5%AD%A6%E4%B8%8A%E3%81%AE%E6%9C%AA%E8%A7%A3%E6%B1%BA%E5%95%8F%E9%A1%8C",
+															"hyperlinkTitle": "数学上の未解決問題"
+														},
+														"children": []
+													}
+												]
+											},
+											{
+												"data": {
+													"id": "ctzbeus2rso0",
+													"created": 1689075835660,
+													"text": "補題\n(lemma)",
+													"font-family": "sans-serif"
+												},
+												"children": []
+											},
+											{
+												"data": {
+													"id": "cu65lfm738g0",
+													"created": 1689770344239,
+													"text": "系\n(corollary)",
+													"font-family": "sans-serif"
+												},
+												"children": []
+											}
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"data": {
+							"id": "cpf73r8g5ps0",
+							"created": 1672407848604,
+							"text": "単位 接頭語",
+							"note": "Q クエタ (quetta) 10^30\nR ロナ (ronna) 10^27\nY ヨタ (yotta) 10^24\nZ ゼタ (zetta) 10^21\nE エクサ (exa) 10^18\nP ペタ (peta) 10^15\nT テラ (tera) 10^12\nG ギガ (giga) 10^9\nM メガ (mega) 10^6\nk キロ (kilo) 10^3\nh ヘクト (hecto) 10^2\nda デカ (deca) 10^1\n\nd デシ (deci)  10^-1\nc センチ (centi)  10^-2\nm ミリ (milli)  10^-3\nμ マイクロ (micro) 10^-6\nn ナノ (nano)  10^-9\np ピコ (pico)  10^-12\nf フェムト (femto)  10^-15\na アト (atto)  10^-18\nz ゼプト (zepto)  10^-21\ny ヨクト (yocto)  10^-24\nr ロント (ronto) 10^-27\nq クエクト (quecto) 10^-30\n\nhttps://keisan.casio.jp/keisan/unchiku/index.php?pno=106\n",
+							"font-family": "sans-serif",
+							"hyperlink": "https://www.tohoho-web.com/ex/unit.html",
+							"hyperlinkTitle": "とほほの単位入門"
+						},
+						"children": []
+					},
+					{
+						"data": {
+							"id": "ctqpa3y3ov40",
+							"created": 1688200919724,
+							"text": "クロネッカーのデルタ\n(Kronecker delta)",
+							"note": "i=jならば1\ni≠jならば0\n",
+							"font-family": "sans-serif",
+							"hyperlink": "https://linear-algebra.com/entry/kronecker",
+							"hyperlinkTitle": "クロネッカーのデルタについてわかりやすく解説する"
+						},
+						"children": [
+							{
+								"data": {
+									"id": "cv9y0jnomw00",
+									"created": 1693811357886,
+									"text": "レヴィ=チヴィタの記号\n(Levi-Civita symbol)",
+									"font-family": "sans-serif",
+									"note": "偶置換 = +1\n奇置換 = -1\nそれ以外 = 0\n"
+								},
+								"children": []
+							}
+						]
+					},
+					{
+						"data": {
+							"id": "cua707xt0mo0",
+							"created": 1690180563926,
+							"text": "電卓",
+							"font-family": "sans-serif",
+							"background": "#ffff00",
+							"font-size": 16
+						},
+						"children": [
+							{
+								"data": {
+									"id": "cua70wfubpk0",
+									"created": 1690180617260,
+									"text": "Casio 高精度計算サイト",
+									"hyperlink": "https://keisan.casio.jp/",
+									"hyperlinkTitle": "",
+									"font-family": "sans-serif"
+								},
+								"children": []
+							},
+							{
+								"data": {
+									"id": "cua7170hr800",
+									"created": 1690180640276,
+									"text": "Wolfram Alpha",
+									"hyperlink": "https://ja.wolframalpha.com/",
+									"hyperlinkTitle": "",
+									"font-family": "sans-serif"
+								},
+								"children": []
+							},
+							{
+								"data": {
+									"id": "cua71fo7q0o0",
+									"created": 1690180659125,
+									"text": "Microsoft Math Solver",
+									"hyperlink": "https://mathsolver.microsoft.com/ja",
+									"hyperlinkTitle": "",
+									"font-family": "sans-serif"
+								},
+								"children": []
+							},
+							{
+								"data": {
+									"id": "cua74vqkwm80",
+									"created": 1690180929189,
+									"text": "行列計算機",
+									"hyperlink": "https://matrixcalc.org/ja/",
+									"hyperlinkTitle": "行列計算機",
+									"font-family": "sans-serif"
+								},
+								"children": []
+							},
+							{
+								"data": {
+									"id": "cua75vtl66g0",
+									"created": 1690181007735,
+									"text": "順列・組合せ電卓",
+									"hyperlink": "https://tomari.org/main/java/jv-kakuritu.html",
+									"hyperlinkTitle": "順列・組合せ電卓",
+									"font-family": "sans-serif"
+								},
+								"children": []
+							}
+						]
+					}
+				]
+			},
+			{
+				"data": {
+					"id": "cucx8muuvwo0",
+					"created": 1690457692084,
+					"text": "数・数列",
+					"font-family": "sans-serif"
+				},
+				"children": [
+					{
+						"data": {
+							"id": "cu9z7fr7mig0",
+							"created": 1690158560612,
+							"text": "数\n(number)",
+							"font-family": "sans-serif"
+						},
+						"children": [
+							{
+								"data": {
+									"id": "cuc403m6xeo0",
+									"created": 1690375211100,
+									"text": "複素数\n(complex number)",
+									"font-family": "sans-serif",
+									"note": "●複素共役 (complex conjugate)\n"
+								},
+								"children": [
+									{
+										"data": {
+											"id": "cuc3ymt7f5k0",
+											"created": 1690375096155,
+											"text": "実数\n(real number)",
+											"font-family": "sans-serif"
+										},
+										"children": [
+											{
+												"data": {
+													"id": "cuc3xqrwfts0",
+													"created": 1690375026419,
+													"text": "有理数\n(rational number)",
+													"font-family": "sans-serif"
+												},
+												"children": [
+													{
+														"data": {
+															"id": "cuc3vybtlvk0",
+															"created": 1690374886133,
+															"text": "自然数\n(natural number)",
+															"font-family": "sans-serif"
+														},
+														"children": [
+															{
+																"data": {
+																	"id": "cu9zbq89h000",
+																	"created": 1690158896867,
+																	"text": "ペアノの公理\n(Peano axioms)",
+																	"font-family": "sans-serif",
+																	"hyperlink": "https://marieer.com/1-plus-1-equals-2/",
+																	"hyperlinkTitle": "「１＋１＝２」を証明してみよう！　〜まず、ペアノの公理から始めよ。〜"
+																},
+																"children": []
+															},
+															{
+																"data": {
+																	"id": "cuc4mfa1nkw0",
+																	"created": 1690376960499,
+																	"text": "素数\n(prime number)",
+																	"font-family": "sans-serif"
+																},
+																"children": []
+															},
+															{
+																"data": {
+																	"id": "cuc4miayd680",
+																	"created": 1690376967084,
+																	"text": "合成数\n(composite number)",
+																	"font-family": "sans-serif"
+																},
+																"children": []
+															}
+														]
+													},
+													{
+														"data": {
+															"id": "cuc3x01we5c0",
+															"created": 1690374968251,
+															"text": "整数\n(integer)",
+															"font-family": "sans-serif"
+														},
+														"children": []
+													},
+													{
+														"data": {
+															"id": "cujkqdnpy2g0",
+															"created": 1691133327884,
+															"text": "既約分数\n(irreducible fraction)",
+															"font-family": "sans-serif",
+															"note": "\n●循環小数\n(recurring decimal / repeating decimal)\n●有限小数\n(terminating decimal)\n"
+														},
+														"children": []
+													},
+													{
+														"data": {
+															"id": "cucyfnhu4k80",
+															"created": 1690461063132,
+															"text": "稠密 ちゅうみつ\n(dense)",
+															"font-family": "sans-serif",
+															"hyperlink": "https://math-note.xyz/calculus/basics-of-calculus/density-of-the-rationals/",
+															"hyperlinkTitle": "微分積分学５｜有理数の稠密性の証明は「アルキメデスの性質」から"
+														},
+														"children": []
+													}
+												]
+											},
+											{
+												"data": {
+													"id": "cuc3yc475ns0",
+													"created": 1690375072875,
+													"text": "無理数\n(irrational number)",
+													"font-family": "sans-serif"
+												},
+												"children": [
+													{
+														"data": {
+															"id": "cu9z94g3nb40",
+															"created": 1690158692724,
+															"text": "デデキントの切断\n(Dedekind cut)",
+															"font-family": "sans-serif",
+															"hyperlink": "https://mamekebi-science.com/math/analysis-misc/dedekind-example/",
+															"hyperlinkTitle": "デデキント切断の概要と例題"
+														},
+														"children": [
+															{
+																"data": {
+																	"id": "cudihklth280",
+																	"created": 1690517635769,
+																	"text": "実数の連続性\n(continuity of real numbers)",
+																	"font-family": "sans-serif"
+																},
+																"children": [
+																	{
+																		"data": {
+																			"id": "cuxa7reied40",
+																			"created": 1692525497177,
+																			"text": "アルキメデスの原理\n(Archimedean property)",
+																			"hyperlink": "https://mathlog.info/articles/3192",
+																			"hyperlinkTitle": "lim [n→∞] n = ∞は本当に自明？-実数の連続性とアルキメデスの原理",
+																			"font-family": "sans-serif"
+																		},
+																		"children": []
+																	},
+																	{
+																		"data": {
+																			"id": "cvbtcbadst40",
+																			"created": 1694001294402,
+																			"text": "中間値の定理\n(intermediate value theorem)",
+																			"font-family": "sans-serif",
+																			"hyperlink": "https://www.ozawa.phys.waseda.ac.jp/pdf/intermediate.pdf",
+																			"hyperlinkTitle": "中間値の定理"
+																		},
+																		"children": []
+																	}
+																]
+															}
+														]
+													},
+													{
+														"data": {
+															"id": "cuc40h2144g0",
+															"created": 1690375240356,
+															"text": "超越数\n(transcendental number)",
+															"font-family": "sans-serif"
+														},
+														"children": [
+															{
+																"data": {
+																	"id": "cuc46k5svyo0",
+																	"created": 1690375717300,
+																	"text": "円周率 (Pi / π)",
+																	"font-family": "sans-serif"
+																},
+																"children": []
+															},
+															{
+																"data": {
+																	"id": "cuc474k3jhk0",
+																	"created": 1690375761700,
+																	"text": "ネイピア数\n(Napier's constant)",
+																	"font-family": "sans-serif"
+																},
+																"children": []
+															}
+														]
+													}
+												]
+											}
+										]
+									},
+									{
+										"data": {
+											"id": "cuc421yn62g0",
+											"created": 1690375364228,
+											"text": "虚数\n(imaginary number)",
+											"font-family": "sans-serif",
+											"note": "\n複素数, 虚数とは何か？複素数の歴史、虚数単位、複素数の分類\nhttps://imaginary-blog-im.com/kyosuu/\n"
+										},
+										"children": []
+									}
+								]
+							},
+							{
+								"data": {
+									"id": "cuc4c1i87xc0",
+									"created": 1690376146877,
+									"text": "四元数\n(quaternion)",
+									"hyperlink": "https://zenn.dev/omakazu/articles/12877bf82044b5",
+									"hyperlinkTitle": "クウォータ二オン(四元数)を理解したいメモ"
+								},
+								"children": []
+							},
+							{
+								"data": {
+									"id": "cug3o3ntnuw0",
+									"created": 1690780510656,
+									"text": "八元数\n(octonion)",
+									"font-family": "sans-serif",
+									"note": "八元数と回転\nhttp://physnakajima.html.xdomain.jp/Octonion_rotation.pdf\n",
+									"hyperlink": "https://ameblo.jp/math-field/entry-12290696238.html",
+									"hyperlinkTitle": "八元数の世界　～ 究極の数を探して ～"
+								},
+								"children": []
+							}
+						]
+					},
+					{
+						"data": {
+							"id": "ctot2ruj7740",
+							"created": 1688038592218,
+							"text": "極限\n(limit)",
+							"font-family": "sans-serif"
+						},
+						"children": [
+							{
+								"data": {
+									"id": "cu4i1fviob40",
+									"created": 1689602332035,
+									"text": "はさみうちの原理\n(squeeze theorem)",
+									"font-family": "sans-serif",
+									"note": "収束を求めるのに便利！はさみうちの原理の使い方とその厳密な証明\nhttps://math-note.com/squeeze-theorem/\n\nはさみうちの原理と追い出しの原理の極限問題での使い方のコツ\nhttps://linky-juku.com/lim-hasamiuchi/\n\nはさみうちの原理とその厳密な証明～数列版・関数版～\nhttps://mathlandscape.com/squeeze-theorem/\n"
+								},
+								"children": [
+									{
+										"data": {
+											"id": "ctot1h6hfko0",
+											"created": 1688008407777,
+											"text": "ε-N論法\n(epsilon-N definition)",
+											"font-family": "sans-serif",
+											"hyperlink": "https://mamekebi-science.com/math/limit/series-limit-epsilon/",
+											"hyperlinkTitle": "【ε論法】数列の収束と極限・例題 ～εとNを使って～",
+											"note": "https://okimath.com/ipusiron\n大学数学のε-N論法がありがたく思える例【イプシロン-エヌ論法】\n"
+										},
+										"children": [
+											{
+												"data": {
+													"id": "cv1m4pd01gg0",
+													"created": 1692965350786,
+													"text": "各点収束\n(pointwise convergence)",
+													"font-family": "sans-serif",
+													"hyperlink": "https://mamekebi-science.com/math/limit/pointwise-uniform-converge/",
+													"hyperlinkTitle": "【ε論法】関数列の各点収束と一様収束"
+												},
+												"children": [
+													{
+														"data": {
+															"id": "cv1m52g9kzs0",
+															"created": 1692965379281,
+															"text": "ディニの定理\n(Dini's theorem)",
+															"font-family": "sans-serif",
+															"hyperlink": "https://ja.wikipedia.org/wiki/%E3%83%87%E3%82%A3%E3%83%8B%E3%81%AE%E5%AE%9A%E7%90%86",
+															"hyperlinkTitle": "ディニの定理"
+														},
+														"children": [
+															{
+																"data": {
+																	"id": "cv1m58o54ao0",
+																	"created": 1692965392818,
+																	"text": "一様収束\n(uniform convergence)",
+																	"font-family": "sans-serif",
+																	"hyperlink": "https://ramune-physics.blogspot.com/2021/03/math5.html",
+																	"hyperlinkTitle": "絶対収束、一様収束、各点収束の違い"
+																},
+																"children": []
+															}
+														]
+													}
+												]
+											}
+										]
+									},
+									{
+										"data": {
+											"id": "ctm79eb8d7c0",
+											"created": 1687743844116,
+											"text": "ε-δ論法\n(epsilon-delta definition of limit)",
+											"font-family": "sans-serif",
+											"hyperlink": "https://math.keicode.com/calculus/epsilon-delta-definition.php",
+											"hyperlinkTitle": "ε-δ 論法による極限"
+										},
+										"children": []
+									}
+								]
+							},
+							{
+								"data": {
+									"id": "ctuaut6arls0",
+									"created": 1688566465100,
+									"text": "有界\n(bounded)",
+									"font-family": "sans-serif",
+									"hyperlink": "https://ramenhuhu.com/math-realnumber2",
+									"hyperlinkTitle": "有界と上限・下限の概念を解説"
+								},
+								"children": [
+									{
+										"data": {
+											"id": "ctub2bzvd4g0",
+											"created": 1688567054619,
+											"text": "上に有界\n(bounded above)",
+											"font-family": "sans-serif"
+										},
+										"children": [
+											{
+												"data": {
+													"id": "ctub2whyfvk0",
+													"created": 1688567099249,
+													"text": "上界\n(upper bound)",
+													"hyperlink": "https://wiis.info/math/real-number/definition-of-real-number/upper-bound-and-lower-bound/",
+													"hyperlinkTitle": "実数集合の上界・下界"
+												},
+												"children": [
+													{
+														"data": {
+															"id": "cub9hppvf9k0",
+															"created": 1690289136996,
+															"text": "上限 sup\n(supremum)",
+															"font-family": "sans-serif",
+															"hyperlink": "https://math-topic.hatenablog.com/entry/2016/03/27/173839",
+															"hyperlinkTitle": "上限・下限"
+														},
+														"children": []
+													}
+												]
+											}
+										]
+									},
+									{
+										"data": {
+											"id": "ctub2hgtto80",
+											"created": 1688567066529,
+											"text": "下に有界\n(bounded below)",
+											"font-family": "sans-serif"
+										},
+										"children": [
+											{
+												"data": {
+													"id": "ctub2zn2xsw0",
+													"created": 1688567106089,
+													"text": "下界\n(lower bound)"
+												},
+												"children": [
+													{
+														"data": {
+															"id": "cub9hvw06yg0",
+															"created": 1690289150427,
+															"text": "下限 inf\n(infimum)",
+															"font-family": "sans-serif"
+														},
+														"children": []
+													}
+												]
+											}
+										]
+									},
+									{
+										"data": {
+											"id": "cu4gdje9wo00",
+											"created": 1689597637850,
+											"text": "完備\n(complete)",
+											"font-family": "sans-serif",
+											"hyperlink": "http://sammaya.garyoutensei.com/math_phys/math1/math1-3/math1-3.html",
+											"hyperlinkTitle": "第3回：実数とは何か"
+										},
+										"children": []
+									},
+									{
+										"data": {
+											"id": "cv2dvuh5reg0",
+											"created": 1693043647721,
+											"text": "単調収束定理\n(monotone convergence theory)",
+											"font-family": "sans-serif",
+											"hyperlink": "https://takemita.hatenadiary.org/entry/20100201/p4",
+											"hyperlinkTitle": "「有界な単調数列は収束する」の証明"
+										},
+										"children": []
+									}
+								]
+							},
+							{
+								"data": {
+									"id": "ctzcsgwpj0o0",
+									"created": 1689079723674,
+									"text": "収束半径\n(radius of convergence)",
+									"font-family": "sans-serif",
+									"hyperlink": "https://yomoriki.com/physical-mathematics/46040/",
+									"hyperlinkTitle": "数列の収束と発散|一様収束・絶対収束・収束半径とは？"
+								},
+								"children": []
+							}
+						]
+					},
+					{
+						"data": {
+							"id": "cucx921oedc0",
+							"created": 1690457725148,
+							"text": "数列\n(numerical sequence)",
+							"font-family": "sans-serif",
+							"note": "●単調増加\n(monotonically increasing)\n\n●単調減少\n(monotonically decreasing)\n\n●漸化式\n(recurrence relation)\n"
+						},
+						"children": [
+							{
+								"data": {
+									"id": "cude0dng2oo0",
+									"created": 1690505004000,
+									"text": "等差数列\n(arithmetic progression)",
+									"font-family": "sans-serif",
+									"note": "または\narithmetic sequence\n"
+								},
+								"children": []
+							},
+							{
+								"data": {
+									"id": "cude19mw6ag0",
+									"created": 1690505073623,
+									"text": "等比数列\n(geometric progression)",
+									"font-family": "sans-serif",
+									"note": "または\ngeometric sequence\n"
+								},
+								"children": []
+							},
+							{
+								"data": {
+									"id": "cux9u756yps0",
+									"created": 1692524434344,
+									"text": "ボルツァーノ＝ワイエルシュトラスの定理\n(Bolzano–Weierstrass theorem)",
+									"font-family": "sans-serif",
+									"hyperlink": "https://math-note.com/bolzano-weierstrass-theorem/",
+									"hyperlinkTitle": "ボルツァーノ・ワイエルシュトラスの定理の証明（解析学 第I章 実数と連続6）"
+								},
+								"children": [
+									{
+										"data": {
+											"id": "cucxee72o3c0",
+											"created": 1690458143417,
+											"text": "コーシー列\n(Cauchy sequence)",
+											"font-family": "sans-serif",
+											"hyperlink": "https://math-note.com/cauchy-convergence-condition/",
+											"hyperlinkTitle": "コーシーの収束条件（解析学 第I章 実数と連続7）"
+										},
+										"children": []
+									}
+								]
+							},
+							{
+								"data": {
+									"id": "cvd8p69x77c0",
+									"created": 1694146178829,
+									"text": "級数\n(series)",
+									"font-family": "sans-serif"
+								},
+								"children": [
+									{
+										"data": {
+											"id": "cvd8iv1697s0",
+											"created": 1694145684171,
+											"text": "ダランベールの収束判定法\n(d'Alembert's ratio test)",
+											"font-family": "sans-serif",
+											"hyperlink": "https://math-note.com/dalembert-ratio-test/",
+											"hyperlinkTitle": "例題で理解する級数の収束・発散判定（解析学 第I章 実数と連続10）"
+										},
+										"children": [
+											{
+												"data": {
+													"id": "cvd8n2b4tgo0",
+													"created": 1694146013467,
+													"text": "コーシーの収束判定法\n(Cauchy's root test)",
+													"font-family": "sans-serif"
+												},
+												"children": []
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			},
+			{
+				"data": {
+					"id": "cu9jaqnkrow0",
+					"created": 1690113681670,
+					"text": "記号論理学\n(symbolic logic)",
+					"font-family": "sans-serif"
+				},
+				"children": [
+					{
+						"data": {
+							"id": "cuiloztyn7c0",
+							"created": 1691034480576,
+							"text": "ロジカルシンキング\n(logical thinking)",
+							"font-family": "sans-serif",
+							"background": "#eaf1dd",
+							"note": "●形式論理学 (formal logic)\n\n●トートロジー (tautology)\nトートロジーの意味とは？　気をつけたい、論理崩壊の話法\nhttps://studyhacker.net/what-is-tautology\n\n●二律背反 (antinomy)\n「二律背反」とは？意味や使い方！例文や解釈\nhttps://meaning-book.com/blog/20190624101441.html\n"
+						},
+						"children": [
+							{
+								"data": {
+									"id": "cv5vlqbn3h40",
+									"created": 1693398314887,
+									"text": "三原則\n(three traditional laws)",
+									"font-family": "sans-serif"
+								},
+								"children": [
+									{
+										"data": {
+											"id": "cv5vm9dm1kw0",
+											"created": 1693398356365,
+											"text": "同一律\n(low of identity)",
+											"font-family": "sans-serif"
+										},
+										"children": []
+									},
+									{
+										"data": {
+											"id": "cv5vmohijew0",
+											"created": 1693398389253,
+											"text": "無矛盾律\n(law of noncontradiction)",
+											"font-family": "sans-serif",
+											"note": "または\nlaw of contradiction\nprinciple of non-contradiction\n"
+										},
+										"children": []
+									},
+									{
+										"data": {
+											"id": "cv5vlz6lj4w0",
+											"created": 1693398334173,
+											"text": "排中律\n(law of excluded middle)",
+											"font-family": "sans-serif",
+											"hyperlink": "https://study-z.net/dictionary/%E6%8E%92%E4%B8%AD%E5%BE%8B",
+											"hyperlinkTitle": "【1分でわかる】排中律の意味・使い方・例文や類似の似た言葉をわかりやすく解説【日本語辞典】"
+										},
+										"children": []
+									}
+								]
+							},
+							{
+								"data": {
+									"id": "cu9jb52v23k0",
+									"created": 1690113713070,
+									"text": "命題論理\n(propositional logic)",
+									"hyperlink": "https://online-library.site/?p=1664",
+									"hyperlinkTitle": "命題論理についてわかりやすく！〜構文論・意味論について〜",
+									"font-family": "sans-serif"
+								},
+								"children": [
+									{
+										"data": {
+											"id": "cu9jbrory7s0",
+											"created": 1690113762284,
+											"text": "述語論理\n(predicate logic)",
+											"hyperlink": "https://www.virtualinvader.com/predicate-logic/",
+											"hyperlinkTitle": "【入門】述語論理とは。命題論理との違いも解説【日本一わかりやすい】",
+											"font-family": "sans-serif"
+										},
+										"children": [
+											{
+												"data": {
+													"id": "cukijbln2200",
+													"created": 1691228692593,
+													"text": "否定 (negation)",
+													"font-family": "sans-serif"
+												},
+												"children": []
+											},
+											{
+												"data": {
+													"id": "cukijfpwx800",
+													"created": 1691228701558,
+													"text": "選言 (disjunction)",
+													"font-family": "sans-serif"
+												},
+												"children": []
+											},
+											{
+												"data": {
+													"id": "cukijiwwqlk0",
+													"created": 1691228708511,
+													"text": "連言 (conjunction)",
+													"font-family": "sans-serif"
+												},
+												"children": []
+											}
+										]
+									}
+								]
+							},
+							{
+								"data": {
+									"id": "cv2fra5uia80",
+									"created": 1693048932264,
+									"text": "定言命題\n(categorical proposition)",
+									"font-family": "sans-serif",
+									"hyperlink": "https://www.u.tsukuba.ac.jp/~hashimoto.kouji.fu/paper/term_logic.html",
+									"hyperlinkTitle": "名辞論理とヴェン図"
+								},
+								"children": [
+									{
+										"data": {
+											"id": "cv2frwcj1pc0",
+											"created": 1693048980558,
+											"text": "全称肯定命題 A\n(universal affirmative proposition)",
+											"font-family": "sans-serif"
+										},
+										"children": []
+									},
+									{
+										"data": {
+											"id": "cv2frzryufs0",
+											"created": 1693048988022,
+											"text": "全称否定命題 E\n(universal nagative proposition)",
+											"font-family": "sans-serif"
+										},
+										"children": []
+									},
+									{
+										"data": {
+											"id": "cv2fs678jqw0",
+											"created": 1693049002006,
+											"text": "特称肯定命題 I\n(particular affirmative proposition)",
+											"font-family": "sans-serif"
+										},
+										"children": []
+									},
+									{
+										"data": {
+											"id": "cv2fsa1mogg0",
+											"created": 1693049010374,
+											"text": "特称否定命題 O\n(particular negative proposition)",
+											"font-family": "sans-serif"
+										},
+										"children": []
+									},
+									{
+										"data": {
+											"id": "cv2g40v0wtc0",
+											"created": 1693049930753,
+											"text": "対当\n(opposition)",
+											"font-family": "sans-serif",
+											"note": "\n全称・特称と肯定・否定という量と質の違いに基づく四種類の命題区分、論理学における量と質の意味とは？\nhttps://information-station.xyz/7598.html\n",
+											"hyperlink": "https://information-station.xyz/7604.html",
+											"hyperlinkTitle": "矛盾対当とは何か？対当関係における四つの真偽関係の違い①、直接推論に分類される推論の形式②"
+										},
+										"children": []
+									}
+								]
+							},
+							{
+								"data": {
+									"id": "cukizcq1ilc0",
+									"created": 1691229948862,
+									"text": "推論\n(argument)",
+									"font-family": "sans-serif"
+								},
+								"children": [
+									{
+										"data": {
+											"id": "cujdj83ydhs0",
+											"created": 1691113019487,
+											"text": "証明\n(proof)",
+											"font-family": "sans-serif",
+											"note": "\n証明とは？推論とは？数学に必要な論理の基本②\nhttps://kopende.com/math/logic-proof/\n\n仮定 (hypothesis)\n自明 (trivial)\n"
+										},
+										"children": [
+											{
+												"data": {
+													"id": "cujdjy1tnf40",
+													"created": 1691113075954,
+													"text": "背理法\n(proof by contradiction)",
+													"font-family": "sans-serif",
+													"hyperlink": "https://yama-taku.science/mathematics/logic-and-sets/basics-of-proof-by-contradiction/",
+													"hyperlinkTitle": "背理法１ 背理法はこう考える！仕組みを具体例から理解しよう"
+												},
+												"children": []
+											}
+										]
+									},
+									{
+										"data": {
+											"id": "cukixzj69tk0",
+											"created": 1691229841784,
+											"text": "帰納\n(induction)",
+											"font-family": "sans-serif"
+										},
+										"children": [
+											{
+												"data": {
+													"id": "cumabpnjf7c0",
+													"created": 1691408647303,
+													"text": "超限帰納法\n(transfinite induction)",
+													"font-family": "sans-serif"
+												},
+												"children": []
+											}
+										]
+									},
+									{
+										"data": {
+											"id": "cukiy3iagqg0",
+											"created": 1691229850438,
+											"text": "演繹\n(deduction)",
+											"font-family": "sans-serif",
+											"hyperlink": "https://comemo.nikkei.com/n/nf7fa57ffa0be",
+											"hyperlinkTitle": ""
+										},
+										"children": [
+											{
+												"data": {
+													"id": "cujdju1xfrk0",
+													"created": 1691113067253,
+													"text": "三段論法\n(syllogism)",
+													"font-family": "sans-serif",
+													"note": "\n妥当な三段論法を導くための6つのルール・誤りについて解説\nhttps://math-fun.net/20200106/4732/\n\n",
+													"hyperlink": "https://www.fumitei.jp/syllogism/",
+													"hyperlinkTitle": "三段論法とは？簡単な例と間違いやすいポイントをわかりやすく解説"
+												},
+												"children": [
+													{
+														"data": {
+															"id": "cuklscccyqo0",
+															"created": 1691237862815,
+															"text": "大前提 (major premise)",
+															"font-family": "sans-serif"
+														},
+														"children": []
+													},
+													{
+														"data": {
+															"id": "cuklsfi8n340",
+															"created": 1691237869701,
+															"text": "小前提 (minor premise)",
+															"font-family": "sans-serif"
+														},
+														"children": []
+													},
+													{
+														"data": {
+															"id": "cuklso008ug0",
+															"created": 1691237888190,
+															"text": "結論 (conclusion)",
+															"font-family": "sans-serif"
+														},
+														"children": []
+													}
+												]
+											}
+										]
+									},
+									{
+										"data": {
+											"id": "cumah4y3l7k0",
+											"created": 1691409072414,
+											"text": "アブダクション / 逆行推論\n(abduction / retroduction)",
+											"font-family": "sans-serif",
+											"hyperlink": "https://ferret-plus.com/5631?page=3",
+											"hyperlinkTitle": "帰納法・演繹法・アブダクションの3つの推論過程の違い｜論理的思考（ロジカルシンキング）"
+										},
+										"children": []
+									}
+								]
+							},
+							{
+								"data": {
+									"id": "cuxaiygf23s0",
+									"created": 1692526374536,
+									"text": "ベン図\n(Venn diagram)",
+									"hyperlink": "https://visualizing.jp/euler-venn-diagram/",
+									"hyperlinkTitle": "オイラー図とベン図（Euler Diagram & Venn Diagram）",
+									"font-family": "sans-serif"
+								},
+								"children": [
+									{
+										"data": {
+											"id": "cukj95hh3400",
+											"created": 1691230716748,
+											"text": "ド・モルガンの法則\n(De Morgan's laws)",
+											"font-family": "sans-serif",
+											"note": "プログラミングに役立つ 「ド・モルガンの法則」\nhttps://xtech.nikkei.com/it/article/Watcher/20070806/279127/\n"
+										},
+										"children": []
+									}
+								]
+							},
+							{
+								"data": {
+									"id": "cuu0u2vrr080",
+									"created": 1692194355208,
+									"text": "well-defined",
+									"font-family": "sans-serif",
+									"hyperlink": "https://mathtano.com/well-defined/",
+									"hyperlinkTitle": "well-definedを生徒議会で考える",
+									"note": "定訳はないが、あえて訳するなら「上手に定義されている」\n"
+								},
+								"children": [
+									{
+										"data": {
+											"id": "cuu0u9xmmx40",
+											"created": 1692194370558,
+											"text": "<--> ill-defined",
+											"font-family": "sans-serif",
+											"note": "定訳はないが、あえて訳するなら「へたくそに定義されている」\n\n特集－Ⅰ　つる植物の右巻きと左巻き(詳細版)\nhttp://forests.world.coocan.jp/flora/issue/issue-1b.html\n"
+										},
+										"children": []
+									}
+								]
+							}
+						]
+					},
+					{
+						"data": {
+							"id": "ctlpd65pkw00",
+							"created": 1687693359846,
+							"text": "集合論\n(set theory)",
+							"font-family": "sans-serif"
+						},
+						"children": [
+							{
+								"data": {
+									"id": "ctlop9vthhs0",
+									"created": 1687691487215,
+									"text": "集合\n(set)",
+									"font-family": "sans-serif",
+									"note": "集合論(Set Theory)その１\nhttps://sun.ac.jp/prof/hnagano/mathematics/set.html\n"
+								},
+								"children": [
+									{
+										"data": {
+											"id": "cv7k0nfjx0w0",
+											"created": 1693568750650,
+											"text": "ZF公理系\n(ZF axioms)",
+											"font-family": "sans-serif"
+										},
+										"children": [
+											{
+												"data": {
+													"id": "ctzbflnmjjc0",
+													"created": 1689075894164,
+													"text": "ZFC公理系\n(ZFC axioms)",
+													"font-family": "sans-serif",
+													"hyperlink": "https://tech-blog.rei-frontier.jp/entry/2017/11/02/102042",
+													"hyperlinkTitle": "ZFC公理系について：その1",
+													"note": "ZFC公理系について：その2\nhttps://tech-blog.rei-frontier.jp/entry/2017/11/09/100000\nZFC公理系について：その3\nhttps://tech-blog.rei-frontier.jp/entry/2017/11/16/100000\n"
+												},
+												"children": [
+													{
+														"data": {
+															"id": "ctlopjwqo080",
+															"created": 1687691509039,
+															"text": "要素 / 元\n(element)",
+															"font-family": "sans-serif"
+														},
+														"children": [
+															{
+																"data": {
+																	"id": "cuaxxvvo3sg0",
+																	"created": 1690256550915,
+																	"text": "内包\n(intension)",
+																	"font-family": "sans-serif",
+																	"hyperlink": "https://www.itmedia.co.jp/bizid/articles/0809/29/news065_2.html",
+																	"hyperlinkTitle": "第18回　常識的な概念ほど、きっちり定義を考えなければならない"
+																},
+																"children": []
+															},
+															{
+																"data": {
+																	"id": "cuaxxrw4ziw0",
+																	"created": 1690256542236,
+																	"text": "外延\n(extension)",
+																	"font-family": "sans-serif"
+																},
+																"children": []
+															}
+														]
+													},
+													{
+														"data": {
+															"id": "ctlpeypduzk0",
+															"created": 1687693500350,
+															"text": "空集合\n(empty set)",
+															"font-family": "sans-serif"
+														},
+														"children": []
+													},
+													{
+														"data": {
+															"id": "ctvoi65yri00",
+															"created": 1688706530139,
+															"text": "冪集合\n(power set)",
+															"font-family": "sans-serif",
+															"hyperlink": "https://www.krrk0.com/power-set/",
+															"hyperlinkTitle": "【離散数学】べき集合って何？分かりやすく解説します！"
+														},
+														"children": [
+															{
+																"data": {
+																	"id": "cu9izb37sug0",
+																	"created": 1690112785782,
+																	"text": "部分集合族\n(family of subsets)",
+																	"font-family": "sans-serif",
+																	"note": "ある集合の部分集合たちから成る集合族\n",
+																	"hyperlink": "https://www.sciencetime.jp/note/130",
+																	"hyperlinkTitle": "部分集合とべき集合"
+																},
+																"children": []
+															}
+														]
+													},
+													{
+														"data": {
+															"id": "ctrkzn836dk0",
+															"created": 1688290375198,
+															"text": "選択公理\n(axiom of choice)",
+															"font-family": "sans-serif",
+															"hyperlink": "https://math.jp/wiki/%E9%81%B8%E6%8A%9E%E5%85%AC%E7%90%86%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6",
+															"hyperlinkTitle": "選択公理について"
+														},
+														"children": [
+															{
+																"data": {
+																	"id": "cuyohb7vf000",
+																	"created": 1692667301085,
+																	"text": "ツォルンの補題\n(Zorn's lemma)",
+																	"font-family": "sans-serif",
+																	"hyperlink": "https://ieyasu03.web.fc2.com/Mathmatics/33_Zorn.html",
+																	"hyperlinkTitle": "ツォルンの補題",
+																	"note": "Zorn の補題と選択公理のお話\nhttp://cs-study.com/koga/set/lemmaOfZorn.html\n"
+																},
+																"children": []
+															},
+															{
+																"data": {
+																	"id": "cuunnfgixg80",
+																	"created": 1692258719563,
+																	"text": "従属選択公理\n(axiom of dependent choice)",
+																	"font-family": "sans-serif",
+																	"hyperlink": "https://konn-san.com/math/forcing-axiom-and-choice.pdf",
+																	"hyperlinkTitle": "強い選択公理としての強制公理"
+																},
+																"children": []
+															}
+														]
+													}
+												]
+											},
+											{
+												"data": {
+													"id": "cv7j9iy1j280",
+													"created": 1693566625052,
+													"text": "正則性公理\n(axiom of regularity)",
+													"font-family": "sans-serif"
+												},
+												"children": []
+											}
+										]
+									},
+									{
+										"data": {
+											"id": "cuh6myjxhq00",
+											"created": 1690890444459,
+											"text": "全体集合 / 普遍集合\n(universal set)",
+											"font-family": "sans-serif"
+										},
+										"children": [
+											{
+												"data": {
+													"id": "cuh5h3lb5680",
+													"created": 1690887164131,
+													"text": "部分集合\n(subset)",
+													"font-family": "sans-serif",
+													"hyperlink": "https://fromhimuka.com/blog/1854.html",
+													"hyperlinkTitle": "集合の記号と意味（要素,真部分集合,和集合,補集合,ド・モルガンの法則）"
+												},
+												"children": [
+													{
+														"data": {
+															"id": "cuh5hxwzbnk0",
+															"created": 1690887230140,
+															"text": "補集合\n(complement of a set)",
+															"font-family": "sans-serif"
+														},
+														"children": []
+													}
+												]
+											}
+										]
+									},
+									{
+										"data": {
+											"id": "cvedkr5k3kw0",
+											"created": 1694261497963,
+											"text": "ラッセルのパラドックス\n(Russell's paradox)",
+											"font-family": "sans-serif",
+											"hyperlink": "https://www.nli-research.co.jp/report/detail/id=72459?site=nli",
+											"hyperlinkTitle": "無限について－無限に関するパラドックス（３）－"
+										},
+										"children": [
+											{
+												"data": {
+													"id": "cvedek6gm9s0",
+													"created": 1694261012595,
+													"text": "真のクラス\n(proper class)",
+													"font-family": "sans-serif",
+													"hyperlink": "https://tnomura9.exblog.jp/21916880/",
+													"hyperlinkTitle": "集合とクラス（ラッセルのパラドックスへの回答）"
+												},
+												"children": []
+											},
+											{
+												"data": {
+													"id": "cvedv8g1ivk0",
+													"created": 1694262319244,
+													"text": "分出公理\n(axiom schema of specification)",
+													"font-family": "sans-serif",
+													"note": "または\n(axiom of separation)\n\n集合とクラス\nhttps://ieyasu03.web.fc2.com/Mathmatics/44_set_class.html\n",
+													"hyperlink": "https://kopende.com/math/set-zfc/",
+													"hyperlinkTitle": "公理的集合論のZFCを、論理記号抜きで噛み砕いて解説。"
+												},
+												"children": []
+											}
+										]
+									},
+									{
+										"data": {
+											"id": "cu7t63btgyo0",
+											"created": 1689938408623,
+											"text": "順序対\n(ordered pair)",
+											"font-family": "sans-serif",
+											"hyperlink": "https://sorai-note.com/math/200402/",
+											"hyperlinkTitle": "集合を使って「写像」を作る｜順序対・直積・写像の構成"
+										},
+										"children": [
+											{
+												"data": {
+													"id": "cu7t0xi9hew0",
+													"created": 1689938004131,
+													"text": "直積\n(direct product)",
+													"note": "または\nデカルト積 (Cartesian product)\n",
+													"font-family": "sans-serif",
+													"hyperlink": "https://iwai-math-blog.com/index.php/cartesian-product/",
+													"hyperlinkTitle": "直積集合 | 順序対から二項演算への理解【大学数学の基礎】"
+												},
+												"children": [
+													{
+														"data": {
+															"id": "cu7t9qns4x40",
+															"created": 1689938694504,
+															"text": "二項関係\n(binary relation)",
+															"font-family": "sans-serif",
+															"note": "直積集合の部分集合\n",
+															"hyperlink": "https://wiis.info/math/set/relation/",
+															"hyperlinkTitle": "関係とは何か"
+														},
+														"children": [
+															{
+																"data": {
+																	"id": "cudm9o6ckls0",
+																	"created": 1690528301067,
+																	"text": "同値関係\n(equivalence relation)",
+																	"font-family": "sans-serif"
+																},
+																"children": [
+																	{
+																		"data": {
+																			"id": "cua0k51lna80",
+																			"created": 1690162377139,
+																			"text": "反射律\n(reflexive relation)",
+																			"font-family": "sans-serif"
+																		},
+																		"children": []
+																	},
+																	{
+																		"data": {
+																			"id": "cua0kavf8l40",
+																			"created": 1690162389826,
+																			"text": "対称律\n(symmetric relation)",
+																			"font-family": "sans-serif"
+																		},
+																		"children": []
+																	},
+																	{
+																		"data": {
+																			"id": "cua0k822ii80",
+																			"created": 1690162383698,
+																			"text": "推移律\n(transitive relation)",
+																			"font-family": "sans-serif"
+																		},
+																		"children": []
+																	},
+																	{
+																		"data": {
+																			"id": "cufcbkbfcj40",
+																			"created": 1690703358210,
+																			"text": "同値類\n(equivalence class)",
+																			"font-family": "sans-serif",
+																			"hyperlink": "http://www.misojiro.t.u-tokyo.ac.jp/~murota/lect-kisosuri/equivrel061028.pdf",
+																			"hyperlinkTitle": "同値関係"
+																		},
+																		"children": [
+																			{
+																				"data": {
+																					"id": "cufctuc5rk00",
+																					"created": 1690704790577,
+																					"text": "代表元\n(representative)",
+																					"font-family": "sans-serif"
+																				},
+																				"children": []
+																			},
+																			{
+																				"data": {
+																					"id": "cufcri2it1k0",
+																					"created": 1690704607145,
+																					"text": "商集合\n(quotient set) ",
+																					"font-family": "sans-serif",
+																					"hyperlink": "https://www.krrk0.com/equivalence-class-and-quotient-set/",
+																					"hyperlinkTitle": "【離散数学】同値類と商集合について分かりやすく解説！"
+																				},
+																				"children": []
+																			}
+																		]
+																	}
+																]
+															},
+															{
+																"data": {
+																	"id": "cua0kdp6f200",
+																	"created": 1690162395979,
+																	"text": "反対称律\n(antisymmetric relation)",
+																	"font-family": "sans-serif"
+																},
+																"children": []
+															},
+															{
+																"data": {
+																	"id": "cua6iadmnxk0",
+																	"created": 1690179158682,
+																	"text": "順序集合\n(ordered set)",
+																	"font-family": "sans-serif",
+																	"hyperlink": "https://nunuki.hatenablog.com/entry/2016/12/23/182301",
+																	"hyperlinkTitle": "半順序？弱順序？二項関係・順序関係まとめ"
+																},
+																"children": [
+																	{
+																		"data": {
+																			"id": "cuaxnqy83a80",
+																			"created": 1690255756544,
+																			"text": "前順序\n(preorder)",
+																			"font-family": "sans-serif"
+																		},
+																		"children": [
+																			{
+																				"data": {
+																					"id": "cva4hj8pvns0",
+																					"created": 1693829615832,
+																					"text": "有向集合\n(directed set)",
+																					"font-family": "sans-serif"
+																				},
+																				"children": []
+																			}
+																		]
+																	},
+																	{
+																		"data": {
+																			"id": "cuaxntwzjeg0",
+																			"created": 1690255762999,
+																			"text": "弱順序\n(weak order)",
+																			"font-family": "sans-serif"
+																		},
+																		"children": []
+																	},
+																	{
+																		"data": {
+																			"id": "cuaxnws147c0",
+																			"created": 1690255769230,
+																			"text": "半順序\n(partial order)",
+																			"font-family": "sans-serif",
+																			"hyperlink": "https://www.krrk0.com/half-order-total-order/",
+																			"hyperlinkTitle": "【離散数学】半順序と全順序を分かりやすく解説！"
+																		},
+																		"children": [
+																			{
+																				"data": {
+																					"id": "cuh5qfojqg00",
+																					"created": 1690887895726,
+																					"text": "ハッセ図\n(Hasse diagram)",
+																					"font-family": "sans-serif",
+																					"hyperlink": "https://ja.wikipedia.org/wiki/%E3%83%8F%E3%83%83%E3%82%BB%E5%9B%B3",
+																					"hyperlinkTitle": "ハッセ図",
+																					"expandState": "collapse"
+																				},
+																				"children": [
+																					{
+																						"data": {
+																							"id": "cuyokrj1gls0",
+																							"created": 1692667571681,
+																							"text": "上界 (upper bound)",
+																							"font-family": "sans-serif",
+																							"hyperlink": "https://yuhoth.com/408/",
+																							"hyperlinkTitle": "ハッセ図の上界と下限"
+																						},
+																						"children": [
+																							{
+																								"data": {
+																									"id": "cuyol5m7uv40",
+																									"created": 1692667602348,
+																									"text": "上限 (supremum)",
+																									"font-family": "sans-serif"
+																								},
+																								"children": []
+																							}
+																						]
+																					},
+																					{
+																						"data": {
+																							"id": "cuyol9ph1x40",
+																							"created": 1692667611252,
+																							"text": "下界 (lower bound)",
+																							"font-family": "sans-serif"
+																						},
+																						"children": [
+																							{
+																								"data": {
+																									"id": "cuyoldllbdk0",
+																									"created": 1692667619724,
+																									"text": "下限 (infimum)",
+																									"font-family": "sans-serif"
+																								},
+																								"children": []
+																							}
+																						]
+																					},
+																					{
+																						"data": {
+																							"id": "cuyoli07w6o0",
+																							"created": 1692667629316,
+																							"text": "極大元 (maximal element)",
+																							"font-family": "sans-serif",
+																							"hyperlink": "https://www.krrk0.com/maximum-minimum-other/",
+																							"hyperlinkTitle": "【離散数学】「最大最小・極大極小・上界下界・上限下限」を分かりやすく解説！"
+																						},
+																						"children": []
+																					},
+																					{
+																						"data": {
+																							"id": "cuyoll2yes80",
+																							"created": 1692667636012,
+																							"text": "極小元 (minimal element)",
+																							"font-family": "sans-serif"
+																						},
+																						"children": []
+																					},
+																					{
+																						"data": {
+																							"id": "cuyolqcaiv40",
+																							"created": 1692667647460,
+																							"text": "最大元 (greatest element)",
+																							"font-family": "sans-serif"
+																						},
+																						"children": []
+																					},
+																					{
+																						"data": {
+																							"id": "cuyoltvymkw0",
+																							"created": 1692667655180,
+																							"text": "最小元 (least element)",
+																							"font-family": "sans-serif"
+																						},
+																						"children": []
+																					}
+																				]
+																			}
+																		]
+																	},
+																	{
+																		"data": {
+																			"id": "cuaxnz99cdc0",
+																			"created": 1690255774625,
+																			"text": "全順序\n(total order)",
+																			"font-family": "sans-serif"
+																		},
+																		"children": [
+																			{
+																				"data": {
+																					"id": "cuypa7p9k8o0",
+																					"created": 1692669565990,
+																					"text": "全順序集合 / 鎖\n(totally ordered set  / chain)",
+																					"note": "または\n線型順序集合\n(linearly ordered set)\n",
+																					"font-family": "sans-serif"
+																				},
+																				"children": []
+																			},
+																			{
+																				"data": {
+																					"id": "culee1dedr40",
+																					"created": 1691318554023,
+																					"text": "整列集合\n(well ordered set)",
+																					"font-family": "sans-serif",
+																					"hyperlink": "https://math.fandom.com/ja/wiki/%E6%95%B4%E5%88%97%E9%9B%86%E5%90%88",
+																					"hyperlinkTitle": "整列集合"
+																				},
+																				"children": [
+																					{
+																						"data": {
+																							"id": "cuuo8unus4o0",
+																							"created": 1692260398306,
+																							"text": "順序数\n(ordinal number)",
+																							"font-family": "sans-serif",
+																							"hyperlink": "https://mgtohakari.hatenablog.com/entry/2016/10/26/135927",
+																							"hyperlinkTitle": "順序数と基数の話"
+																						},
+																						"children": [
+																							{
+																								"data": {
+																									"id": "cuuoadoluuo0",
+																									"created": 1692260518074,
+																									"text": "基数\n(cardinal number)",
+																									"font-family": "sans-serif"
+																								},
+																								"children": []
+																							}
+																						]
+																					}
+																				]
+																			}
+																		]
+																	}
+																]
+															}
+														]
+													}
+												]
+											}
+										]
+									},
+									{
+										"data": {
+											"id": "cts9plk7vmg0",
+											"created": 1688360115684,
+											"text": "無限集合\n(infinite set) ",
+											"font-family": "sans-serif"
+										},
+										"children": [
+											{
+												"data": {
+													"id": "cts9nxl6dyo0",
+													"created": 1688359985135,
+													"text": "<--> 有限集合\n(finite set)",
+													"font-family": "sans-serif"
+												},
+												"children": []
+											},
+											{
+												"data": {
+													"id": "ctub96cafs00",
+													"created": 1688567590859,
+													"text": "濃度\n(cardinality)",
+													"font-family": "sans-serif",
+													"hyperlink": "https://teachamath.com/%e5%80%8b%e6%95%b0%e3%81%ae%e4%b8%80%e8%88%ac%e5%8c%96%e3%80%80%e6%bf%83%e5%ba%a6/",
+													"hyperlinkTitle": "個数の一般化　濃度"
+												},
+												"children": [
+													{
+														"data": {
+															"id": "cts9uwwks2w0",
+															"created": 1688360532196,
+															"text": "可算無限集合\n(countably infinite set)",
+															"font-family": "sans-serif"
+														},
+														"children": [
+															{
+																"data": {
+																	"id": "cuu0ve3lqwo0",
+																	"created": 1692194457991,
+																	"text": "高々可算\n(at most countable)",
+																	"font-family": "sans-serif",
+																	"hyperlink": "https://ja.wikipedia.org/wiki/%E5%8F%AF%E7%AE%97%E9%9B%86%E5%90%88",
+																	"hyperlinkTitle": "可算集合"
+																},
+																"children": []
+															}
+														]
+													},
+													{
+														"data": {
+															"id": "ctubauycqlc0",
+															"created": 1688567722800,
+															"text": "非可算集合\n(uncountable set)",
+															"font-family": "sans-serif"
+														},
+														"children": [
+															{
+																"data": {
+																	"id": "cuzy1szqqi80",
+																	"created": 1692795857004,
+																	"text": "連続体仮説 CH\n(continuum hypothesis)",
+																	"font-family": "sans-serif"
+																},
+																"children": []
+															}
+														]
+													},
+													{
+														"data": {
+															"id": "cuuo0mpp95s0",
+															"created": 1692259754090,
+															"text": "到達不能基数\n(inaccessible cardinal)",
+															"font-family": "sans-serif",
+															"hyperlink": "https://yasudayasutomo.github.io/weakly%20compact2.pdf",
+															"hyperlinkTitle": "巨大基数について",
+															"note": "\n巨大基数入門 - ～可測基数を巡って～\nhttps://eurekagap.up.seesaa.net/image/measurable_intro.pdf\n\n無限基数と定常集合\nhttp://www.math.sci.ehime-u.ac.jp/~fujita/preprints/cardinals-basics.pdf\n"
+														},
+														"children": [
+															{
+																"data": {
+																	"id": "cvf00cxc1uo0",
+																	"created": 1694324785236,
+																	"text": "弱到達不能基数\n(weakly inaccessible)",
+																	"font-family": "sans-serif"
+																},
+																"children": []
+															},
+															{
+																"data": {
+																	"id": "cvf00l8qvkg0",
+																	"created": 1694324803340,
+																	"text": "強到達不能基数\n(strongly inaccessible)",
+																	"font-family": "sans-serif"
+																},
+																"children": [
+																	{
+																		"data": {
+																			"id": "cvezwvzrmtc0",
+																			"created": 1694324513285,
+																			"text": "グロタンディーク宇宙\n(Grothendieck universe)",
+																			"font-family": "sans-serif",
+																			"hyperlink": "https://googology.fandom.com/ja/wiki/%E5%AE%87%E5%AE%99_(%E6%95%B0%E5%AD%A6)",
+																			"hyperlinkTitle": "宇宙 (数学)"
+																		},
+																		"children": []
+																	}
+																]
+															}
+														]
+													}
+												]
+											}
+										]
+									},
+									{
+										"data": {
+											"id": "ctlpgjaq2kg0",
+											"created": 1687693623540,
+											"text": "集合族\n(family of sets)",
+											"font-family": "sans-serif",
+											"note": "集合を要素とする集合\n"
+										},
+										"children": [
+											{
+												"data": {
+													"id": "cts3fvxtekg0",
+													"created": 1688342427972,
+													"text": "σ-加法族\n(sigma-algebra / sigma-field)",
+													"font-family": "sans-serif",
+													"hyperlink": "https://keito.luxe/2021/02/03/borel-function/",
+													"hyperlinkTitle": "σ-加法族(sigma-algebra, sigma-field)と可測集合(measurable set)",
+													"note": "または\n完全加法族\n(completely additive class)\n"
+												},
+												"children": [
+													{
+														"data": {
+															"id": "cu9iqfkb5x40",
+															"created": 1690112090245,
+															"text": "可測空間\n(measurable space)",
+															"font-family": "sans-serif"
+														},
+														"children": []
+													},
+													{
+														"data": {
+															"id": "cu9it8q4g940",
+															"created": 1690112310452,
+															"text": "可測集合\n(measurable set)",
+															"font-family": "sans-serif"
+														},
+														"children": []
+													},
+													{
+														"data": {
+															"id": "cutzois024g0",
+															"created": 1692191098514,
+															"text": "有限加法族\n(finitely additive class)",
+															"font-family": "sans-serif"
+														},
+														"children": []
+													}
+												]
+											}
+										]
+									}
+								]
+							},
+							{
+								"data": {
+									"id": "ctlornbuoo80",
+									"created": 1687691673211,
+									"text": "写像\n(mapping)",
+									"font-family": "sans-serif",
+									"hyperlink": "https://poruka01.com/mapping2/",
+									"hyperlinkTitle": "【写像】単射、全射、全単射を分かりやすく解説＜大学数学＞"
+								},
+								"children": [
+									{
+										"data": {
+											"id": "ctqo92rqsk00",
+											"created": 1688198017688,
+											"text": "単射\n(injection / injective function)",
+											"font-family": "sans-serif"
+										},
+										"children": []
+									},
+									{
+										"data": {
+											"id": "ctqo97kmxi80",
+											"created": 1688198028142,
+											"text": "全射\n(surjection / surjective function)",
+											"font-family": "sans-serif"
+										},
+										"children": [
+											{
+												"data": {
+													"id": "cuo0az0bi3k0",
+													"created": 1691583498117,
+													"text": "鳩の巣原理\n(pigeonhole principle)",
+													"font-family": "sans-serif",
+													"note": "または\nディリクレの箱入れ原理\n(Dirichlet's box principle)\n",
+													"hyperlink": "https://sorai-note.com/math/pigeonhole/",
+													"hyperlinkTitle": "鳩ノ巣原理を証明する｜有限集合の定義"
+												},
+												"children": []
+											}
+										]
+									},
+									{
+										"data": {
+											"id": "ctqo9lnh4b40",
+											"created": 1688198058789,
+											"text": "全単射\n(bijection / bijective function)",
+											"font-family": "sans-serif"
+										},
+										"children": [
+											{
+												"data": {
+													"id": "cv7djx4odm00",
+													"created": 1693550512910,
+													"text": "逆写像\n(inverse mapping)",
+													"font-family": "sans-serif",
+													"hyperlink": "https://mathlandscape.com/inverse-function/",
+													"hyperlinkTitle": "逆関数(逆写像)の定義と性質を厳密に～図解付き～"
+												},
+												"children": []
+											},
+											{
+												"data": {
+													"id": "cuo0bxmrj4w0",
+													"created": 1691583573485,
+													"text": "シュレーダー=ベルンシュタインの定理\n(Schröder-Bernstein theorem)",
+													"font-family": "sans-serif",
+													"hyperlink": "https://manabitimes.jp/math/1335",
+													"hyperlinkTitle": "ベルンシュタインの定理とその証明",
+													"note": "ベルンシュタインの定理・証明概略図\nhttps://neqmath.blogspot.com/2018/09/blog-post.html\n"
+												},
+												"children": []
+											},
+											{
+												"data": {
+													"id": "ctus0d63ra80",
+													"created": 1688614859313,
+													"text": "置換\n(permutation)",
+													"font-family": "sans-serif"
+												},
+												"children": [
+													{
+														"data": {
+															"id": "ctvnyy08s5c0",
+															"created": 1688705023460,
+															"text": "単位置換 / 恒等置換\n(unit permutation / identity permutation)",
+															"font-family": "sans-serif",
+															"note": "置き換えなし\n"
+														},
+														"children": [
+															{
+																"data": {
+																	"id": "ctwsdwk5kgo0",
+																	"created": 1688819040169,
+																	"text": "逆置換\n(inverse permutation)",
+																	"font-family": "sans-serif",
+																	"hyperlink": "https://math.keicode.com/linear-algebra/permutation.php",
+																	"hyperlinkTitle": "置換の定義と基本的な性質"
+																},
+																"children": []
+															}
+														]
+													},
+													{
+														"data": {
+															"id": "ctus0l76iqo0",
+															"created": 1688614876793,
+															"text": "互換\n(transposition)",
+															"font-family": "sans-serif",
+															"note": "要素２個を入れ替え\n＝要素２個での巡回置換に相当\n"
+														},
+														"children": [
+															{
+																"data": {
+																	"id": "ctwtdvxk13s0",
+																	"created": 1688821859913,
+																	"text": "巡回置換\n(cyclic permutation)",
+																	"hyperlink": "http://mathematics-box.net/2018/04/12/%E5%B7%A1%E5%9B%9E%E7%BD%AE%E6%8F%9B%E3%80%81%E4%BA%92%E6%8F%9B%E3%80%81%E3%81%9D%E3%81%97%E3%81%A6%E9%83%A8%E5%88%86%E7%BE%A4%E3%81%B8/",
+																	"hyperlinkTitle": "巡回置換、互換、そして部分群へ"
+																},
+																"children": []
+															}
+														]
+													},
+													{
+														"data": {
+															"id": "ctus254ks4g0",
+															"created": 1688614998535,
+															"text": "偶置換\n(even permutation)",
+															"font-family": "sans-serif",
+															"note": "(偶置換と奇置換が両立しない証明)\nおしどり硬貨のパズル〜証明\nhttps://fukuchi.org/works/puzzle/osidori_proof.html\n"
+														},
+														"children": [
+															{
+																"data": {
+																	"id": "ctus2c59xcw0",
+																	"created": 1688615013815,
+																	"text": "<--> 奇置換\n(odd permutation)",
+																	"font-family": "sans-serif"
+																},
+																"children": []
+															}
+														]
+													},
+													{
+														"data": {
+															"id": "ctus0u8ftfk0",
+															"created": 1688614896460,
+															"text": "対称群\n(symmetric group)",
+															"font-family": "sans-serif",
+															"note": "n次の置換全体\n",
+															"hyperlink": "https://manabitimes.jp/math/949",
+															"hyperlinkTitle": "置換の基礎（互換・偶置換・奇置換・符号の意味）"
+														},
+														"children": [
+															{
+																"data": {
+																	"id": "ctus126ep4w0",
+																	"created": 1688614913751,
+																	"text": "置換群\n(permutation group)",
+																	"font-family": "sans-serif",
+																	"note": "対称群の部分群\n"
+																},
+																"children": []
+															},
+															{
+																"data": {
+																	"id": "ctus1azpykg0",
+																	"created": 1688614932938,
+																	"text": "交代群\n(alternating group)",
+																	"font-family": "sans-serif",
+																	"note": "n次の偶置換全体\n"
+																},
+																"children": []
+															}
+														]
+													}
+												]
+											}
+										]
+									},
+									{
+										"data": {
+											"id": "cv7dikkiae00",
+											"created": 1693550407205,
+											"text": "像 / 値域\n(image / range)",
+											"font-family": "sans-serif",
+											"hyperlink": "https://ja.wikipedia.org/wiki/%E5%83%8F_(%E6%95%B0%E5%AD%A6)",
+											"hyperlinkTitle": "像 (数学)"
+										},
+										"children": [
+											{
+												"data": {
+													"id": "cv7dizmut400",
+													"created": 1693550439998,
+													"text": "<--> 逆像 / 原像\n(inverse image / preimage)",
+													"font-family": "sans-serif"
+												},
+												"children": []
+											}
+										]
+									},
+									{
+										"data": {
+											"id": "cts9yqliz7k0",
+											"created": 1688360831924,
+											"text": "カントールの対角線論法\n(Cantor's diagonal argument)",
+											"font-family": "sans-serif",
+											"hyperlink": "https://analytics-notty.tech/compare-infinity-of-mathematics/",
+											"hyperlinkTitle": "数学の無限を比較する？実数の集合と自然数の集合を対角線論法を使って比較する"
+										},
+										"children": []
+									}
+								]
+							}
+						]
+					}
+				]
+			},
+			{
+				"data": {
+					"id": "cssh7kwn3l40",
+					"created": 1684725114142,
+					"text": "幾何\n(geometry)",
+					"font-family": "sans-serif"
+				},
+				"children": [
+					{
+						"data": {
+							"id": "cu9ihidlooo0",
+							"created": 1690111391092,
+							"text": "ユークリッド幾何学\n(Euclidean geometry)",
+							"font-family": "sans-serif",
+							"background": "#ffffff",
+							"hyperlink": "https://pisan-dub.jp/doc/2009/20091214001/intro.html",
+							"hyperlinkTitle": "幾何学事始"
+						},
+						"children": [
+							{
+								"data": {
+									"id": "cua95ajgcbk0",
+									"created": 1690186603629,
+									"text": "原論\n(Elements / Στοιχεία)",
+									"font-family": "sans-serif",
+									"hyperlink": "https://pisan-dub.jp/doc/2011/20110205001/intro.html",
+									"hyperlinkTitle": "ユークリッド原論"
+								},
+								"children": []
+							},
+							{
+								"data": {
+									"id": "cv1n64q0xi00",
+									"created": 1692968283699,
+									"text": "デカルト座標系\n(Cartesian coordinate system)",
+									"font-family": "sans-serif",
+									"note": "または\n直交座標\n(rectangular coordinate system\n/ orthogonal coordinate system)\n"
+								},
+								"children": []
+							},
+							{
+								"data": {
+									"id": "cv1n7y04zm00",
+									"created": 1692968425801,
+									"text": "極座標系\n(polar coordinates system)",
+									"font-family": "sans-serif"
+								},
+								"children": []
+							},
+							{
+								"data": {
+									"id": "cu9ijxhs4j40",
+									"created": 1690111580725,
+									"text": "円周角\n(inscribed angle)",
+									"hyperlink": "https://sugaku.fun/circumferential-angle-theorem2",
+									"hyperlinkTitle": "円周角の定理の証明｜図で分かりやすく解説",
+									"font-family": "sans-serif"
+								},
+								"children": []
+							}
+						]
+					},
+					{
+						"data": {
+							"id": "cpgwvy0biag0",
+							"created": 1672582145251,
+							"text": "距離\n(distance)",
+							"font-family": "sans-serif",
+							"note": "ディープラーニングで用いられる6つの距離計算\nhttps://sitest.jp/blog/?p=6784\n"
+						},
+						"children": [
+							{
+								"data": {
+									"id": "cpsicyt060o0",
+									"created": 1673759882008,
+									"text": "ミンコフスキー距離\n(Minkowski's distance)",
+									"font-family": "sans-serif",
+									"note": "ドイツの数学者ヘルマン・ミンコフスキー に由来する名称\np=1ならマンハッタン距離\np=2ならユークリッド距離\np=∞ならチェビシェフ距離\n",
+									"hyperlink": "https://mathwords.net/minkofusuki",
+									"hyperlinkTitle": "ミンコフスキー距離の意味と、関連する距離の性質"
+								},
+								"children": [
+									{
+										"data": {
+											"id": "cpsngh2o2gg0",
+											"created": 1673774262416,
+											"text": "マンハッタン距離\n(Manhattan distance)",
+											"note": "または\ntaxicab distance\n\n19世紀\nヘルマン・ミンコフスキーによって考案\n",
+											"font-family": "sans-serif"
+										},
+										"children": []
+									},
+									{
+										"data": {
+											"id": "cpsngrk8i940",
+											"created": 1673774285246,
+											"text": "ユークリッド距離\n(Euclidean distance)",
+											"font-family": "sans-serif",
+											"note": "２点間の距離のこと\n",
+											"hyperlink": "https://kaikiblog.com/kyorikuukann/",
+											"hyperlinkTitle": "距離空間の定義と例"
+										},
+										"children": []
+									},
+									{
+										"data": {
+											"id": "cpsidzzevz40",
+											"created": 1673759962936,
+											"text": "チェビシェフ距離\n(Chebyshev distance)",
+											"font-family": "sans-serif",
+											"note": "または\nチェス盤距離(chessboard distance)\n\nパフヌティ・チェビシェフに由来する名称\n\n各座標の差(の絶対値)の最大値を2点間の距離とする\n"
+										},
+										"children": []
+									}
+								]
+							},
+							{
+								"data": {
+									"id": "cv8yq3kcog00",
+									"created": 1693711800368,
+									"text": "距離関数\n(distance function)",
+									"font-family": "sans-serif"
+								},
+								"children": [
+									{
+										"data": {
+											"id": "cv8xzhq4irs0",
+											"created": 1693709715360,
+											"text": "距離空間\n(metric space)",
+											"font-family": "sans-serif"
+										},
+										"children": []
+									}
+								]
+							}
+						]
+					},
+					{
+						"data": {
+							"id": "cut6hxxbisg0",
+							"created": 1692108770751,
+							"text": "位相幾何学\n(topology)",
+							"font-family": "sans-serif"
+						},
+						"children": [
+							{
+								"data": {
+									"id": "ctrn0iidba80",
+									"created": 1688296085519,
+									"text": "位相空間\n(topological space)",
+									"font-family": "sans-serif",
+									"hyperlink": "https://math.jp/wiki/%E4%BD%8D%E7%9B%B8%E7%A9%BA%E9%96%93%E8%AB%961%EF%BC%9A%E4%BD%8D%E7%9B%B8%E7%A9%BA%E9%96%93",
+									"hyperlinkTitle": "位相空間論1：位相空間"
+								},
+								"children": [
+									{
+										"data": {
+											"id": "ctsavfzbzv40",
+											"created": 1688363394832,
+											"text": "近傍\n(neighborhood)",
+											"font-family": "sans-serif",
+											"hyperlink": "https://wiis.info/math/metric-space/topology/neighbourhood/",
+											"hyperlinkTitle": "距離空間における点の近傍・近傍系"
+										},
+										"children": [
+											{
+												"data": {
+													"id": "cucxzf21eu00",
+													"created": 1690459790936,
+													"text": "触点\n(adherent point)",
+													"font-family": "sans-serif",
+													"note": "または\nclosure point\npoint of closure\ncontact point\n"
+												},
+												"children": [
+													{
+														"data": {
+															"id": "cu49c0al9sg0",
+															"created": 1689577770135,
+															"text": "集積点\n(accumulation point)",
+															"font-family": "sans-serif",
+															"hyperlink": "https://iwai-math-blog.com/index.php/kuwazugirai/",
+															"hyperlinkTitle": "ε近傍 | 近傍から集積点、そして閉集合へと理解を広げて【数直線のイメージは大切】"
+														},
+														"children": []
+													},
+													{
+														"data": {
+															"id": "cucxtd163ow0",
+															"created": 1690459316345,
+															"text": "孤立点\n(isolated point)",
+															"font-family": "sans-serif"
+														},
+														"children": []
+													}
+												]
+											}
+										]
+									},
+									{
+										"data": {
+											"id": "ctrn8yjvyyo0",
+											"created": 1688296747353,
+											"text": "開集合\n(open set)",
+											"hyperlink": "https://kaikiblog.com/openset_properties/",
+											"hyperlinkTitle": "開集合の定義と性質【距離空間】",
+											"font-family": "sans-serif"
+										},
+										"children": [
+											{
+												"data": {
+													"id": "cv0tsovshk00",
+													"created": 1692885418298,
+													"text": "開被覆\n(open cover)",
+													"font-family": "sans-serif",
+													"hyperlink": "https://zellij.hatenablog.com/entry/20120515/p1",
+													"hyperlinkTitle": "コンパクト性、開被覆"
+												},
+												"children": [
+													{
+														"data": {
+															"id": "ctwqkepc2ww0",
+															"created": 1688813907630,
+															"text": "コンパクト\n(compact)",
+															"hyperlink": "https://math-note.com/compact/",
+															"hyperlinkTitle": "数学におけるコンパクトとは何か",
+															"font-family": "sans-serif"
+														},
+														"children": [
+															{
+																"data": {
+																	"id": "cuxx77m89b40",
+																	"created": 1692590339636,
+																	"text": "点列コンパクト\n(sequentially compact)",
+																	"font-family": "sans-serif"
+																},
+																"children": []
+															}
+														]
+													}
+												]
+											}
+										]
+									},
+									{
+										"data": {
+											"id": "ctrn9fjw8i80",
+											"created": 1688296784359,
+											"text": "閉集合\n(closed set)",
+											"hyperlink": "https://teachamath.com/%e4%bd%8d%e7%9b%b8%e3%81%ab%e3%81%8a%e3%81%91%e3%82%8b%e9%96%89%e9%9b%86%e5%90%88%e3%80%81%e5%86%85%e9%83%a8%e3%80%81%e5%a4%96%e9%83%a8%e3%80%81%e5%a2%83%e7%95%8c%e3%80%81%e9%96%89%e5%8c%85/",
+											"hyperlinkTitle": "位相における閉集合、内部、外部、境界、閉包",
+											"font-family": "sans-serif"
+										},
+										"children": [
+											{
+												"data": {
+													"id": "ctwquwarrc00",
+													"created": 1688814729573,
+													"text": "閉包\n(closure)",
+													"font-family": "sans-serif",
+													"hyperlink": "https://www.sciencetime.jp/note/127",
+													"hyperlinkTitle": "内部、境界、閉包"
+												},
+												"children": [
+													{
+														"data": {
+															"id": "cuo28i3xq3s0",
+															"created": 1691588946822,
+															"text": "内部 / 開核\n(interior / open kernel)",
+															"font-family": "sans-serif"
+														},
+														"children": []
+													},
+													{
+														"data": {
+															"id": "cuo28l7tun40",
+															"created": 1691588953588,
+															"text": "境界\n(boundary / frontier)",
+															"font-family": "sans-serif"
+														},
+														"children": []
+													},
+													{
+														"data": {
+															"id": "cuo28o7e7uw0",
+															"created": 1691588960092,
+															"text": "外部\n(exterior)",
+															"font-family": "sans-serif"
+														},
+														"children": []
+													}
+												]
+											}
+										]
+									},
+									{
+										"data": {
+											"id": "cv9vefy2ifc0",
+											"created": 1693803983576,
+											"text": "分離公理\n(separation axioms)",
+											"font-family": "sans-serif"
+										},
+										"children": [
+											{
+												"data": {
+													"id": "cv9ufi0cqow0",
+													"created": 1693801245322,
+													"text": "ハウスドルフ空間\n(Hausdorff space)",
+													"font-family": "sans-serif",
+													"note": "または\n分離空間 (separated space)\n",
+													"hyperlink": "https://teachamath.com/%E3%83%8F%E3%82%A6%E3%82%B9%E3%83%89%E3%83%AB%E3%83%95%E7%A9%BA%E9%96%93/",
+													"hyperlinkTitle": "ハウスドルフ空間"
+												},
+												"children": []
+											}
+										]
+									},
+									{
+										"data": {
+											"id": "cum75bgdlew0",
+											"created": 1691399682880,
+											"text": "連結\n(connected)",
+											"font-family": "sans-serif"
+										},
+										"children": [
+											{
+												"data": {
+													"id": "cum7nkv5lg80",
+													"created": 1691401113920,
+													"text": "<--> 非連結\n(disconnected)",
+													"font-family": "sans-serif"
+												},
+												"children": []
+											},
+											{
+												"data": {
+													"id": "cum7npjezfs0",
+													"created": 1691401124094,
+													"text": "弧状連結\n(path connected)",
+													"font-family": "sans-serif"
+												},
+												"children": []
+											}
+										]
+									}
+								]
+							},
+							{
+								"data": {
+									"id": "cv7ed0skznc0",
+									"created": 1693552793447,
+									"text": "連続写像\n(continuous map)",
+									"font-family": "sans-serif",
+									"hyperlink": "https://minazumi.com/math/note/pre/ch02sec02.html",
+									"hyperlinkTitle": "2.2 連続写像"
+								},
+								"children": []
+							},
+							{
+								"data": {
+									"id": "cv44866x1u80",
+									"created": 1693219522407,
+									"text": "位相同型 / 同相\n(homeomorphic)",
+									"font-family": "sans-serif"
+								},
+								"children": []
+							},
+							{
+								"data": {
+									"id": "cv2yj5xuzk00",
+									"created": 1693101897249,
+									"text": "多様体\n(manifold)",
+									"font-family": "sans-serif",
+									"note": "\n0次元多様体\n(zero-dimensional manifold)\n= ただの点\n\n3次元多様体\n(three-dimensional manifold)\n\n分類定理\n(classification theorem)\n",
+									"hyperlink": "https://www.komazawa-u.ac.jp/~w3c/lecture/topology/",
+									"hyperlinkTitle": "Topology"
+								},
+								"children": [
+									{
+										"data": {
+											"id": "cv9u7o55u2w0",
+											"created": 1693800631760,
+											"text": "1次元多様体\n(one-dimensional manifold)",
+											"note": "●閉曲線 (closed curve)\n●弧 (arc)\n\n１次元多様体の分類\nhttps://yamyamtopo.wordpress.com/2015/09/17/%EF%BC%91%E6%AC%A1%E5%85%83%E5%A4%9A%E6%A7%98%E4%BD%93%E3%81%AE%E5%88%86%E9%A1%9E/\n",
+											"font-family": "sans-serif"
+										},
+										"children": []
+									},
+									{
+										"data": {
+											"id": "cvaz9u0robs0",
+											"created": 1693916466790,
+											"text": "2次元多様体\n(two-dimensional manifold / surface)",
+											"font-family": "sans-serif",
+											"hyperlink": "https://www.f-denshi.com/000TokiwaJPN/24manif/320fld.html",
+											"hyperlinkTitle": "２次元多様体の分類",
+											"note": "２次元多様体（2-manifold, surface）\nhttps://www.komazawa-u.ac.jp/~w3c/lecture/topology/2-manifold.html\n\n２次元多様体の分類\nhttps://www.f-denshi.com/000TokiwaJPN/24manif/320fld.html\n"
+										},
+										"children": []
+									}
+								]
+							}
+						]
+					}
+				]
+			},
+			{
+				"data": {
+					"id": "cu4zbjgfvpk0",
+					"created": 1689651082341,
+					"text": "代数学\n(algebra)",
+					"font-family": "sans-serif"
+				},
+				"children": [
+					{
+						"data": {
+							"id": "cuilrzdyks80",
+							"created": 1691034714701,
+							"text": "方程式\n(equation)",
+							"font-family": "sans-serif",
+							"note": "●次数 (degree)\n●定数項 (constant term)\n"
+						},
+						"children": [
+							{
+								"data": {
+									"id": "cuyqyxiwp940",
+									"created": 1692674324052,
+									"text": "整式\n(polynomial)",
+									"font-family": "sans-serif"
+								},
+								"children": [
+									{
+										"data": {
+											"id": "cul73kicfco0",
+											"created": 1691297985905,
+											"text": "単項式\n(monomial)",
+											"font-family": "sans-serif",
+											"hyperlink": "https://goukaku-suppli.com/archives/43182",
+											"hyperlinkTitle": "【3分で分かる！】単項式とは？単項式とその次数・係数などについてわかりやすく"
+										},
+										"children": []
+									},
+									{
+										"data": {
+											"id": "cul73o0jhp40",
+											"created": 1691297993536,
+											"text": "多項式\n(polynomial)",
+											"font-family": "sans-serif"
+										},
+										"children": [
+											{
+												"data": {
+													"id": "cv2j4n96wfc0",
+													"created": 1693058442829,
+													"text": "対称式\n(symmetric polynomial)",
+													"font-family": "sans-serif",
+													"note": "\n【数学Ⅰ】対称式の基本と因数分解など全問題\nhttps://rikeilabo.com/Symmetric-formula\n"
+												},
+												"children": []
+											},
+											{
+												"data": {
+													"id": "cv2j4q3p6aw0",
+													"created": 1693058449027,
+													"text": "交代式\n(alternating polynomial)",
+													"font-family": "sans-serif"
+												},
+												"children": []
+											},
+											{
+												"data": {
+													"id": "cul747lzfzs0",
+													"created": 1691298036191,
+													"text": "二次形式\n(quadratic form)",
+													"font-family": "sans-serif",
+													"hyperlink": "https://bkbkb.net/articles/quadratic-form",
+													"hyperlinkTitle": "二次形式とは？そして標準化する"
+												},
+												"children": []
+											}
+										]
+									}
+								]
+							},
+							{
+								"data": {
+									"id": "ctusjx46br40",
+									"created": 1688616391651,
+									"text": "平方完成\n(completing the square)",
+									"font-family": "sans-serif",
+									"note": "【2次方程式】解の公式証明(平方完成の式)\nhttps://denheki-suri.com/solution-formula-proof/\n",
+									"hyperlink": "https://suuhaji.com/complete-square/",
+									"hyperlinkTitle": "”平方完成”の意味や手順・やり方について ※解の公式や判別式より重要です"
+								},
+								"children": []
+							}
+						]
+					},
+					{
+						"data": {
+							"id": "cu6666u55mw0",
+							"created": 1689771970776,
+							"text": "代数的構造\n(algebraic structure)",
+							"font-family": "sans-serif",
+							"hyperlink": "https://suzume-world.com/2020/11/17/1/",
+							"hyperlinkTitle": "「代数的構造」の紹介",
+							"note": "\n代数的構造の関係を図示してみた（マグマ、半群、モノイド、群、アーベル群、環、可換環、整域、体）\nhttps://keito.luxe/2020/01/25/algebra/\n"
+						},
+						"children": [
+							{
+								"data": {
+									"id": "cu4zjrdttw80",
+									"created": 1689651726510,
+									"text": "二項演算\n(binary operation)",
+									"font-family": "sans-serif"
+								},
+								"children": [
+									{
+										"data": {
+											"id": "cu66ekia1mo0",
+											"created": 1689772627447,
+											"text": "結合法則 (associative law)",
+											"font-family": "sans-serif",
+											"hyperlink": "https://mathwords.net/koukanhousoku",
+											"hyperlinkTitle": "交換法則、結合法則、分配法則"
+										},
+										"children": []
+									},
+									{
+										"data": {
+											"id": "cu66eomu1b40",
+											"created": 1689772636430,
+											"text": "交換法則 (commutative law)",
+											"font-family": "sans-serif"
+										},
+										"children": []
+									},
+									{
+										"data": {
+											"id": "cu66es0fgsg0",
+											"created": 1689772643782,
+											"text": "分配法則 (distributive law)",
+											"font-family": "sans-serif",
+											"hyperlink": "https://iwai-math-blog.com/index.php/bunnpairitsu/",
+											"hyperlinkTitle": "分配律 | m個で成立する理由をつかむ【証明で何を使うか】"
+										},
+										"children": []
+									},
+									{
+										"data": {
+											"id": "cu7uiuiiakg0",
+											"created": 1689942229280,
+											"text": "\"閉じている\" (closed)",
+											"font-family": "sans-serif",
+											"hyperlink": "https://opencourse.doshisha.ac.jp/bj01/math-intro/PC/number1.html",
+											"hyperlinkTitle": "数集合と演算"
+										},
+										"children": []
+									}
+								]
+							},
+							{
+								"data": {
+									"id": "cu6688srork0",
+									"created": 1689772131775,
+									"text": "マグマ / 亜群\n(magma / groupoid)",
+									"font-family": "sans-serif",
+									"hyperlink": "https://math2.work/groupoid-and-ring/",
+									"hyperlinkTitle": "代数的構造：亜群（groupoid）（マグマとも）と環など"
+								},
+								"children": [
+									{
+										"data": {
+											"id": "cu668h3lrj40",
+											"created": 1689772149845,
+											"text": "半群\n(semigroup)",
+											"font-family": "sans-serif"
+										},
+										"children": [
+											{
+												"data": {
+													"id": "cu668nm30gg0",
+													"created": 1689772164023,
+													"text": "モノイド\n(monoid)",
+													"font-family": "sans-serif",
+													"hyperlink": "https://suzume-world.com/2021/04/03/%E5%8D%8A%E7%BE%A4%E3%83%BB%E3%83%A2%E3%83%8E%E3%82%A4%E3%83%89%E3%81%AE%E5%AE%9A%E7%BE%A9/",
+													"hyperlinkTitle": "半群・モノイドの定義"
+												},
+												"children": [
+													{
+														"data": {
+															"id": "ctvjis5lhzs0",
+															"created": 1688692472457,
+															"text": "群\n(group)",
+															"font-family": "sans-serif",
+															"hyperlink": "https://math-note.xyz/algebra/basics-of-algebra/",
+															"hyperlinkTitle": "代数学の基本｜群・環・体の定義と具体例をゼロから解説"
+														},
+														"children": [
+															{
+																"data": {
+																	"id": "ctvjk7uj0r40",
+																	"created": 1688692584980,
+																	"text": "環\n(ring)",
+																	"font-family": "sans-serif"
+																},
+																"children": [
+																	{
+																		"data": {
+																			"id": "cu7u5xavnwo0",
+																			"created": 1689941216615,
+																			"text": "整域\n(integral domain)",
+																			"font-family": "sans-serif",
+																			"hyperlink": "https://math-notes.info/2021/03/15/ring-2/",
+																			"hyperlinkTitle": "整域と体 (環論)"
+																		},
+																		"children": [
+																			{
+																				"data": {
+																					"id": "ctvjkhw92so0",
+																					"created": 1688692606852,
+																					"text": "体\n(field)",
+																					"font-family": "sans-serif"
+																				},
+																				"children": []
+																			}
+																		]
+																	}
+																]
+															}
+														]
+													}
+												]
+											},
+											{
+												"data": {
+													"id": "cuzwkjn6ymo0",
+													"created": 1692791683354,
+													"text": "半束\n(semilattice)",
+													"font-family": "sans-serif"
+												},
+												"children": [
+													{
+														"data": {
+															"id": "ctvjm85mwug0",
+															"created": 1688692742380,
+															"text": "束\n(lattice)",
+															"font-family": "sans-serif"
+														},
+														"children": []
+													}
+												]
+											}
+										]
+									}
+								]
+							},
+							{
+								"data": {
+									"id": "ctv29hey3600",
+									"created": 1688643784932,
+									"text": "群論\n(group theory)",
+									"font-family": "sans-serif",
+									"hyperlink": "http://sss.sci.ibaraki.ac.jp/teaching/group/gr2008.pdf",
+									"hyperlinkTitle": "群論入門これだけ"
+								},
+								"children": [
+									{
+										"data": {
+											"id": "cukic59igvs0",
+											"created": 1691228130249,
+											"text": "群の位数\n(order)",
+											"hyperlink": "http://hooktail.sub.jp/algebra/GroupBasic/",
+											"hyperlinkTitle": "群について基本的なこと",
+											"font-family": "sans-serif",
+											"expandState": "expand"
+										},
+										"children": [
+											{
+												"data": {
+													"id": "cv0r62dui1s0",
+													"created": 1692878003092,
+													"text": "有限群\n(finite group)",
+													"font-family": "sans-serif"
+												},
+												"children": [
+													{
+														"data": {
+															"id": "cuyswjbneao0",
+															"created": 1692679778629,
+															"text": "ラグランジュの定理\n(Lagrange's theorem)",
+															"font-family": "sans-serif",
+															"note": "\n有限群の部分群について、位数はもとの位数の約数になる\n\nラグランジュの定理 | 有限群の位数についての定理\nhttps://iwai-math-blog.com/index.php/ragurannjunoteiri-lagrange-theorem/\n",
+															"expandState": "expand"
+														},
+														"children": [
+															{
+																"data": {
+																	"id": "cvfvgzvp0q80",
+																	"created": 1694413543436,
+																	"text": "元の位数\n(order)",
+																	"font-family": "sans-serif",
+																	"hyperlink": "https://math-notes.info/2022/02/13/group-4/",
+																	"hyperlinkTitle": "位数 (群論)"
+																},
+																"children": []
+															}
+														]
+													},
+													{
+														"data": {
+															"id": "cv51o8hz67k0",
+															"created": 1693313877883,
+															"text": "コーシーの定理\n(Cauchy's theorem)",
+															"font-family": "sans-serif",
+															"note": "\n群論：Cauchyの定理\nhttp://blog.livedoor.jp/ron1827-algebras/archives/82462382.html\n\n有限群のおもちゃ箱(3)Cauchyの定理と位数2pの群\nhttp://blog.livedoor.jp/ron1827-algebras/archives/85455236.html\n"
+														},
+														"children": [
+															{
+																"data": {
+																	"id": "cuysr7mk6ig0",
+																	"created": 1692679361347,
+																	"text": "シローの定理\n(Sylow's theorem)",
+																	"font-family": "sans-serif"
+																},
+																"children": []
+															}
+														]
+													}
+												]
+											}
+										]
+									},
+									{
+										"data": {
+											"id": "cui0vowitig0",
+											"created": 1690975762027,
+											"text": "部分群\n(subgroup)",
+											"font-family": "sans-serif",
+											"hyperlink": "https://for-spring.com/algebra/group-2/",
+											"hyperlinkTitle": "「部分群とは？」「生成系とは？」「正規部分群とは？」丁寧に解説！【代数学の基礎シリーズ】群論編 その2"
+										},
+										"children": [
+											{
+												"data": {
+													"id": "cui10pkxbz40",
+													"created": 1690976155323,
+													"text": "剰余類 / 傍系\n(residue class / coset)",
+													"font-family": "sans-serif",
+													"hyperlink": "https://hooktail.sub.jp/algebra/Remainder/",
+													"hyperlinkTitle": "剰余類"
+												},
+												"children": [
+													{
+														"data": {
+															"id": "cui5z7nulp40",
+															"created": 1690990143504,
+															"text": "左剰余類\n(left coset)",
+															"font-family": "sans-serif"
+														},
+														"children": []
+													},
+													{
+														"data": {
+															"id": "cui5zb6774w0",
+															"created": 1690990151143,
+															"text": "右剰余類\n(right coset)",
+															"font-family": "sans-serif"
+														},
+														"children": []
+													}
+												]
+											},
+											{
+												"data": {
+													"id": "cuil8gjqwl40",
+													"created": 1691033184773,
+													"text": "正規部分群\n(normal subgroup)",
+													"font-family": "sans-serif"
+												},
+												"children": []
+											}
+										]
+									},
+									{
+										"data": {
+											"id": "cuki78ksh940",
+											"created": 1691227745641,
+											"text": "可換群 / アーベル群\n(commutative group / abelian group)",
+											"font-family": "sans-serif",
+											"hyperlink": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%BC%E3%83%99%E3%83%AB%E7%BE%A4",
+											"hyperlinkTitle": "アーベル群",
+											"note": "abelian が大文字でない件はリンク先の記事を参照\n"
+										},
+										"children": [
+											{
+												"data": {
+													"id": "cuxzp97j7y80",
+													"created": 1692597395876,
+													"text": "巡回群\n(cyclic group)",
+													"font-family": "sans-serif",
+													"hyperlink": "http://proofcafe.org/k27c8/math/math/group/page/cyclic_group/",
+													"hyperlinkTitle": "巡回群",
+													"expandState": "expand"
+												},
+												"children": []
+											}
+										]
+									},
+									{
+										"data": {
+											"id": "cuil8qj55940",
+											"created": 1691033206504,
+											"text": "単純群\n(simple group)",
+											"font-family": "sans-serif"
+										},
+										"children": []
+									},
+									{
+										"data": {
+											"id": "cumbao5s0740",
+											"created": 1691411386798,
+											"text": "準同型\n(homomorphism)",
+											"font-family": "sans-serif",
+											"note": "準同型写像・同型写像の定義と基本的な性質【群・環・体】\nhttps://mathlandscape.com/homomorphism/\n"
+										},
+										"children": [
+											{
+												"data": {
+													"id": "cumbas01oag0",
+													"created": 1691411395159,
+													"text": "同型\n(isomorphism)",
+													"font-family": "sans-serif"
+												},
+												"children": []
+											}
+										]
+									}
+								]
+							},
+							{
+								"data": {
+									"id": "cuxanhmhde00",
+									"created": 1692526729718,
+									"text": "環論\n(ring theory)",
+									"font-family": "sans-serif",
+									"hyperlink": "https://www.lab.twcu.ac.jp/~oaku/algebra.pdf",
+									"hyperlinkTitle": "環と加群の基礎"
+								},
+								"children": [
+									{
+										"data": {
+											"id": "cuy3kr2y2s80",
+											"created": 1692608327400,
+											"text": "部分環\n(subring)",
+											"font-family": "sans-serif"
+										},
+										"children": []
+									},
+									{
+										"data": {
+											"id": "cuy0ee36yu00",
+											"created": 1692599365602,
+											"text": "可換環\n(commutative ring)",
+											"font-family": "sans-serif"
+										},
+										"children": [
+											{
+												"data": {
+													"id": "cuy3aox2l8w0",
+													"created": 1692607539049,
+													"text": "<--> 非可換環\n(noncommutative ring)",
+													"font-family": "sans-serif"
+												},
+												"children": []
+											},
+											{
+												"data": {
+													"id": "cv37ksd942o0",
+													"created": 1693127414423,
+													"text": "加群\n(module)",
+													"font-family": "sans-serif",
+													"hyperlink": "https://limnanthaceae.hatenablog.com/entry/2020/12/27/210000",
+													"hyperlinkTitle": "加群の定義【環上の加群 1】"
+												},
+												"children": []
+											},
+											{
+												"data": {
+													"id": "cv2go3ied400",
+													"created": 1693051503803,
+													"text": "素イデアル\n(prime ideal)",
+													"font-family": "sans-serif",
+													"hyperlink": "https://math-notes.info/2021/04/21/ring-9/",
+													"hyperlinkTitle": "素イデアルと極大イデアル (環論)"
+												},
+												"children": [
+													{
+														"data": {
+															"id": "cv2go3yyosg0",
+															"created": 1693051504805,
+															"text": "極大イデアル\n(maximal ideal)",
+															"font-family": "sans-serif"
+														},
+														"children": []
+													}
+												]
+											}
+										]
+									},
+									{
+										"data": {
+											"id": "cuxaocogdgw0",
+											"created": 1692526797318,
+											"text": "イデアル\n(ideal)",
+											"font-family": "sans-serif",
+											"hyperlink": "https://keito.luxe/2021/01/20/ideal/",
+											"hyperlinkTitle": "イデアルとは何か。定義と例と発展的なイデアルの紹介"
+										},
+										"children": [
+											{
+												"data": {
+													"id": "cuy3lagpuuw0",
+													"created": 1692608369591,
+													"text": "左イデアル\n(left ideal)",
+													"font-family": "sans-serif"
+												},
+												"children": []
+											},
+											{
+												"data": {
+													"id": "cuy3ldr4gio0",
+													"created": 1692608376751,
+													"text": "右イデアル\n(right ideal)",
+													"font-family": "sans-serif"
+												},
+												"children": []
+											},
+											{
+												"data": {
+													"id": "cuy3lh0hk3c0",
+													"created": 1692608383847,
+													"text": "両側イデアル\n(two–sided ideal)",
+													"font-family": "sans-serif"
+												},
+												"children": [
+													{
+														"data": {
+															"id": "cuy3lre8ktc0",
+															"created": 1692608406447,
+															"text": "商環 / 剰余環\n(quotient ring / factor ring)",
+															"font-family": "sans-serif"
+														},
+														"children": []
+													}
+												]
+											}
+										]
+									}
+								]
+							},
+							{
+								"data": {
+									"id": "cuzwjzehhn40",
+									"created": 1692791639291,
+									"text": "束論\n(lattice theory)",
+									"font-family": "sans-serif",
+									"hyperlink": "https://www.cs-study.com/koga/lattice/index.html",
+									"hyperlinkTitle": "束論を勉強しよう (Let's Study Lattice Theory)"
+								},
+								"children": [
+									{
+										"data": {
+											"id": "cujeuy818w80",
+											"created": 1691116759445,
+											"text": "交わり (meet)",
+											"font-family": "sans-serif"
+										},
+										"children": []
+									},
+									{
+										"data": {
+											"id": "cujev18m6hk0",
+											"created": 1691116766011,
+											"text": "結び (join)",
+											"font-family": "sans-serif"
+										},
+										"children": []
+									}
+								]
+							}
+						]
+					}
+				]
+			},
+			{
+				"data": {
+					"id": "ctvk0vuoh5k0",
+					"created": 1688693891059,
+					"text": "圏論\n(category theory)",
+					"note": "\n圏論\nhttp://alg-d.com/math/kan_extension/\n\nプログラマーのための圏論 (初級編：圏論とHaskell)\nhttps://bitterharvest.hatenablog.com/archive/category/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9E%E3%83%BC%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E5%9C%8F%E8%AB%96%20%28%E5%88%9D%E7%B4%9A%E7%B7%A8%EF%BC%9A%E5%9C%8F%E8%AB%96%E3%81%A8Haskell%29\n",
+					"font-family": "sans-serif",
+					"hyperlink": "https://nagoya.repo.nii.ac.jp/record/30360/files/tanimura-category.pdf",
+					"hyperlinkTitle": "物理学者のための圏論入門"
+				},
+				"children": [
+					{
+						"data": {
+							"id": "cuaxpj5cim80",
+							"created": 1690255896289,
+							"text": "圏\n(category)",
+							"font-family": "sans-serif",
+							"hyperlink": "https://ja.wikipedia.org/wiki/%E5%9C%8F_(%E6%95%B0%E5%AD%A6)",
+							"hyperlinkTitle": "圏 (数学)"
+						},
+						"children": [
+							{
+								"data": {
+									"id": "cufyumxzv0o0",
+									"created": 1690766917265,
+									"text": "対象\n(object)",
+									"font-family": "sans-serif"
+								},
+								"children": [
+									{
+										"data": {
+											"id": "cug5rdief8g0",
+											"created": 1690786409408,
+											"text": "始域\n(domain)",
+											"font-family": "sans-serif"
+										},
+										"children": [
+											{
+												"data": {
+													"id": "cug5rgcwag00",
+													"created": 1690786415606,
+													"text": "<--> 終域\n(codomain)",
+													"font-family": "sans-serif"
+												},
+												"children": []
+											}
+										]
+									}
+								]
+							},
+							{
+								"data": {
+									"id": "cufyodljqu80",
+									"created": 1690766426737,
+									"text": "射\n(arrow / morphism)",
+									"font-family": "sans-serif"
+								},
+								"children": [
+									{
+										"data": {
+											"id": "cujlmbwmxjs0",
+											"created": 1691135831723,
+											"text": "恒等射 (identity arrow)",
+											"font-family": "sans-serif"
+										},
+										"children": []
+									},
+									{
+										"data": {
+											"id": "cujlmf8hozs0",
+											"created": 1691135838970,
+											"text": "合成射 (composite)",
+											"font-family": "sans-serif",
+											"note": "●可換図式\n(commutative diagram)\n\n可換図式\nhttps://dic.nicovideo.jp/a/%E5%8F%AF%E6%8F%9B%E5%9B%B3%E5%BC%8F\n\n圏を可換図式で定義したい\nhttps://mathlog.info/articles/942\n\n●ファイバー積 / 引き戻し\n(fibered product / pullback)\n\n圏論「引き戻し」と「積」の関係\nhttp://math.artet.net/?eid=1422467\n"
+										},
+										"children": []
+									},
+									{
+										"data": {
+											"id": "cv31xv211wg0",
+											"created": 1693111512349,
+											"text": "モノ射\n(monomorphism / monic morphism)",
+											"font-family": "sans-serif",
+											"note": "左簡約可能(left cancelable)\n「単射」にあたる\n\nモノとエピを深める1\nhttps://ameblo.jp/karaokegurui/entry-12626251273.html\n\n"
+										},
+										"children": []
+									},
+									{
+										"data": {
+											"id": "cv31xykhqyg0",
+											"created": 1693111519996,
+											"text": "エピ射\n(epimorphism / epic morphism)",
+											"font-family": "sans-serif",
+											"note": "右簡約可能(right cancelable)\n「全射」にあたる\n"
+										},
+										"children": []
+									},
+									{
+										"data": {
+											"id": "cv6qizompso0",
+											"created": 1693485554578,
+											"text": "Hom集合\n(hom-set)",
+											"font-family": "sans-serif",
+											"hyperlink": "https://ameblo.jp/karaokegurui/entry-12572209284.html",
+											"hyperlinkTitle": "圏論の簡単な入門1"
+										},
+										"children": [
+											{
+												"data": {
+													"id": "cv6qqrujx0g0",
+													"created": 1693486164435,
+													"text": "小圏\n(small category)",
+													"font-family": "sans-serif"
+												},
+												"children": [
+													{
+														"data": {
+															"id": "cvey9oqk2sg0",
+															"created": 1694319874005,
+															"text": "<--> 大きい圏\n(large category)",
+															"font-family": "sans-serif"
+														},
+														"children": [
+															{
+																"data": {
+																	"id": "cv6qr0i9kiw0",
+																	"created": 1693486183283,
+																	"text": "局所小圏\n(locally small category)",
+																	"font-family": "sans-serif"
+																},
+																"children": []
+															}
+														]
+													}
+												]
+											}
+										]
+									},
+									{
+										"data": {
+											"id": "cv6qrmq6qag0",
+											"created": 1693486231651,
+											"text": "普遍性\n(universal property / universality)",
+											"font-family": "sans-serif"
+										},
+										"children": [
+											{
+												"data": {
+													"id": "cv3220dm4vc0",
+													"created": 1693111837390,
+													"text": "始対象\n(initial object / coterminal object)",
+													"font-family": "sans-serif",
+													"hyperlink": "https://bitterharvest.hatenablog.com/entry/2016/12/31/220930",
+													"hyperlinkTitle": "圏論での積と余積―終対象と始対象"
+												},
+												"children": [
+													{
+														"data": {
+															"id": "cv3227cv0ds0",
+															"created": 1693111852582,
+															"text": "<--> 終対象\n(final object / terminal object)",
+															"font-family": "sans-serif"
+														},
+														"children": []
+													}
+												]
+											}
+										]
+									}
+								]
+							},
+							{
+								"data": {
+									"id": "cvfoz011eeg0",
+									"created": 1694395206545,
+									"text": "未整理",
+									"font-family": "sans-serif",
+									"background": "#eaf1dd",
+									"expandState": "collapse"
+								},
+								"children": [
+									{
+										"data": {
+											"id": "cvfozl1er8g0",
+											"created": 1694395252280,
+											"text": "反対圏 / 双対圏 / 逆圏\n(opposite category / dual category)",
+											"font-family": "sans-serif",
+											"note": "射の向きを逆にした圏\n"
+										},
+										"children": []
+									},
+									{
+										"data": {
+											"id": "cvfpqnnlro80",
+											"created": 1694397373808,
+											"text": "コンマ圏\n(comma category)",
+											"font-family": "sans-serif"
+										},
+										"children": [
+											{
+												"data": {
+													"id": "cvfpr5gr2cg0",
+													"created": 1694397412576,
+													"text": "スライス圏\n(slice category)",
+													"font-family": "sans-serif"
+												},
+												"children": []
+											}
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"data": {
+							"id": "cuaxpmm4rxk0",
+							"created": 1690255903834,
+							"text": "関手\n(functor)",
+							"font-family": "sans-serif",
+							"note": "圏Cにおける (始域, 射, 終域) を\n圏Dに移す手段\n\n●Hom関手\n圏論への入門 Hom 関手について\nhttps://blog.foresta.me/posts/learn-category-theory-06/\n",
+							"hyperlink": "https://bitterharvest.hatenablog.com/entry/2017/02/16/091551",
+							"hyperlinkTitle": "関手ー定義"
+						},
+						"children": [
+							{
+								"data": {
+									"id": "cukj37qi0xk0",
+									"created": 1691230251463,
+									"text": "共変関手\n(covariant functor)",
+									"font-family": "sans-serif"
+								},
+								"children": []
+							},
+							{
+								"data": {
+									"id": "cukj3ajbajk0",
+									"created": 1691230257558,
+									"text": "反変関手\n(contravariant functor)",
+									"font-family": "sans-serif"
+								},
+								"children": []
+							},
+							{
+								"data": {
+									"id": "cuo1jts4azk0",
+									"created": 1691587013125,
+									"text": "随伴\n(adjunction)",
+									"note": "数学者じゃない人が圏論を学ぶ時の勘どころ　その２　ー　圏論における図の書き順について\nhttps://note.com/nao_tsuchiya/n/nfd406d6d530a\n",
+									"font-family": "sans-serif"
+								},
+								"children": []
+							}
+						]
+					},
+					{
+						"data": {
+							"id": "cuaxpq2dujk0",
+							"created": 1690255911347,
+							"text": "自然変換\n(natural transformation)",
+							"font-family": "sans-serif",
+							"hyperlink": "https://gihyo.jp/science/serial/01/category_theory_report/0002",
+							"hyperlinkTitle": "圏論の三つの根本概念 「圏」「関手」「自然変換」"
+						},
+						"children": []
+					}
+				]
+			},
+			{
+				"data": {
+					"id": "cq4lvest1qo0",
+					"created": 1674988510189,
+					"text": "線形代数\n(linear algebra)",
+					"font-family": "sans-serif",
+					"hyperlink": "https://www.slideshare.net/SEGADevTech/ss-249343092",
+					"hyperlinkTitle": "基礎線形代数講座",
+					"note": "琉球大学理学部講義「物理数学 I」\nhttp://irobutsu.a.la9.jp/kougi/linalg2021/bs1.pdf\n"
+				},
+				"children": [
+					{
+						"data": {
+							"id": "cpsjjzrygtc0",
+							"created": 1673763253780,
+							"text": "テンソル\n(tensor)",
+							"font-family": "sans-serif",
+							"hyperlink": "https://aizine.ai/tensor-0917/",
+							"hyperlinkTitle": "機械学習で使う数学を学ぶなら覚えておこう！「テンソル」とは"
+						},
+						"children": [
+							{
+								"data": {
+									"id": "cq1216w5n2o0",
+									"created": 1674627861094,
+									"text": "0次元：スカラー\n(scalar)",
+									"font-family": "sans-serif",
+									"hyperlink": "https://ja.wikipedia.org/wiki/%E3%82%B9%E3%82%AB%E3%83%A9%E3%83%BC_(%E6%95%B0%E5%AD%A6)",
+									"hyperlinkTitle": "スカラー (数学)"
+								},
+								"children": []
+							},
+							{
+								"data": {
+									"id": "cq121uwn1pc0",
+									"created": 1674627913366,
+									"text": "1次元：ベクトル\n(vector)",
+									"font-family": "sans-serif"
+								},
+								"children": [
+									{
+										"data": {
+											"id": "cphmu78p77k0",
+											"created": 1672655357478,
+											"text": "内積\n(inner product)",
+											"note": "\n(A・B 内積) \n= (Aの大きさ)(Bの大きさ)(cos(θ))\n\n(a1,a2)・(b1,b2) = a1b1 + a2b2\n\n証明\nhttps://web.math-aquarium.jp/syoumei-naisekitoseibunn.pdf\n",
+											"font-family": "sans-serif",
+											"hyperlink": "https://www.simulationroom999.com/blog/basics-of-linear-algebra/",
+											"hyperlinkTitle": "【入門】線形代数の基礎【数値計算】"
+										},
+										"children": [
+											{
+												"data": {
+													"id": "cut649qclnk0",
+													"created": 1692107699352,
+													"text": "直交\n(orthogonality)",
+													"font-family": "sans-serif",
+													"hyperlink": "https://oguemon.com/study/linear-algebra/orthogonal/",
+													"hyperlinkTitle": "【線形空間編】ベクトルの内積と直交"
+												},
+												"children": []
+											},
+											{
+												"data": {
+													"id": "cut64wa9pts0",
+													"created": 1692107748446,
+													"text": "コーシー=シュワルツの不等式\n(Cauchy-Schwarz's inequality)",
+													"font-family": "sans-serif",
+													"hyperlink": "https://mathematicsgarden.com/cschwarz/",
+													"hyperlinkTitle": "コーシー・シュワルツの不等式：証明",
+													"note": "【証明】コーシー・シュワルツの不等式と三角不等式\nhttps://wakame-msds.com/cs_triangle-inequality/\n"
+												},
+												"children": [
+													{
+														"data": {
+															"id": "cv8y6bdyn680",
+															"created": 1693710250113,
+															"text": "三角不等式\n(triangle inequality)",
+															"font-family": "sans-serif",
+															"hyperlink": "https://math-note.com/summary-of-triangle-inequality/",
+															"hyperlinkTitle": "当たり前のようだけど超役に立つ!三角不等式のまとめ"
+														},
+														"children": [
+															{
+																"data": {
+																	"id": "ctyb5678i0g0",
+																	"created": 1688973516923,
+																	"text": "劣加法性\n(subadditivity)",
+																	"font-family": "sans-serif",
+																	"hyperlink": "https://www.wikiwand.com/ja/%E5%8A%A3%E5%8A%A0%E6%B3%95%E7%9A%84%E5%87%BD%E6%95%B0",
+																	"hyperlinkTitle": "劣加法性"
+																},
+																"children": []
+															}
+														]
+													}
+												]
+											},
+											{
+												"data": {
+													"id": "cut49et0jts0",
+													"created": 1692102459998,
+													"text": "内積空間\n(inner product space)",
+													"font-family": "sans-serif"
+												},
+												"children": [
+													{
+														"data": {
+															"id": "cut49rix0rk0",
+															"created": 1692102487686,
+															"text": "ヒルベルト空間\n(Hilbert space)",
+															"font-family": "sans-serif",
+															"note": "内積空間 + 完備性\n\nヒルベルト空間の備忘録\nhttps://physics-memorandum.hatenadiary.jp/entry/2021/01/02/171352\n"
+														},
+														"children": []
+													}
+												]
+											},
+											{
+												"data": {
+													"id": "cut4hyhdow00",
+													"created": 1692103129744,
+													"text": "ノルム\n(norm)",
+													"font-family": "sans-serif",
+													"note": "自分自身との内積\n"
+												},
+												"children": [
+													{
+														"data": {
+															"id": "cut4aog15uo0",
+															"created": 1692102559345,
+															"text": "ノルム空間\n(normed vector space)",
+															"font-family": "sans-serif"
+														},
+														"children": [
+															{
+																"data": {
+																	"id": "cut4b0fydag0",
+																	"created": 1692102585462,
+																	"text": "バナッハ空間\n(Banach space)",
+																	"note": "ノルム空間 + 完備性\n",
+																	"font-family": "sans-serif"
+																},
+																"children": []
+															}
+														]
+													}
+												]
+											}
+										]
+									},
+									{
+										"data": {
+											"id": "cu5dqib55fc0",
+											"created": 1689691750845,
+											"text": "外積\n(outer product)",
+											"font-family": "sans-serif",
+											"note": "(A×B) \n= (Aの大きさ)(Bの大きさ)(sin(θ))\n\n【ベクトル編】内積と外積を画像付きで徹底解説！\nhttps://oguemon.com/study/linear-algebra/inner-and-cross-product/\n\n外積について\nhttps://eman-physics.net/electromag/product.html\n\nベクトルの外積\nhttps://jfor.net/gaiseki/\n\n▼導出\nベクトルの内積（スカラー積）と外積（ベクトル積）の成分表示\nhttp://fnorio.com/0126scalar_vector_product/scalar_vector_product.html\n",
+											"hyperlink": "https://diracphysics.com/portfolio/physicalmath/S3/pouterproduct.html",
+											"hyperlinkTitle": "外積とその諸性質"
+										},
+										"children": []
+									},
+									{
+										"data": {
+											"id": "cty23x7tygg0",
+											"created": 1688948029015,
+											"text": "ベクトル空間\n(vector space)",
+											"font-family": "sans-serif",
+											"hyperlink": "https://ja.wikipedia.org/wiki/%E3%83%99%E3%82%AF%E3%83%88%E3%83%AB%E7%A9%BA%E9%96%93",
+											"hyperlinkTitle": "ベクトル空間",
+											"note": "ベクトル空間とは？分かりやすく解説します！\nhttps://www.krrk0.com/bekutorukuukan/\n"
+										},
+										"children": [
+											{
+												"data": {
+													"id": "ctxjndpd9hs0",
+													"created": 1688895952735,
+													"text": "部分空間\n(subspace)",
+													"font-family": "sans-serif",
+													"hyperlink": "https://mathwords.net/bubunkukan",
+													"hyperlinkTitle": "部分空間の定義と、部分空間であることの証明"
+												},
+												"children": []
+											},
+											{
+												"data": {
+													"id": "ctxju5w3qhs0",
+													"created": 1688896484277,
+													"text": "一次独立 / 線型独立\n(linearly independent)",
+													"font-family": "sans-serif",
+													"hyperlink": "https://www.krrk0.com/primary-independenceprimary-subordination/",
+													"hyperlinkTitle": "一次独立・一次従属って何？定義と判定方法を分かりやすく解説！"
+												},
+												"children": [
+													{
+														"data": {
+															"id": "ctxk3i0ljco0",
+															"created": 1688897215947,
+															"text": "<--> 線型従属\n(linearly dependent)",
+															"font-family": "sans-serif"
+														},
+														"children": []
+													},
+													{
+														"data": {
+															"id": "ctxkerbris80",
+															"created": 1688898098221,
+															"text": "基底\n(basis) ",
+															"font-family": "sans-serif",
+															"hyperlink": "https://mathwords.net/kitei",
+															"hyperlinkTitle": "線形代数における基底と次元の意味と求め方"
+														},
+														"children": [
+															{
+																"data": {
+																	"id": "cty1p6sluzc0",
+																	"created": 1688946874400,
+																	"text": " 正規直交基底\n(orthonormal basis)",
+																	"font-family": "sans-serif",
+																	"hyperlink": "https://linky-juku.com/orthonormal-basis/",
+																	"hyperlinkTitle": "正規直交基底とグラム・シュミットの直交化法をわかりやすく"
+																},
+																"children": []
+															},
+															{
+																"data": {
+																	"id": "cty28jnj4zc0",
+																	"created": 1688948391310,
+																	"text": "次元\n(dimension)",
+																	"font-family": "sans-serif",
+																	"note": "基底をなすベクトルの個数が一定であることの証明\nhttps://math-note.xyz/linear-algebra/basics-of-linear-algebra/dimension-of-linear-subspace/#toc10\n"
+																},
+																"children": []
+															}
+														]
+													}
+												]
+											}
+										]
+									}
+								]
+							},
+							{
+								"data": {
+									"id": "cpd5kwsdqbc0",
+									"created": 1672200430751,
+									"text": "2次元：行列\n(matrix)",
+									"font-family": "sans-serif"
+								},
+								"children": [
+									{
+										"data": {
+											"id": "cq5zc2ar3eo0",
+											"created": 1675128049552,
+											"text": "行列の種類",
+											"font-family": "sans-serif",
+											"hyperlink": "https://mathlandscape.com/matrixes/",
+											"hyperlinkTitle": "さまざまな行列48個一覧",
+											"background": "#eaf1dd"
+										},
+										"children": [
+											{
+												"data": {
+													"id": "cr29299rd9k0",
+													"created": 1678405410800,
+													"text": "正方行列\n(square matrix)",
+													"hyperlink": "https://wiis.info/math/linear-algebra/matrix/square-matrix/",
+													"hyperlinkTitle": "正方行列の定義とその分類",
+													"note": "行要素の数と列要素の数が一致する行列\n"
+												},
+												"children": [
+													{
+														"data": {
+															"id": "ctb7zrax5ds0",
+															"created": 1686628750340,
+															"text": "単位行列\n(identity matrix)",
+															"font-family": "sans-serif",
+															"note": "対角成分が1、それ以外が0\n"
+														},
+														"children": []
+													},
+													{
+														"data": {
+															"id": "ctb84ajtulc0",
+															"created": 1686629105695,
+															"text": "正則行列\n(regular matrix)",
+															"font-family": "sans-serif",
+															"note": "または\n非特異行列\n(nonsingular matrix)\n\n逆行列が存在する\n"
+														},
+														"children": [
+															{
+																"data": {
+																	"id": "ctb8916cdbk0",
+																	"created": 1686629477109,
+																	"text": "<--> 特異行列\n(singular matrix)",
+																	"font-family": "sans-serif",
+																	"note": "逆行列が存在しない\n"
+																},
+																"children": []
+															},
+															{
+																"data": {
+																	"id": "cqdtnhzd6oo0",
+																	"created": 1675924498692,
+																	"text": "逆行列\n(inverse matrix)",
+																	"font-family": "sans-serif",
+																	"hyperlink": "https://mathlandscape.com/invert-matrix/",
+																	"hyperlinkTitle": "逆行列の定義と2通りの求め方～計算の手順～"
+																},
+																"children": []
+															}
+														]
+													},
+													{
+														"data": {
+															"id": "cr2934rtnvc0",
+															"created": 1678405479373,
+															"text": "対角行列\n(diagonal matrix)",
+															"font-family": "sans-serif",
+															"hyperlink": "https://ja.wikipedia.org/wiki/%E5%AF%BE%E8%A7%92%E8%A1%8C%E5%88%97",
+															"hyperlinkTitle": "対角行列",
+															"note": "対角成分以外がゼロ\n"
+														},
+														"children": []
+													},
+													{
+														"data": {
+															"id": "cr28zkjyh1s0",
+															"created": 1678405200269,
+															"text": "直交行列\n(orthogonal matrix)",
+															"hyperlink": "https://manabitimes.jp/math/1218",
+															"hyperlinkTitle": "直交行列の５つの定義と性質の証明",
+															"font-family": "sans-serif",
+															"note": "転置行列＝逆行列 な正方行列\n"
+														},
+														"children": [
+															{
+																"data": {
+																	"id": "ctqpgttcsrk0",
+																	"created": 1688201446218,
+																	"text": "ユニタリ行列\n(unitary matrix)",
+																	"font-family": "sans-serif",
+																	"note": "随伴行列=逆行列 になっている行列\n"
+																},
+																"children": []
+															}
+														]
+													},
+													{
+														"data": {
+															"id": "ctpmryxwg5s0",
+															"created": 1688092296096,
+															"text": "余因子行列\n(adjugate matrix)",
+															"font-family": "sans-serif",
+															"hyperlink": "https://jfor.net/adjoint-matrix/",
+															"hyperlinkTitle": "余因子行列と逆行列",
+															"note": "または\n古典随伴行列\n(classical adjoint matrix)\n"
+														},
+														"children": []
+													}
+												]
+											},
+											{
+												"data": {
+													"id": "ctb7upyj6go0",
+													"created": 1686628355595,
+													"text": "転置行列\n(transposed matrix)",
+													"font-family": "sans-serif",
+													"note": "ある行列の行と列を入れ替えた行列\n"
+												},
+												"children": [
+													{
+														"data": {
+															"id": "ctpout3mygg0",
+															"created": 1688098160695,
+															"text": "対称行列\n(symmetric matrix)",
+															"font-family": "sans-serif",
+															"note": "転置行列が元の行列と一致\n"
+														},
+														"children": [
+															{
+																"data": {
+																	"id": "cul797iqkpk0",
+																	"created": 1691298427816,
+																	"text": "実対称行列\n(real symmetric matrix)",
+																	"note": "成分がすべて実数な対象行列\n"
+																},
+																"children": []
+															},
+															{
+																"data": {
+																	"id": "cv2czzctw140",
+																	"created": 1693041150690,
+																	"text": "グラム行列\n(Gram matrix)",
+																	"font-family": "sans-serif",
+																	"note": "元の行列と転置行列を掛けた結果\n",
+																	"hyperlink": "https://www.simulationroom999.com/blog/gram-matrix/",
+																	"hyperlinkTitle": "【入門】グラム行列【数値計算】"
+																},
+																"children": []
+															}
+														]
+													},
+													{
+														"data": {
+															"id": "ctpp3abgiwg0",
+															"created": 1688098825086,
+															"text": "交代行列\n(alternating matrix)",
+															"font-family": "sans-serif",
+															"note": "転置行列が元の行列の-1倍\n"
+														},
+														"children": []
+													},
+													{
+														"data": {
+															"id": "ctqonzuacr40",
+															"created": 1688199186774,
+															"text": "随伴行列\n(adjoint matrix)",
+															"font-family": "sans-serif",
+															"note": "転置行列の各要素を共役複素数に置き換え\n"
+														},
+														"children": [
+															{
+																"data": {
+																	"id": "ctqot3yc9xs0",
+																	"created": 1688199587547,
+																	"text": "エルミート行列\n(Hermitian matrix)",
+																	"font-family": "sans-serif",
+																	"note": "随伴行列が元の行列と一致\n",
+																	"hyperlink": "https://www.risalc.info/src/Hermitian-matrix.html",
+																	"hyperlinkTitle": "エルミート行列の性質"
+																},
+																"children": [
+																	{
+																		"data": {
+																			"id": "cv2cppvvffk0",
+																			"created": 1693040346432,
+																			"text": "半正定値\n(positive semidefinite)",
+																			"font-family": "sans-serif",
+																			"hyperlink": "https://shakayami-math.hatenablog.com/entry/2019/12/29/174432",
+																			"hyperlinkTitle": "正定値行列について"
+																		},
+																		"children": [
+																			{
+																				"data": {
+																					"id": "cv2cpvnq55s0",
+																					"created": 1693040359000,
+																					"text": "正定値\n(positive definite)",
+																					"font-family": "sans-serif"
+																				},
+																				"children": []
+																			}
+																		]
+																	}
+																]
+															}
+														]
+													}
+												]
+											},
+											{
+												"data": {
+													"id": "ctpl78bca800",
+													"created": 1688087849742,
+													"text": "階段行列\n(step matrix)",
+													"font-family": "sans-serif",
+													"hyperlink": "https://science-journey.net/mathematics/linear-algebra/elementary-operation/echelon",
+													"hyperlinkTitle": "階段行列・階数標準形と階数"
+												},
+												"children": [
+													{
+														"data": {
+															"id": "ctdw2sx7e740",
+															"created": 1686899815508,
+															"text": "階数\n(rank)",
+															"hyperlink": "https://university-note.com/matrix-rank/",
+															"hyperlinkTitle": "【入門線形代数】行列の階数(rank)-連立一次方程式-",
+															"font-family": "sans-serif"
+														},
+														"children": []
+													}
+												]
+											}
+										]
+									},
+									{
+										"data": {
+											"id": "ctbi6oij2n40",
+											"created": 1686657503918,
+											"text": "行列の演算",
+											"font-family": "sans-serif",
+											"background": "#eaf1dd"
+										},
+										"children": [
+											{
+												"data": {
+													"id": "ctdquo8eq080",
+													"created": 1686885072839,
+													"text": "行列式\n(determinant)",
+													"font-family": "sans-serif",
+													"note": "\n行列式の基本的な性質と公式\nhttps://risalc.info/src/determinant-formulas.html\n\n行列式の性質・定義/意味と計算量を減らすコツをわかりやすく解説\nhttps://linky-juku.com/determinant/\n",
+													"hyperlink": "https://linky-juku.com/determinant-permutation/",
+													"hyperlinkTitle": "行列式の定義式と互換・置換をできるだけわかりやすく！"
+												},
+												"children": []
+											},
+											{
+												"data": {
+													"id": "ctpl4c0mh2g0",
+													"created": 1688087622710,
+													"text": "掃き出し法\n(row reduction)",
+													"note": "または\nガウスの消去法 (Gaussian elimination)\n",
+													"font-family": "sans-serif",
+													"hyperlink": "https://senkei.nomaki.jp/gaussian_elimination.html",
+													"hyperlinkTitle": "掃き出し法"
+												},
+												"children": []
+											},
+											{
+												"data": {
+													"id": "cqonj0xmvz40",
+													"created": 1677024380989,
+													"text": "アダマール積\n(Hadamard product)",
+													"font-family": "sans-serif",
+													"note": "同じサイズの行列に対して成分ごとに積を取ることによって定まる行列の積\n",
+													"hyperlink": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%80%E3%83%9E%E3%83%BC%E3%83%AB%E7%A9%8D",
+													"hyperlinkTitle": "アダマール積"
+												},
+												"children": []
+											},
+											{
+												"data": {
+													"id": "cpqony1xtu80",
+													"created": 1673574549123,
+													"text": "固有値分解\n(Eigenvalue Decompositions)",
+													"font-family": "sans-serif",
+													"note": "n次正方行列Aに対して\n  Ax = λx\nを満たす\n  固有ベクトル ｘ\n  固有値 λ\nを算出\n",
+													"hyperlink": "https://manabitimes.jp/math/1008",
+													"hyperlinkTitle": "行列の固有値・固有ベクトルの定義と具体的な計算方法"
+												},
+												"children": [
+													{
+														"data": {
+															"id": "cq65h4z17340",
+															"created": 1675145373854,
+															"text": "固有値\n(eigenvalue)",
+															"font-family": "sans-serif",
+															"hyperlink": "https://mathlandscape.com/eigenvalue/",
+															"hyperlinkTitle": "固有値の定義と求め方をていねいに～計算の手順～"
+														},
+														"children": [
+															{
+																"data": {
+																	"id": "cul83v47t9k0",
+																	"created": 1691300830106,
+																	"text": "対角化\n(diagonalization)",
+																	"font-family": "sans-serif",
+																	"hyperlink": "https://oguemon.com/study/linear-algebra/diagonalization/",
+																	"hyperlinkTitle": "【固有値編】行列の対角化と具体的な計算例"
+																},
+																"children": [
+																	{
+																		"data": {
+																			"id": "cul829ie2ko0",
+																			"created": 1691300704709,
+																			"text": "ジョルダン標準形\n(Jordan normal form)",
+																			"font-family": "sans-serif",
+																			"note": "ジョルダン標準形への変形\nhttps://darts25.com/jordan-normal-form/\n",
+																			"hyperlink": "https://www.headboost.jp/jordan-normal-form/",
+																			"hyperlinkTitle": "ジョルダン標準形とは？意義と求め方を具体的に解説"
+																		},
+																		"children": [
+																			{
+																				"data": {
+																					"id": "cul82hcw0dc0",
+																					"created": 1691300721791,
+																					"text": "ジョルダン細胞\n(Jordan cell / Jordan block)",
+																					"font-family": "sans-serif"
+																				},
+																				"children": []
+																			}
+																		]
+																	}
+																]
+															}
+														]
+													},
+													{
+														"data": {
+															"id": "cq65h1f9xlc0",
+															"created": 1675145366129,
+															"text": "固有ベクトル\n(eigenvector)",
+															"font-family": "sans-serif"
+														},
+														"children": [
+															{
+																"data": {
+																	"id": "ctxkk0elwyw0",
+																	"created": 1688898509803,
+																	"text": "固有空間\n(eigenspace)",
+																	"font-family": "sans-serif",
+																	"note": "うさぎでもわかる線形代数　第15羽　固有値・固有ベクトル\nhttps://www.momoyama-usagi.com/entry/math-linear-algebra15#1-4\n"
+																},
+																"children": []
+															}
+														]
+													}
+												]
+											},
+											{
+												"data": {
+													"id": "cpsnncnntug0",
+													"created": 1673774801351,
+													"text": "特異値分解 SVD\n(Singular Value Decomposition)",
+													"font-family": "sans-serif",
+													"note": "m x n 行列を\n直交行列・対角行列・直交行列\nの積に分解\n\n\n分解すると見える世界 ー特異値分解ー\nhttps://thinkit.co.jp/article/16884\n",
+													"hyperlink": "https://www.momoyama-usagi.com/entry/math-linear-algebra-ap07",
+													"hyperlinkTitle": "うさぎでもわかる線形代数　応用編第7羽　行列の特異値分解"
+												},
+												"children": []
+											}
+										]
+									}
+								]
+							},
+							{
+								"data": {
+									"id": "cq122q6ij0w0",
+									"created": 1674627981443,
+									"text": "3次元テンソル ... 以下続く",
+									"font-family": "sans-serif"
+								},
+								"children": []
+							}
+						]
+					}
+				]
+			},
+			{
+				"data": {
+					"id": "cqulhcok77k0",
+					"created": 1677627967354,
+					"text": "解析学\n(mathematical analysis)",
+					"font-family": "sans-serif"
+				},
+				"children": [
+					{
+						"data": {
+							"id": "ctot7l5szww0",
+							"created": 1688038506198,
+							"text": "関数\n(function)",
+							"font-family": "sans-serif"
+						},
+						"children": [
+							{
+								"data": {
+									"id": "cv0qipx72740",
+									"created": 1692876173588,
+									"text": "分類",
+									"font-family": "sans-serif",
+									"background": "#eaf1dd"
+								},
+								"children": [
+									{
+										"data": {
+											"id": "ctlk2xxr2so0",
+											"created": 1687678452760,
+											"text": "陽関数\n(explicit function)",
+											"font-family": "sans-serif"
+										},
+										"children": [
+											{
+												"data": {
+													"id": "ctlk3dwwdoo0",
+													"created": 1687678487537,
+													"text": "<--> 陰関数\n(implicit function)",
+													"font-family": "sans-serif",
+													"note": "陰関数定理\n(implicit function theorem)\n\n",
+													"hyperlink": "https://risalc.info/src/implicit-function.html",
+													"hyperlinkTitle": "陰関数"
+												},
+												"children": []
+											}
+										]
+									},
+									{
+										"data": {
+											"id": "ctmai67zdko0",
+											"created": 1687752995113,
+											"text": "逆関数\n(inverse function) ",
+											"font-family": "sans-serif"
+										},
+										"children": []
+									},
+									{
+										"data": {
+											"id": "cqulj2pq9a00",
+											"created": 1677628102385,
+											"text": "初等関数\n(elementary functions)",
+											"hyperlink": "http://www.crl.nitech.ac.jp/~ida/education/MaterialsDesign/1421.html",
+											"hyperlinkTitle": "初等関数",
+											"expandState": "collapse",
+											"font-family": "sans-serif"
+										},
+										"children": [
+											{
+												"data": {
+													"id": "cqzb874omc00",
+													"created": 1678106838675,
+													"text": "指数関数\n(exponential function)",
+													"font-family": "sans-serif"
+												},
+												"children": []
+											},
+											{
+												"data": {
+													"id": "cqzb8ajkeiw0",
+													"created": 1678106846105,
+													"text": "対数関数\n(logarithmic function)",
+													"font-family": "sans-serif",
+													"note": "●底 (base)\n●真数 (antilogarithm)\n"
+												},
+												"children": [
+													{
+														"data": {
+															"id": "creini0v9ao0",
+															"created": 1679651184970,
+															"text": "常用対数\n(common logarithm)",
+															"font-family": "sans-serif",
+															"note": "底が 10\n"
+														},
+														"children": []
+													},
+													{
+														"data": {
+															"id": "creinwr3q6g0",
+															"created": 1679651217032,
+															"text": "自然対数\n(natural logarithm)",
+															"font-family": "sans-serif",
+															"note": "底が e (=2.7182818...)\n"
+														},
+														"children": []
+													}
+												]
+											},
+											{
+												"data": {
+													"id": "cqzb8dwmgg80",
+													"created": 1678106853425,
+													"text": "三角関数\n(trigonometric functions)",
+													"font-family": "sans-serif",
+													"note": "\n●三角関数の加法定理\nhttps://opencourse.doshisha.ac.jp/bj01/math-intro/PC/trigono3.html\n",
+													"hyperlink": "https://ja.wikipedia.org/wiki/%E4%B8%89%E8%A7%92%E9%96%A2%E6%95%B0",
+													"hyperlinkTitle": "三角関数"
+												},
+												"children": [
+													{
+														"data": {
+															"id": "cuotg9he22w0",
+															"created": 1691665724925,
+															"text": "正弦定理\n(law of sines)",
+															"note": "正弦定理と余弦定理の公式の証明\nhttps://rikeilabo.com/sine-cosine-theorem\n"
+														},
+														"children": []
+													},
+													{
+														"data": {
+															"id": "cuotgckozmw0",
+															"created": 1691665731655,
+															"text": "余弦定理\n(law of cosines / cosine formula)"
+														},
+														"children": []
+													}
+												]
+											},
+											{
+												"data": {
+													"id": "cqzb8gviu5k0",
+													"created": 1678106859889,
+													"text": "逆三角関数\n(inverse trigonometric functions)",
+													"font-family": "sans-serif"
+												},
+												"children": []
+											},
+											{
+												"data": {
+													"id": "cqzb8jkrtow0",
+													"created": 1678106865769,
+													"text": "双曲線関数\n(hyperbolic functions)",
+													"font-family": "sans-serif"
+												},
+												"children": []
+											},
+											{
+												"data": {
+													"id": "cqzb8m9mlxs0",
+													"created": 1678106871625,
+													"text": "逆双曲線関数\n(inverse hyperbolic functions)",
+													"font-family": "sans-serif"
+												},
+												"children": []
+											}
+										]
+									},
+									{
+										"data": {
+											"id": "cudeb6fnu4g0",
+											"created": 1690505850298,
+											"text": "偶関数\n(even function)",
+											"font-family": "sans-serif",
+											"hyperlink": "https://math.keicode.com/calculus/odd-function-even-function.php",
+											"hyperlinkTitle": "偶関数と奇関数の積分"
+										},
+										"children": [
+											{
+												"data": {
+													"id": "cudeba8k4wo0",
+													"created": 1690505858575,
+													"text": "<--> 奇関数\n(odd function)",
+													"font-family": "sans-serif"
+												},
+												"children": []
+											}
+										]
+									}
+								]
+							},
+							{
+								"data": {
+									"id": "ctwqdcfewrk0",
+									"created": 1688813354127,
+									"text": "台 (support)",
+									"font-family": "sans-serif",
+									"hyperlink": "https://risalc.info/src/support.html",
+									"hyperlinkTitle": "関数の台"
+								},
+								"children": []
+							},
+							{
+								"data": {
+									"id": "cv1lojgbltk0",
+									"created": 1692964084099,
+									"text": "ランダウの記号\n(Landau symbol)",
+									"font-family": "sans-serif",
+									"hyperlink": "https://univ-study.net/order/",
+									"hyperlinkTitle": "ランダウ記号とは？１円単位で割り勘をするタイプには使いこなせないね！"
+								},
+								"children": []
+							},
+							{
+								"data": {
+									"id": "cv0qj71gr480",
+									"created": 1692876210851,
+									"text": "操作",
+									"font-family": "sans-serif",
+									"background": "#eaf1dd"
+								},
+								"children": [
+									{
+										"data": {
+											"id": "cskxxaperds0",
+											"created": 1683959787510,
+											"text": "テイラー展開\n(Taylor expansion)",
+											"font-family": "sans-serif",
+											"hyperlink": "https://controlabo.com/taylor-series/",
+											"hyperlinkTitle": "超分かるテイラー展開。イメージ・意味・使い方を具体例で解説！",
+											"note": "テイラー展開の公式集\n【よく使う関数の展開式一覧】\nhttps://shoma-life-blog.com/%E3%83%86%E3%82%A4%E3%83%A9%E3%83%BC%E5%B1%95%E9%96%8B%E3%81%AE%E5%85%AC%E5%BC%8F%E9%9B%86/\n"
+										},
+										"children": [
+											{
+												"data": {
+													"id": "cskxxusjyf40",
+													"created": 1683959831236,
+													"text": "マクローリン展開\n(Maclaurin expansion)",
+													"font-family": "sans-serif"
+												},
+												"children": []
+											},
+											{
+												"data": {
+													"id": "cua3jzsqeu80",
+													"created": 1690170829049,
+													"text": "剰余項\n(Lagrange remainder)",
+													"font-family": "sans-serif",
+													"hyperlink": "https://mathsuke.jp/taylor-theorem/",
+													"hyperlinkTitle": "テイラーの定理～具体例からわかりやすく解説！　剰余項の由来はコーシーの平均値の定理！？～"
+												},
+												"children": []
+											}
+										]
+									},
+									{
+										"data": {
+											"id": "cu8vc40w5pc0",
+											"created": 1690046082500,
+											"text": "解析接続\n(analytic continuation)",
+											"font-family": "sans-serif",
+											"hyperlink": "https://uchii-memo.hatenablog.com/entry/kaiseki-connection",
+											"hyperlinkTitle": "解析接続をほんの少しだけかじる【解析接続】"
+										},
+										"children": [
+											{
+												"data": {
+													"id": "cu8taib9xb40",
+													"created": 1690040314655,
+													"text": "ガンマ関数\n(gamma function)",
+													"font-family": "sans-serif",
+													"hyperlink": "https://mamekebi-science.com/math/spetialfunction/gamma1/",
+													"hyperlinkTitle": "【γ1】ガンマ関数の定義・特殊値・解析接続・留数（ガンマ関数の基礎1）"
+												},
+												"children": [
+													{
+														"data": {
+															"id": "cufy3z8otfs0",
+															"created": 1690764828201,
+															"text": "スターリングの公式\n(Stirling's formula / Stirling’s approximation)",
+															"font-family": "sans-serif",
+															"note": "\nガンマ関数の漸近展開とスターリングの公式\nhttps://www.eng.niigata-u.ac.jp/~nomoto/13.html\n",
+															"hyperlink": "https://yomoriki.com/physical-mathematics/5772/",
+															"hyperlinkTitle": "ガンマ関数の導出｜階乗を一般化した関数とは？【スターリングの公式】特殊関数入門①"
+														},
+														"children": []
+													}
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"data": {
+							"id": "cqfqv1ocpoo0",
+							"created": 1676119746694,
+							"text": "微積分\n(calculus)",
+							"font-family": "sans-serif",
+							"hyperlink": "http://mecs.jp/MULTIMEDIA/calc/calc.html",
+							"hyperlinkTitle": "微分積分学入門"
+						},
+						"children": [
+							{
+								"data": {
+									"id": "cpd7ieizqxk0",
+									"created": 1672205876493,
+									"text": "微分\n(differential)",
+									"font-family": "sans-serif",
+									"hyperlink": "https://math-fun.net/20220208/22210/",
+									"hyperlinkTitle": "大学で学ぶ微積分学：分野ごとの記事まとめ"
+								},
+								"children": [
+									{
+										"data": {
+											"id": "cr1vyde7prs0",
+											"created": 1678368431891,
+											"text": "常微分 ODE\n(ordinary differential equation)",
+											"font-family": "sans-serif",
+											"hyperlink": "https://math-masteeer.com/formula/differential.html",
+											"hyperlinkTitle": "【数III】微分の公式のまとめ"
+										},
+										"children": [
+											{
+												"data": {
+													"id": "cr1we8r7dns0",
+													"created": 1678369675620,
+													"text": "導関数\n(derivative)",
+													"font-family": "sans-serif",
+													"hyperlink": "https://sci-pursuit.com/math/differential-formulae.html",
+													"hyperlinkTitle": "微分の公式一覧",
+													"note": "微分の公式全59個を重要度つきで整理\nhttps://mathwords.net/bibun\n\n【三角関数（sin,cos,tan）の微分公式】とその証明→極限の形に着目する\nhttps://high-mathematics.com/4097/\n"
+												},
+												"children": []
+											}
+										]
+									},
+									{
+										"data": {
+											"id": "cq00dblypw80",
+											"created": 1674521609555,
+											"text": "偏微分 PDE\n(partial differentiation)",
+											"font-family": "sans-serif"
+										},
+										"children": [
+											{
+												"data": {
+													"id": "ctj0qxc94fc0",
+													"created": 1687420790088,
+													"text": "<--> 全微分\n(total derivative)",
+													"font-family": "sans-serif",
+													"hyperlink": "https://eman-physics.net/analytic/total_dif.html",
+													"hyperlinkTitle": "全微分"
+												},
+												"children": []
+											},
+											{
+												"data": {
+													"id": "cr1wghm7qk00",
+													"created": 1678369851637,
+													"text": "偏導関数\n(partial derivatives)",
+													"font-family": "sans-serif"
+												},
+												"children": []
+											}
+										]
+									},
+									{
+										"data": {
+											"id": "ctma9ua9f8o0",
+											"created": 1687752342216,
+											"text": "C1級\n(class C1 / continuously differentiable)",
+											"font-family": "sans-serif",
+											"hyperlink": "https://risalc.info/src/class-cn-smooth-function.html",
+											"hyperlinkTitle": "C n  級関数・滑らかな関数"
+										},
+										"children": []
+									},
+									{
+										"data": {
+											"id": "cv7fg1dgvkw0",
+											"created": 1693555850912,
+											"text": "ヘッセ行列\n(Hessian matrix)",
+											"font-family": "sans-serif"
+										},
+										"children": []
+									},
+									{
+										"data": {
+											"id": "cv3tcfai8940",
+											"created": 1693188823463,
+											"text": "ワイエルシュトラスの最大値定理\n(extreme value theorem)",
+											"font-family": "sans-serif",
+											"hyperlink": "https://for-spring.com/analysis/%e3%80%8c%e3%83%af%e3%82%a4%e3%82%a8%e3%83%ab%e3%82%b7%e3%83%a5%e3%83%88%e3%83%a9%e3%82%b9%e3%81%ae%e6%9c%80%e5%a4%a7%e5%80%a4%e5%ae%9a%e7%90%86%e3%82%92%e8%a8%bc%e6%98%8e%e3%81%97%e3%82%88%e3%81%86e/",
+											"hyperlinkTitle": "「ワイエルシュトラスの最大値定理を証明しよう！」〜連続な関数の性質〜【解析学の基礎シリーズ】関数の極限編 その16"
+										},
+										"children": [
+											{
+												"data": {
+													"id": "cv3tcr4x22w0",
+													"created": 1693188849246,
+													"text": "ロルの定理\n(Rolle's theorem\n / Rolle's lemma)",
+													"font-family": "sans-serif",
+													"hyperlink": "https://ramenhuhu.com/math-meanvaluetheorem",
+													"hyperlinkTitle": "ロルの定理とラグランジュの平均値定理の証明"
+												},
+												"children": [
+													{
+														"data": {
+															"id": "cv3td54v1i80",
+															"created": 1693188879718,
+															"text": "ラグランジュの平均値の定理\n(mean-value theorem)",
+															"font-family": "sans-serif",
+															"hyperlink": "https://enggy.net/math/1247/",
+															"hyperlinkTitle": "【高校数学】”平均値の定理”の公式とその証明"
+														},
+														"children": []
+													},
+													{
+														"data": {
+															"id": "cv3trfhybco0",
+															"created": 1693189999376,
+															"text": "コーシーの平均値の定理\n(Cauchy's mean value theorem)",
+															"font-family": "sans-serif",
+															"hyperlink": "https://enggy.net/math/1248/",
+															"hyperlinkTitle": "【高校数学】”コーシーの平均値の定理”の公式とその証明"
+														},
+														"children": [
+															{
+																"data": {
+																	"id": "cv3tdkx8wk00",
+																	"created": 1693188914086,
+																	"text": "ロピタルの定理\n(l'Hôpital's rule)",
+																	"font-family": "sans-serif",
+																	"hyperlink": "https://takataninote.com/analysis/lhopital.html",
+																	"hyperlinkTitle": "ロピタルの定理【証明と例題】"
+																},
+																"children": []
+															}
+														]
+													}
+												]
+											}
+										]
+									}
+								]
+							},
+							{
+								"data": {
+									"id": "cqfqwohsffk0",
+									"created": 1676119874728,
+									"text": "積分\n(integral)",
+									"font-family": "sans-serif",
+									"hyperlink": "https://keisan.casio.jp/menu/system/000000001360",
+									"hyperlinkTitle": "数値積分"
+								},
+								"children": [
+									{
+										"data": {
+											"id": "cr71urspc2g0",
+											"created": 1678892876229,
+											"text": "不定積分\n(indefinite integral)",
+											"font-family": "sans-serif",
+											"hyperlink": "https://mathlandscape.com/integration/",
+											"hyperlinkTitle": "原始関数・不定積分の厳密な定義とその違い"
+										},
+										"children": [
+											{
+												"data": {
+													"id": "cspdz4syyhs0",
+													"created": 1684411308979,
+													"text": "原始関数\n(primitive function)",
+													"font-family": "sans-serif"
+												},
+												"children": [
+													{
+														"data": {
+															"id": "csq5ei2pw540",
+															"created": 1684488683296,
+															"text": "積分定数\n(constant of integration)",
+															"font-family": "sans-serif"
+														},
+														"children": []
+													}
+												]
+											}
+										]
+									},
+									{
+										"data": {
+											"id": "cr71vrand3c0",
+											"created": 1678892953501,
+											"text": "定積分\n(definite integral)",
+											"note": "または\nリーマン積分 (Riemann integral)\n",
+											"font-family": "sans-serif",
+											"hyperlink": "http://aozoragakuen.sakura.ne.jp/taiwa/taiwaNch01/sekibun/node1.html",
+											"hyperlinkTitle": "定積分の定義"
+										},
+										"children": [
+											{
+												"data": {
+													"id": "cux9kg8tokg0",
+													"created": 1692523670513,
+													"text": "区分求積法\n(quadrature by parts) ",
+													"font-family": "sans-serif",
+													"hyperlink": "https://univ-juken.com/kubun-kyusekihou",
+													"hyperlinkTitle": "区分求積法とは？公式と証明、logの問題をわかりやすく解説！"
+												},
+												"children": []
+											},
+											{
+												"data": {
+													"id": "cts63iaoihc0",
+													"created": 1688349921235,
+													"text": "広義積分\n(improper integral)",
+													"font-family": "sans-serif",
+													"hyperlink": "http://sla.cls.ihe.tohoku.ac.jp/learningtip/2949/",
+													"hyperlinkTitle": "広義積分の計算方法とその理解の仕方～そんな計算していいの？？～"
+												},
+												"children": [
+													{
+														"data": {
+															"id": "cv1mevu8nbs0",
+															"created": 1692966148530,
+															"text": "ガウス積分\n(Gaussian integral)",
+															"font-family": "sans-serif",
+															"note": "または\nオイラー＝ポアソン積分\n(Euler-Poisson integral)\n\nガウス積分の公式集 (証明付)\nhttps://risalc.info/src/gaussian-integral.html\n\nガウス積分　～統計学で最も重要な積分～\nhttps://stchopin.hatenablog.com/entry/2021/08/27/224816\n"
+														},
+														"children": []
+													}
+												]
+											}
+										]
+									},
+									{
+										"data": {
+											"id": "ctirdeztpao0",
+											"created": 1687394341431,
+											"text": "置換積分\n(integration by substitution)",
+											"font-family": "sans-serif",
+											"note": "置換積分\nhttps://www.hiraocafe.com/note/integration-by-substitution.html\n\n置換積分（合成関数の積分）のやり方と証明を誰でもわかるように解説\nhttps://www.headboost.jp/integration-by-substitution/\n",
+											"hyperlink": "https://atarimae.biz/archives/23400",
+											"hyperlinkTitle": "置換積分法とは。5つのステップから分かる置換積分のやり方とコツ"
+										},
+										"children": []
+									},
+									{
+										"data": {
+											"id": "cv0qkfbqbio0",
+											"created": 1692876307251,
+											"text": "重積分\n(multiple integral)",
+											"font-family": "sans-serif",
+											"hyperlink": "https://math-journal.bear-fruit.online/multiple-integral/",
+											"hyperlinkTitle": "重積分のやり方を基本から丁寧に！積分範囲や重積分のイメージも図解！"
+										},
+										"children": [
+											{
+												"data": {
+													"id": "cv0rid2o6gg0",
+													"created": 1692878966731,
+													"text": "フビニの定理\n(Fubini's theorem)",
+													"font-family": "sans-serif"
+												},
+												"children": []
+											},
+											{
+												"data": {
+													"id": "cv0rifyx46w0",
+													"created": 1692878973034,
+													"text": "トネリの定理\n(Tonelli's theorem)",
+													"font-family": "sans-serif"
+												},
+												"children": []
+											},
+											{
+												"data": {
+													"id": "cv1o60l15880",
+													"created": 1692971095800,
+													"text": "ヤコビ行列\n(Jacobian matrix)",
+													"font-family": "sans-serif"
+												},
+												"children": [
+													{
+														"data": {
+															"id": "cv1o6o7gxaw0",
+															"created": 1692971147223,
+															"text": "ヤコビアン\n(Jacobian determinant)",
+															"font-family": "sans-serif",
+															"note": "ヤコビ行列 の行列式\n"
+														},
+														"children": []
+													}
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"data": {
+							"id": "cv0rgumpdpc0",
+							"created": 1692878848219,
+							"text": "複素解析\n(complex analysis)",
+							"font-family": "sans-serif",
+							"hyperlink": "https://yomoriki.com/complex-analysis-index/",
+							"hyperlinkTitle": "複素関数論の目次"
+						},
+						"children": [
+							{
+								"data": {
+									"id": "cv401acaoc80",
+									"created": 1693207698451,
+									"text": "複素平面\n(complex plane)",
+									"font-family": "sans-serif"
+								},
+								"children": []
+							},
+							{
+								"data": {
+									"id": "cv91lc95rmg0",
+									"created": 1693719890791,
+									"text": "複素関数\n(complex function)",
+									"font-family": "sans-serif",
+									"hyperlink": "https://mecs.jp/MULTIMEDIA/complex/complex.html",
+									"hyperlinkTitle": "複素関数論入門"
+								},
+								"children": [
+									{
+										"data": {
+											"id": "cvayj5ynufc0",
+											"created": 1693914376951,
+											"text": "多価関数\n(multivalued function)",
+											"font-family": "sans-serif"
+										},
+										"children": [
+											{
+												"data": {
+													"id": "cvayje7e7bs0",
+													"created": 1693914394893,
+													"text": "<--> 1価関数\n(single-valued function)",
+													"font-family": "sans-serif"
+												},
+												"children": []
+											},
+											{
+												"data": {
+													"id": "cvayjqqjiao0",
+													"created": 1693914422173,
+													"text": "主値\n(principal value)",
+													"font-family": "sans-serif"
+												},
+												"children": []
+											}
+										]
+									},
+									{
+										"data": {
+											"id": "cvd88iq4eds0",
+											"created": 1694144873740,
+											"text": "オイラーの公式\n(Euler's formula)",
+											"font-family": "sans-serif",
+											"hyperlink": "https://daigakudenki.com/euler-formula/",
+											"hyperlinkTitle": "オイラーの公式とは［例題・証明つき］"
+										},
+										"children": [
+											{
+												"data": {
+													"id": "cv405xo9z1c0",
+													"created": 1693208062698,
+													"text": "ド・モアブルの定理\n(de Moivre's theorem)",
+													"font-family": "sans-serif",
+													"hyperlink": "https://ja.wikipedia.org/wiki/%E3%83%89%E3%83%BB%E3%83%A2%E3%82%A2%E3%83%96%E3%83%AB%E3%81%AE%E5%AE%9A%E7%90%86",
+													"hyperlinkTitle": ""
+												},
+												"children": []
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			},
+			{
+				"data": {
+					"id": "cufavv3j5go0",
+					"created": 1690699306741,
+					"text": "測度論\n(measure theory)",
+					"font-family": "sans-serif"
+				},
+				"children": [
+					{
+						"data": {
+							"id": "cuuwdt0yb8o0",
+							"created": 1692283355444,
+							"text": "準備運動",
+							"font-family": "sans-serif",
+							"background": "#eaf1dd"
+						},
+						"children": [
+							{
+								"data": {
+									"id": "cu4a172y40w0",
+									"created": 1689579744014,
+									"text": "ほとんどいたるところ a.e.\n(almost everywhere)",
+									"font-family": "sans-serif"
+								},
+								"children": []
+							},
+							{
+								"data": {
+									"id": "cux8y9gzrnk0",
+									"created": 1692521931758,
+									"text": "ほとんど確実に a.s.\n(almost surely)",
+									"font-family": "sans-serif",
+									"hyperlink": "https://blog.thetheorier.com/entry/math-almost-surely",
+									"hyperlinkTitle": "20170802 【数学】確率が1であること(ほとんど確実に)"
+								},
+								"children": []
+							},
+							{
+								"data": {
+									"id": "cuuwclltjfk0",
+									"created": 1692283260927,
+									"text": "単関数\n(simple function)",
+									"font-family": "sans-serif",
+									"hyperlink": "https://orz107orz.hatenablog.com/entry/2017/01/07/000000",
+									"hyperlinkTitle": "単関数列と可測関数"
+								},
+								"children": []
+							},
+							{
+								"data": {
+									"id": "cuuwywru15k0",
+									"created": 1692285009247,
+									"text": "ヴィタリ集合\n(Vitali set)",
+									"font-family": "sans-serif",
+									"hyperlink": "https://math-note.xyz/analysis/measure-theory/lebesgue-integral/lebesgue-unmeasurable-set/",
+									"hyperlinkTitle": "ルベーグ非可測集合の具体例｜「ヴィタリ集合」の定義と存在"
+								},
+								"children": []
+							}
+						]
+					},
+					{
+						"data": {
+							"id": "cts4us2i3gw0",
+							"created": 1688346416121,
+							"text": "ルベーグ積分\n(Lebesgue integration)",
+							"font-family": "sans-serif",
+							"note": "\nルベーグ積分の基礎のキソ\nhttps://www1.econ.hit-u.ac.jp/kawahira/courses/lebesgue.pdf\n\n測度論 / ルベーグ積分\nhttps://yagami12.hatenablog.com/entry/2018/11/04/232957\n",
+							"hyperlink": "https://math-note.xyz/category/analysis/measure-theory/basics-of-lebesgue-integral/",
+							"hyperlinkTitle": "ルベーグ積分の基本"
+						},
+						"children": [
+							{
+								"data": {
+									"id": "cufb3eu2wso0",
+									"created": 1690699898254,
+									"text": "外測度\n(outer measure / exterior measure)",
+									"font-family": "sans-serif"
+								},
+								"children": [
+									{
+										"data": {
+											"id": "cutzjm7ra2g0",
+											"created": 1692190714176,
+											"text": "カラテオドリの条件\n(Carathéodory's criterion)",
+											"font-family": "sans-serif"
+										},
+										"children": []
+									}
+								]
+							},
+							{
+								"data": {
+									"id": "cukkqjdu39k0",
+									"created": 1691234900304,
+									"text": "ボレル集合\n(Borel set)",
+									"font-family": "sans-serif",
+									"note": "ルベーグ積分の公式集2：ボレル測度とルベーグ測度\nhttps://su-butsu-kikaigakusyuu.hatenablog.com/entry/2020/05/29/210637\n"
+								},
+								"children": []
+							}
+						]
+					},
+					{
+						"data": {
+							"id": "csnp8fox2cw0",
+							"created": 1684239950251,
+							"text": "確率\n(probability)",
+							"font-family": "sans-serif",
+							"note": "確率公理と性質\nhttps://science-journey.net/mathematics/statistics/probability/probability-axioms\n"
+						},
+						"children": [
+							{
+								"data": {
+									"id": "cthgkim1xds0",
+									"created": 1687262305689,
+									"text": "事象\n(event)",
+									"font-family": "sans-serif",
+									"note": "和事象 (union event)\n積事象 (intersection event)\n排反事象 (exclusive event / mutually exclusive event)\n独立事象 (independent event)\n"
+								},
+								"children": [
+									{
+										"data": {
+											"id": "crqg9h2fgso0",
+											"created": 1680863163050,
+											"text": "根元事象 / 原子事象\n(elementary event / atomic event)",
+											"font-family": "sans-serif",
+											"note": "これ以上分割できない事象\n"
+										},
+										"children": [
+											{
+												"data": {
+													"id": "csmjz2iv7kw0",
+													"created": 1684123550804,
+													"text": "同様に確からしい\n(equally likely)",
+													"font-family": "sans-serif",
+													"hyperlink": "https://math.nakaken88.com/textbook/basic-equally-likely/",
+													"hyperlinkTitle": "【基本】同様に確からしい"
+												},
+												"children": []
+											}
+										]
+									},
+									{
+										"data": {
+											"id": "cthgmzdn3rk0",
+											"created": 1687262498914,
+											"text": "全事象\n(whole event)",
+											"font-family": "sans-serif",
+											"note": "\n「必ず起きる事象」を指す場合は\n(sure event)\n"
+										},
+										"children": [
+											{
+												"data": {
+													"id": "cthgnwhezjk0",
+													"created": 1687262570976,
+													"text": "<--> 空事象\n(empty event / null event)",
+													"font-family": "sans-serif"
+												},
+												"children": []
+											}
+										]
+									},
+									{
+										"data": {
+											"id": "cthgody8hw00",
+											"created": 1687262608999,
+											"text": "余事象\n(complementary event)",
+											"font-family": "sans-serif"
+										},
+										"children": []
+									}
+								]
+							},
+							{
+								"data": {
+									"id": "csyctc6t9ug0",
+									"created": 1685322073368,
+									"text": "順列・組合せ",
+									"font-family": "sans-serif",
+									"background": "#eaf1dd"
+								},
+								"children": [
+									{
+										"data": {
+											"id": "csyctsx57l40",
+											"created": 1685322109789,
+											"text": "順列 (permutation)",
+											"font-family": "sans-serif",
+											"hyperlink": "https://univ-juken.com/zyunretsu-kumiawase",
+											"hyperlinkTitle": "順列と組み合わせの違いと見分け方！公式や練習問題"
+										},
+										"children": []
+									},
+									{
+										"data": {
+											"id": "csyctwife480",
+											"created": 1685322117606,
+											"text": "組合せ (combination)",
+											"font-family": "sans-serif"
+										},
+										"children": []
+									},
+									{
+										"data": {
+											"id": "csyctzihx7s0",
+											"created": 1685322124141,
+											"text": "二項定理\n(binomial theorem)",
+											"font-family": "sans-serif",
+											"hyperlink": "https://laid-back-scientist.com/binomial-theorem",
+											"hyperlinkTitle": "二項定理、多項定理の証明と例題"
+										},
+										"children": [
+											{
+												"data": {
+													"id": "ctlg0755enk0",
+													"created": 1687666953266,
+													"text": "多項定理\n(multinomial theorem)",
+													"font-family": "sans-serif"
+												},
+												"children": []
+											}
+										]
+									}
+								]
+							},
+							{
+								"data": {
+									"id": "csojr4buets0",
+									"created": 1684326047733,
+									"text": "期待値\n(expected value)",
+									"font-family": "sans-serif",
+									"hyperlink": "https://toukei.link/basicprobability/expectedvalue/",
+									"hyperlinkTitle": "期待値とは何か？"
+								},
+								"children": []
+							},
+							{
+								"data": {
+									"id": "csojsz79z080",
+									"created": 1684326193301,
+									"text": "確率変数の収束\n(convergence of random variables)",
+									"font-family": "sans-serif",
+									"hyperlink": "https://kriver-1.hatenablog.com/entry/2018/05/14/204137",
+									"hyperlinkTitle": "確率変数の収束についてまとめる"
+								},
+								"children": [
+									{
+										"data": {
+											"id": "csojtgbyscw0",
+											"created": 1684326230590,
+											"text": "<--> 発散\n(divergence)",
+											"font-family": "sans-serif",
+											"hyperlink": "https://wiis.info/math/real-number/convergent-sequence/divergent-sequence/",
+											"hyperlinkTitle": "数列の無限極限（発散する数列）"
+										},
+										"children": []
+									},
+									{
+										"data": {
+											"id": "csojtu2x4qo0",
+											"created": 1684326260518,
+											"text": "確率収束\n(convergence in probability)",
+											"font-family": "sans-serif"
+										},
+										"children": []
+									},
+									{
+										"data": {
+											"id": "csojtxsni080",
+											"created": 1684326268604,
+											"text": "概収束\n(almost sure convergence)",
+											"font-family": "sans-serif"
+										},
+										"children": []
+									},
+									{
+										"data": {
+											"id": "csoju2epcfk0",
+											"created": 1684326278644,
+											"text": "平均収束\n(convergence in the r-th mean)",
+											"font-family": "sans-serif"
+										},
+										"children": []
+									},
+									{
+										"data": {
+											"id": "csojuf2mzr40",
+											"created": 1684326306213,
+											"text": "分布収束\n(convergence in distribution)",
+											"font-family": "sans-serif",
+											"note": "または\n法則収束 (convergence in law)\n弱収束 (weak convergence)\n"
+										},
+										"children": []
+									}
+								]
+							},
+							{
+								"data": {
+									"id": "cr7ryaqpaio0",
+									"created": 1678966501417,
+									"text": "情報量/エントロピー\n(entropy)",
+									"font-family": "sans-serif",
+									"note": "−log2(起きる確率)\n\n珍しい情報は価値が高い＝数値が大きい\n",
+									"hyperlink": "https://www.momoyama-usagi.com/entry/info-entropy",
+									"hyperlinkTitle": "うさぎでもわかる情報量・エントロピー・相互情報量（情報理論）"
+								},
+								"children": [
+									{
+										"data": {
+											"id": "cpp2qclpsqw0",
+											"created": 1673411113148,
+											"text": "KL ダイバージェンス\n(Kullback-Leibler divergence)",
+											"font-family": "sans-serif",
+											"note": "2つの分布間の「離れ具合」を測る指標\n\n同じ確率分布では0となる\n\n【徹底解説】KLダイバージェンスの定義\nhttps://academ-aid.com/statistics/def-kl-div\n",
+											"hyperlink": "https://dx-consultant-fast-evolving.com/the-meaning-of-kl-divergence/",
+											"hyperlinkTitle": "【基礎から理解しよう】KLダイバージェンスの意味"
+										},
+										"children": []
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	"template": "right",
+	"theme": "fresh-green-compat",
+	"version": "1.4.43"
+}
