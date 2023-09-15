@@ -25,85 +25,10 @@
 							"created": 1692685680803,
 							"text": "数学史・数学者",
 							"font-family": "sans-serif",
-							"background": "#eaf1dd",
-							"note": "\n物理数学の歴史\nhttps://shadowacademy.web.fc2.com/history.html\n\n数学史　年表\nhttps://mathsuke.jp/math-chronology/\n\n歴史上の数学者たち\nhttps://historicalmathematicians.blogspot.com/2012/01/blog-post.html\n\n歴史の中の数学史年表\nhttp://shochandas.xsrv.jp/mathematics.htm\n\n数学者の一覧\nhttps://ja.wikipedia.org/wiki/%E6%95%B0%E5%AD%A6%E8%80%85%E3%81%AE%E4%B8%80%E8%A6%A7\n"
+							"note": "\n物理数学の歴史\nhttps://shadowacademy.web.fc2.com/history.html\n\n数学史　年表\nhttps://mathsuke.jp/math-chronology/\n\n歴史上の数学者たち\nhttps://historicalmathematicians.blogspot.com/2012/01/blog-post.html\n\n歴史の中の数学史年表\nhttp://shochandas.xsrv.jp/mathematics.htm\n\n数学者の一覧\nhttps://ja.wikipedia.org/wiki/%E6%95%B0%E5%AD%A6%E8%80%85%E3%81%AE%E4%B8%80%E8%A6%A7\n",
+							"background": "#eaf1dd"
 						},
 						"children": []
-					},
-					{
-						"data": {
-							"id": "ctzbc1t919c0",
-							"created": 1689075615876,
-							"text": "定義\n(definition)",
-							"font-family": "sans-serif",
-							"hyperlink": "https://zellij.hatenablog.com/entry/20120827/p1",
-							"hyperlinkTitle": "数理論理学に出てくる用語のまとめ"
-						},
-						"children": [
-							{
-								"data": {
-									"id": "ctzbch850fk0",
-									"created": 1689075649428,
-									"text": "公理\n(axiom)",
-									"font-family": "sans-serif"
-								},
-								"children": [
-									{
-										"data": {
-											"id": "ctzbdcipexs0",
-											"created": 1689075717548,
-											"text": "命題\n(proposition)",
-											"font-family": "sans-serif",
-											"note": "●逆 (converse)\n●裏 (inverse)\n●対偶 (contrapositive)\n\n逆、裏、対偶の意味と具体例\nhttps://mathwords.net/gyakuura\n",
-											"hyperlink": "https://kopende.com/math/logic-proposition/",
-											"hyperlinkTitle": "命題とは？数学に必要な論理のことば（または、ならば、すべてのなど）の使い方"
-										},
-										"children": [
-											{
-												"data": {
-													"id": "ctzbe82abhs0",
-													"created": 1689075786212,
-													"text": "定理\n(theorem)",
-													"font-family": "sans-serif",
-													"note": "ここ四半世紀に証明された定理\nhttps://ikuro-kotaro.sakura.ne.jp/koramu/teiri.htm\n"
-												},
-												"children": [
-													{
-														"data": {
-															"id": "cveyxpcphi80",
-															"created": 1694321756084,
-															"text": "<--> 予想\n(conjecture)",
-															"font-family": "sans-serif",
-															"hyperlink": "https://ja.wikipedia.org/wiki/%E6%95%B0%E5%AD%A6%E4%B8%8A%E3%81%AE%E6%9C%AA%E8%A7%A3%E6%B1%BA%E5%95%8F%E9%A1%8C",
-															"hyperlinkTitle": "数学上の未解決問題"
-														},
-														"children": []
-													}
-												]
-											},
-											{
-												"data": {
-													"id": "ctzbeus2rso0",
-													"created": 1689075835660,
-													"text": "補題\n(lemma)",
-													"font-family": "sans-serif"
-												},
-												"children": []
-											},
-											{
-												"data": {
-													"id": "cu65lfm738g0",
-													"created": 1689770344239,
-													"text": "系\n(corollary)",
-													"font-family": "sans-serif"
-												},
-												"children": []
-											}
-										]
-									}
-								]
-							}
-						]
 					},
 					{
 						"data": {
@@ -659,7 +584,7 @@
 								"data": {
 									"id": "cux9u756yps0",
 									"created": 1692524434344,
-									"text": "ボルツァーノ＝ワイエルシュトラスの定理\n(Bolzano–Weierstrass theorem)",
+									"text": "ボルツァーノ＝ワイエルシュトラスの定理\n(Bolzano-Weierstrass theorem)",
 									"font-family": "sans-serif",
 									"hyperlink": "https://math-note.com/bolzano-weierstrass-theorem/",
 									"hyperlinkTitle": "ボルツァーノ・ワイエルシュトラスの定理の証明（解析学 第I章 実数と連続6）"
@@ -715,9 +640,9 @@
 			},
 			{
 				"data": {
-					"id": "cu9jaqnkrow0",
-					"created": 1690113681670,
-					"text": "記号論理学\n(symbolic logic)",
+					"id": "cvj7dd3jlfk0",
+					"created": 1694751791941,
+					"text": "離散数学\n(discrete mathematics)",
 					"font-family": "sans-serif"
 				},
 				"children": [
@@ -731,6 +656,81 @@
 							"note": "●形式論理学 (formal logic)\n\n●トートロジー (tautology)\nトートロジーの意味とは？　気をつけたい、論理崩壊の話法\nhttps://studyhacker.net/what-is-tautology\n\n●二律背反 (antinomy)\n「二律背反」とは？意味や使い方！例文や解釈\nhttps://meaning-book.com/blog/20190624101441.html\n"
 						},
 						"children": [
+							{
+								"data": {
+									"id": "ctzbc1t919c0",
+									"created": 1689075615876,
+									"text": "定義\n(definition)",
+									"font-family": "sans-serif",
+									"hyperlink": "https://zellij.hatenablog.com/entry/20120827/p1",
+									"hyperlinkTitle": "数理論理学に出てくる用語のまとめ"
+								},
+								"children": [
+									{
+										"data": {
+											"id": "ctzbch850fk0",
+											"created": 1689075649428,
+											"text": "公理\n(axiom)",
+											"font-family": "sans-serif"
+										},
+										"children": [
+											{
+												"data": {
+													"id": "ctzbdcipexs0",
+													"created": 1689075717548,
+													"text": "命題\n(proposition)",
+													"font-family": "sans-serif",
+													"note": "●逆 (converse)\n●裏 (inverse)\n●対偶 (contrapositive)\n\n逆、裏、対偶の意味と具体例\nhttps://mathwords.net/gyakuura\n",
+													"hyperlink": "https://kopende.com/math/logic-proposition/",
+													"hyperlinkTitle": "命題とは？数学に必要な論理のことば（または、ならば、すべてのなど）の使い方"
+												},
+												"children": [
+													{
+														"data": {
+															"id": "ctzbe82abhs0",
+															"created": 1689075786212,
+															"text": "定理\n(theorem)",
+															"font-family": "sans-serif",
+															"note": "ここ四半世紀に証明された定理\nhttps://ikuro-kotaro.sakura.ne.jp/koramu/teiri.htm\n"
+														},
+														"children": [
+															{
+																"data": {
+																	"id": "cveyxpcphi80",
+																	"created": 1694321756084,
+																	"text": "<--> 予想\n(conjecture)",
+																	"font-family": "sans-serif",
+																	"hyperlink": "https://ja.wikipedia.org/wiki/%E6%95%B0%E5%AD%A6%E4%B8%8A%E3%81%AE%E6%9C%AA%E8%A7%A3%E6%B1%BA%E5%95%8F%E9%A1%8C",
+																	"hyperlinkTitle": "数学上の未解決問題"
+																},
+																"children": []
+															}
+														]
+													},
+													{
+														"data": {
+															"id": "ctzbeus2rso0",
+															"created": 1689075835660,
+															"text": "補題\n(lemma)",
+															"font-family": "sans-serif"
+														},
+														"children": []
+													},
+													{
+														"data": {
+															"id": "cu65lfm738g0",
+															"created": 1689770344239,
+															"text": "系\n(corollary)",
+															"font-family": "sans-serif"
+														},
+														"children": []
+													}
+												]
+											}
+										]
+									}
+								]
+							},
 							{
 								"data": {
 									"id": "cv5vlqbn3h40",
@@ -998,28 +998,6 @@
 							},
 							{
 								"data": {
-									"id": "cuxaiygf23s0",
-									"created": 1692526374536,
-									"text": "ベン図\n(Venn diagram)",
-									"hyperlink": "https://visualizing.jp/euler-venn-diagram/",
-									"hyperlinkTitle": "オイラー図とベン図（Euler Diagram & Venn Diagram）",
-									"font-family": "sans-serif"
-								},
-								"children": [
-									{
-										"data": {
-											"id": "cukj95hh3400",
-											"created": 1691230716748,
-											"text": "ド・モルガンの法則\n(De Morgan's laws)",
-											"font-family": "sans-serif",
-											"note": "プログラミングに役立つ 「ド・モルガンの法則」\nhttps://xtech.nikkei.com/it/article/Watcher/20070806/279127/\n"
-										},
-										"children": []
-									}
-								]
-							},
-							{
-								"data": {
 									"id": "cuu0u2vrr080",
 									"created": 1692194355208,
 									"text": "well-defined",
@@ -1043,6 +1021,83 @@
 							}
 						]
 					},
+					{
+						"data": {
+							"id": "cvj7kr213e00",
+							"created": 1694752370874,
+							"text": "整数論\n(number theory)",
+							"font-family": "sans-serif",
+							"note": "\nググった限りでは、正の整数については\ntheory of positive integers\nのような名称が充てられている\n"
+						},
+						"children": []
+					},
+					{
+						"data": {
+							"id": "cvj7fjp9bkw0",
+							"created": 1694751963043,
+							"text": "グラフ理論\n(graph theory)",
+							"font-family": "sans-serif"
+						},
+						"children": [
+							{
+								"data": {
+									"id": "cvj925g4zw80",
+									"created": 1694756555503,
+									"text": "グラフ\n(graph)",
+									"font-family": "sans-serif"
+								},
+								"children": [
+									{
+										"data": {
+											"id": "cvj95hl0g4o0",
+											"created": 1694756817011,
+											"text": "節点 / 頂点 / 点\n(node / vertex / point)",
+											"font-family": "sans-serif"
+										},
+										"children": []
+									},
+									{
+										"data": {
+											"id": "cvj95wktiyo0",
+											"created": 1694756849651,
+											"text": "辺 / 線\n(edge / line)",
+											"font-family": "sans-serif"
+										},
+										"children": []
+									},
+									{
+										"data": {
+											"id": "cvj92qht4200",
+											"created": 1694756601316,
+											"text": "無向グラフ\n(indirected graph)",
+											"font-family": "sans-serif"
+										},
+										"children": [
+											{
+												"data": {
+													"id": "cvj92ujqj4w0",
+													"created": 1694756610140,
+													"text": "<--> 有向グラフ\n(directed graph)",
+													"font-family": "sans-serif"
+												},
+												"children": []
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			},
+			{
+				"data": {
+					"id": "cu9jaqnkrow0",
+					"created": 1690113681670,
+					"text": "記号論理学\n(symbolic logic)",
+					"font-family": "sans-serif"
+				},
+				"children": [
 					{
 						"data": {
 							"id": "ctlpd65pkw00",
@@ -2291,7 +2346,9 @@
 													"id": "cum7npjezfs0",
 													"created": 1691401124094,
 													"text": "弧状連結\n(path connected)",
-													"font-family": "sans-serif"
+													"font-family": "sans-serif",
+													"hyperlink": "https://nekodamashi-math.blog.ss-blog.jp/2018-11-16-10",
+													"hyperlinkTitle": "弧状連結　[位相入門]"
 												},
 												"children": []
 											}
@@ -2325,7 +2382,7 @@
 									"created": 1693101897249,
 									"text": "多様体\n(manifold)",
 									"font-family": "sans-serif",
-									"note": "\n0次元多様体\n(zero-dimensional manifold)\n= ただの点\n\n3次元多様体\n(three-dimensional manifold)\n\n分類定理\n(classification theorem)\n",
+									"note": "\n0次元多様体\n(zero-dimensional manifold)\n= ただの点\n\n分類定理\n(classification theorem)\n",
 									"hyperlink": "https://www.komazawa-u.ac.jp/~w3c/lecture/topology/",
 									"hyperlinkTitle": "Topology"
 								},
@@ -2349,6 +2406,15 @@
 											"hyperlink": "https://www.f-denshi.com/000TokiwaJPN/24manif/320fld.html",
 											"hyperlinkTitle": "２次元多様体の分類",
 											"note": "２次元多様体（2-manifold, surface）\nhttps://www.komazawa-u.ac.jp/~w3c/lecture/topology/2-manifold.html\n\n２次元多様体の分類\nhttps://www.f-denshi.com/000TokiwaJPN/24manif/320fld.html\n"
+										},
+										"children": []
+									},
+									{
+										"data": {
+											"id": "cvhrhbq834o0",
+											"created": 1694605404701,
+											"text": "3次元多様体\n(three-dimensional manifold)",
+											"font-family": "sans-serif"
 										},
 										"children": []
 									}
@@ -2626,8 +2692,7 @@
 											"text": "群の位数\n(order)",
 											"hyperlink": "http://hooktail.sub.jp/algebra/GroupBasic/",
 											"hyperlinkTitle": "群について基本的なこと",
-											"font-family": "sans-serif",
-											"expandState": "expand"
+											"font-family": "sans-serif"
 										},
 										"children": [
 											{
@@ -2644,8 +2709,7 @@
 															"created": 1692679778629,
 															"text": "ラグランジュの定理\n(Lagrange's theorem)",
 															"font-family": "sans-serif",
-															"note": "\n有限群の部分群について、位数はもとの位数の約数になる\n\nラグランジュの定理 | 有限群の位数についての定理\nhttps://iwai-math-blog.com/index.php/ragurannjunoteiri-lagrange-theorem/\n",
-															"expandState": "expand"
+															"note": "\n有限群の部分群について、位数はもとの位数の約数になる\n\nラグランジュの定理 | 有限群の位数についての定理\nhttps://iwai-math-blog.com/index.php/ragurannjunoteiri-lagrange-theorem/\n"
 														},
 														"children": [
 															{
@@ -2754,8 +2818,7 @@
 													"text": "巡回群\n(cyclic group)",
 													"font-family": "sans-serif",
 													"hyperlink": "http://proofcafe.org/k27c8/math/math/group/page/cyclic_group/",
-													"hyperlinkTitle": "巡回群",
-													"expandState": "expand"
+													"hyperlinkTitle": "巡回群"
 												},
 												"children": []
 											}
@@ -2894,7 +2957,7 @@
 												"data": {
 													"id": "cuy3lh0hk3c0",
 													"created": 1692608383847,
-													"text": "両側イデアル\n(two–sided ideal)",
+													"text": "両側イデアル\n(two-sided ideal)",
 													"font-family": "sans-serif"
 												},
 												"children": [
@@ -2908,6 +2971,35 @@
 														"children": []
 													}
 												]
+											}
+										]
+									}
+								]
+							},
+							{
+								"data": {
+									"id": "cvj6w0mgiog0",
+									"created": 1694750432597,
+									"text": "体論\n(field theory)",
+									"font-family": "sans-serif"
+								},
+								"children": [
+									{
+										"data": {
+											"id": "cvj6z03k6lc0",
+											"created": 1694750666546,
+											"text": "部分体\n(subfield)",
+											"font-family": "sans-serif"
+										},
+										"children": [
+											{
+												"data": {
+													"id": "cvj6z4y2o9s0",
+													"created": 1694750677098,
+													"text": "<--> 拡大体\n(extended field / extension field)",
+													"font-family": "sans-serif"
+												},
+												"children": []
 											}
 										]
 									}
@@ -2937,6 +3029,70 @@
 											"id": "cujev18m6hk0",
 											"created": 1691116766011,
 											"text": "結び (join)",
+											"font-family": "sans-serif"
+										},
+										"children": []
+									},
+									{
+										"data": {
+											"id": "cvgmknmr3sw0",
+											"created": 1694490000198,
+											"text": "モジュラー束\n(modular lattice)",
+											"font-family": "sans-serif"
+										},
+										"children": [
+											{
+												"data": {
+													"id": "cvgmkb2wjcg0",
+													"created": 1694489972877,
+													"text": "分配束\n(distributive lattice)",
+													"font-family": "sans-serif"
+												},
+												"children": [
+													{
+														"data": {
+															"id": "cvgkd78gzkw0",
+															"created": 1694483773738,
+															"text": "ブール束 / ブール代数\n(boolean lattice / boolean algebra)",
+															"font-family": "sans-serif",
+															"note": "【入門】ブール代数まとめ【スッキリ見やすい】\nhttps://www.virtualinvader.com/bool-algebra-matome/\n\nブール代数と冪集合\nhttps://tnomura9.exblog.jp/28704847/\n",
+															"hyperlink": "https://ameblo.jp/karaokegurui/entry-12758464396.html",
+															"hyperlinkTitle": "束論入門3"
+														},
+														"children": [
+															{
+																"data": {
+																	"id": "cuxaiygf23s0",
+																	"created": 1692526374536,
+																	"text": "ベン図\n(Venn diagram)",
+																	"hyperlink": "https://visualizing.jp/euler-venn-diagram/",
+																	"hyperlinkTitle": "オイラー図とベン図（Euler Diagram & Venn Diagram）",
+																	"font-family": "sans-serif"
+																},
+																"children": [
+																	{
+																		"data": {
+																			"id": "cukj95hh3400",
+																			"created": 1691230716748,
+																			"text": "ド・モルガンの法則\n(De Morgan's laws)",
+																			"font-family": "sans-serif",
+																			"note": "プログラミングに役立つ 「ド・モルガンの法則」\nhttps://xtech.nikkei.com/it/article/Watcher/20070806/279127/\n"
+																		},
+																		"children": []
+																	}
+																]
+															}
+														]
+													}
+												]
+											}
+										]
+									},
+									{
+										"data": {
+											"id": "cvgmlb0z6v40",
+											"created": 1694490051124,
+											"text": "可補束 / 相補束\n(complemented lattice)",
 											"font-family": "sans-serif"
 										},
 										"children": []
@@ -2986,9 +3142,49 @@
 										"children": [
 											{
 												"data": {
-													"id": "cug5rgcwag00",
-													"created": 1690786415606,
-													"text": "<--> 終域\n(codomain)",
+													"id": "cvj4e9li0dk0",
+													"created": 1694743399354,
+													"text": "コスライス圏\n(coslice category)",
+													"font-family": "sans-serif"
+												},
+												"children": []
+											}
+										]
+									},
+									{
+										"data": {
+											"id": "cug5rgcwag00",
+											"created": 1690786415606,
+											"text": "終域\n(codomain)",
+											"font-family": "sans-serif"
+										},
+										"children": [
+											{
+												"data": {
+													"id": "cvfpr5gr2cg0",
+													"created": 1694397412576,
+													"text": "スライス圏\n(slice category)",
+													"font-family": "sans-serif"
+												},
+												"children": []
+											}
+										]
+									},
+									{
+										"data": {
+											"id": "cv3220dm4vc0",
+											"created": 1693111837390,
+											"text": "始対象\n(initial object / coterminal object)",
+											"font-family": "sans-serif",
+											"hyperlink": "https://bitterharvest.hatenablog.com/entry/2016/12/31/220930",
+											"hyperlinkTitle": "圏論での積と余積―終対象と始対象"
+										},
+										"children": [
+											{
+												"data": {
+													"id": "cv3227cv0ds0",
+													"created": 1693111852582,
+													"text": "<--> 終対象\n(final object / terminal object)",
 													"font-family": "sans-serif"
 												},
 												"children": []
@@ -3084,37 +3280,6 @@
 												]
 											}
 										]
-									},
-									{
-										"data": {
-											"id": "cv6qrmq6qag0",
-											"created": 1693486231651,
-											"text": "普遍性\n(universal property / universality)",
-											"font-family": "sans-serif"
-										},
-										"children": [
-											{
-												"data": {
-													"id": "cv3220dm4vc0",
-													"created": 1693111837390,
-													"text": "始対象\n(initial object / coterminal object)",
-													"font-family": "sans-serif",
-													"hyperlink": "https://bitterharvest.hatenablog.com/entry/2016/12/31/220930",
-													"hyperlinkTitle": "圏論での積と余積―終対象と始対象"
-												},
-												"children": [
-													{
-														"data": {
-															"id": "cv3227cv0ds0",
-															"created": 1693111852582,
-															"text": "<--> 終対象\n(final object / terminal object)",
-															"font-family": "sans-serif"
-														},
-														"children": []
-													}
-												]
-											}
-										]
 									}
 								]
 							},
@@ -3124,8 +3289,7 @@
 									"created": 1694395206545,
 									"text": "未整理",
 									"font-family": "sans-serif",
-									"background": "#eaf1dd",
-									"expandState": "collapse"
+									"background": "#eaf1dd"
 								},
 								"children": [
 									{
@@ -3145,17 +3309,16 @@
 											"text": "コンマ圏\n(comma category)",
 											"font-family": "sans-serif"
 										},
-										"children": [
-											{
-												"data": {
-													"id": "cvfpr5gr2cg0",
-													"created": 1694397412576,
-													"text": "スライス圏\n(slice category)",
-													"font-family": "sans-serif"
-												},
-												"children": []
-											}
-										]
+										"children": []
+									},
+									{
+										"data": {
+											"id": "cv6qrmq6qag0",
+											"created": 1693486231651,
+											"text": "普遍性\n(universal property / universality)",
+											"font-family": "sans-serif"
+										},
+										"children": []
 									}
 								]
 							}
@@ -3167,7 +3330,7 @@
 							"created": 1690255903834,
 							"text": "関手\n(functor)",
 							"font-family": "sans-serif",
-							"note": "圏Cにおける (始域, 射, 終域) を\n圏Dに移す手段\n\n●Hom関手\n圏論への入門 Hom 関手について\nhttps://blog.foresta.me/posts/learn-category-theory-06/\n",
+							"note": "圏Cにおける (始域, 射, 終域) を\n圏Dに移す手段\n\n●Hom関手\n圏論への入門 Hom 関手について\nhttps://blog.foresta.me/posts/learn-category-theory-06/\n\n●忘却関手 (forgetful functor)\n●自由関手 (free functor)\n",
 							"hyperlink": "https://bitterharvest.hatenablog.com/entry/2017/02/16/091551",
 							"hyperlinkTitle": "関手ー定義"
 						},
@@ -3179,26 +3342,46 @@
 									"text": "共変関手\n(covariant functor)",
 									"font-family": "sans-serif"
 								},
-								"children": []
-							},
-							{
-								"data": {
-									"id": "cukj3ajbajk0",
-									"created": 1691230257558,
-									"text": "反変関手\n(contravariant functor)",
-									"font-family": "sans-serif"
-								},
-								"children": []
+								"children": [
+									{
+										"data": {
+											"id": "cukj3ajbajk0",
+											"created": 1691230257558,
+											"text": "<--> 反変関手\n(contravariant functor)",
+											"font-family": "sans-serif"
+										},
+										"children": []
+									}
+								]
 							},
 							{
 								"data": {
 									"id": "cuo1jts4azk0",
 									"created": 1691587013125,
 									"text": "随伴\n(adjunction)",
-									"note": "数学者じゃない人が圏論を学ぶ時の勘どころ　その２　ー　圏論における図の書き順について\nhttps://note.com/nao_tsuchiya/n/nfd406d6d530a\n",
+									"note": "数学者じゃない人が圏論を学ぶ時の勘どころ　その２　ー　圏論における図の書き順について\nhttps://note.com/nao_tsuchiya/n/nfd406d6d530a\n\n自由とは何か\nhttps://mathlog.info/articles/1657\n",
 									"font-family": "sans-serif"
 								},
-								"children": []
+								"children": [
+									{
+										"data": {
+											"id": "cvhsi86qeao0",
+											"created": 1694608296466,
+											"text": "左随伴\n(left adjoint)",
+											"font-family": "sans-serif"
+										},
+										"children": []
+									},
+									{
+										"data": {
+											"id": "cvhsjmk5vbk0",
+											"created": 1694608406117,
+											"text": "右随伴\n(right adjoint)",
+											"font-family": "sans-serif"
+										},
+										"children": []
+									}
+								]
 							}
 						]
 					},
@@ -4456,6 +4639,18 @@
 					},
 					{
 						"data": {
+							"id": "cvj6arkybls0",
+							"created": 1694748767267,
+							"text": "ベクトル解析\n(vector calculus)",
+							"font-family": "sans-serif",
+							"note": "4.ベクトル解析とは\nhttps://yuukou-potential.com/vector-calculus/\n",
+							"hyperlink": "https://mathematical.jp/vector_calculus/",
+							"hyperlinkTitle": "よくわかるベクトル解析"
+						},
+						"children": []
+					},
+					{
+						"data": {
 							"id": "cv0rgumpdpc0",
 							"created": 1692878848219,
 							"text": "複素解析\n(complex analysis)",
@@ -4533,6 +4728,42 @@
 												"children": []
 											}
 										]
+									}
+								]
+							},
+							{
+								"data": {
+									"id": "cvj1qp9bz7k0",
+									"created": 1694735910487,
+									"text": "コーシー・リーマンの方程式\n(Cauchy-Riemann equations)",
+									"font-family": "sans-serif",
+									"note": "正則関数とコーシーリーマンの関係式\nhttps://math-juken.com/sikaku/cauchyriemann/\n",
+									"hyperlink": "https://ramune-physics.blogspot.com/2021/03/complex1.html",
+									"hyperlinkTitle": "コーシーリーマンの関係式とは？その導出"
+								},
+								"children": []
+							},
+							{
+								"data": {
+									"id": "cvj172n73i80",
+									"created": 1694734372341,
+									"text": "グリーンの公式\n(Green's theorem)",
+									"font-family": "sans-serif",
+									"hyperlink": "https://physkorimath.xyz/green/",
+									"hyperlinkTitle": "グリーンの公式【複素関数論】",
+									"note": "グリーンの定理\nhttps://w3e.kanazawa-it.ac.jp/math/category/sekibun/zyuusekibun/henkan-tex.cgi?target=/math/category/sekibun/zyuusekibun/Greens_Theorem.html\n"
+								},
+								"children": [
+									{
+										"data": {
+											"id": "cvj1en8c2ug0",
+											"created": 1694734965704,
+											"text": "コーシーの積分定理\n(Cauchy’s integral theorem)",
+											"font-family": "sans-serif",
+											"hyperlink": "https://physkorimath.xyz/cauchy/",
+											"hyperlinkTitle": "コーシーの積分定理"
+										},
+										"children": []
 									}
 								]
 							}
