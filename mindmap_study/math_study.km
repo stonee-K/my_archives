@@ -1802,12 +1802,71 @@
 								"children": [
 									{
 										"data": {
+											"id": "cvl7p1w1zs00",
+											"created": 1694955827827,
+											"text": "定義域\n(domain of definition)",
+											"font-family": "sans-serif",
+											"expandState": "expand",
+											"hyperlink": "https://ja.wikipedia.org/wiki/%E5%AE%9A%E7%BE%A9%E5%9F%9F",
+											"hyperlinkTitle": "定義域"
+										},
+										"children": [
+											{
+												"data": {
+													"id": "cv7dikkiae00",
+													"created": 1693550407205,
+													"text": "<--> 像 / 値域\n(image / range)",
+													"font-family": "sans-serif",
+													"hyperlink": "https://ja.wikipedia.org/wiki/%E5%83%8F_(%E6%95%B0%E5%AD%A6)",
+													"hyperlinkTitle": "像 (数学)",
+													"expandState": "expand"
+												},
+												"children": [
+													{
+														"data": {
+															"id": "cv7dizmut400",
+															"created": 1693550439998,
+															"text": "<--> 逆像 / 原像\n(inverse image / preimage)",
+															"font-family": "sans-serif"
+														},
+														"children": []
+													}
+												]
+											},
+											{
+												"data": {
+													"id": "cvl7c16ijzc0",
+													"created": 1694954807549,
+													"text": "制限写像\n(restriction)",
+													"font-family": "sans-serif",
+													"hyperlink": "http://zen.shinshu-u.ac.jp/modules/0065000003/main/chapter3.html",
+													"hyperlinkTitle": "集合論"
+												},
+												"children": []
+											}
+										]
+									},
+									{
+										"data": {
 											"id": "ctqo92rqsk00",
 											"created": 1688198017688,
 											"text": "単射\n(injection / injective function)",
 											"font-family": "sans-serif"
 										},
-										"children": []
+										"children": [
+											{
+												"data": {
+													"id": "cvl1cot4cs00",
+													"created": 1694937932322,
+													"text": "包含写像\n(inclusion map)",
+													"font-family": "sans-serif",
+													"note": "または\n標準単射 (canonical injection)\n",
+													"hyperlink": "https://scrapbox.io/mrsekut-p/%E5%8C%85%E5%90%AB%E5%86%99%E5%83%8F",
+													"hyperlinkTitle": "包含写像"
+												},
+												"children": []
+											}
+										]
 									},
 									{
 										"data": {
@@ -1967,27 +2026,6 @@
 														]
 													}
 												]
-											}
-										]
-									},
-									{
-										"data": {
-											"id": "cv7dikkiae00",
-											"created": 1693550407205,
-											"text": "像 / 値域\n(image / range)",
-											"font-family": "sans-serif",
-											"hyperlink": "https://ja.wikipedia.org/wiki/%E5%83%8F_(%E6%95%B0%E5%AD%A6)",
-											"hyperlinkTitle": "像 (数学)"
-										},
-										"children": [
-											{
-												"data": {
-													"id": "cv7dizmut400",
-													"created": 1693550439998,
-													"text": "<--> 逆像 / 原像\n(inverse image / preimage)",
-													"font-family": "sans-serif"
-												},
-												"children": []
 											}
 										]
 									},
@@ -4076,11 +4114,22 @@
 													"created": 1687678487537,
 													"text": "<--> 陰関数\n(implicit function)",
 													"font-family": "sans-serif",
-													"note": "陰関数定理\n(implicit function theorem)\n\n",
 													"hyperlink": "https://risalc.info/src/implicit-function.html",
 													"hyperlinkTitle": "陰関数"
 												},
-												"children": []
+												"children": [
+													{
+														"data": {
+															"id": "cvjf52wik9k0",
+															"created": 1694773711714,
+															"text": "陰関数定理\n(implicit function theorem)",
+															"font-family": "sans-serif",
+															"hyperlink": "https://www.f.waseda.jp/ksuga/2005chap16.pdf",
+															"hyperlinkTitle": "第16章 陰関数定理"
+														},
+														"children": []
+													}
+												]
 											}
 										]
 									},
@@ -4257,39 +4306,6 @@
 									"background": "#eaf1dd"
 								},
 								"children": [
-									{
-										"data": {
-											"id": "cskxxaperds0",
-											"created": 1683959787510,
-											"text": "テイラー展開\n(Taylor expansion)",
-											"font-family": "sans-serif",
-											"hyperlink": "https://controlabo.com/taylor-series/",
-											"hyperlinkTitle": "超分かるテイラー展開。イメージ・意味・使い方を具体例で解説！",
-											"note": "テイラー展開の公式集\n【よく使う関数の展開式一覧】\nhttps://shoma-life-blog.com/%E3%83%86%E3%82%A4%E3%83%A9%E3%83%BC%E5%B1%95%E9%96%8B%E3%81%AE%E5%85%AC%E5%BC%8F%E9%9B%86/\n"
-										},
-										"children": [
-											{
-												"data": {
-													"id": "cskxxusjyf40",
-													"created": 1683959831236,
-													"text": "マクローリン展開\n(Maclaurin expansion)",
-													"font-family": "sans-serif"
-												},
-												"children": []
-											},
-											{
-												"data": {
-													"id": "cua3jzsqeu80",
-													"created": 1690170829049,
-													"text": "剰余項\n(Lagrange remainder)",
-													"font-family": "sans-serif",
-													"hyperlink": "https://mathsuke.jp/taylor-theorem/",
-													"hyperlinkTitle": "テイラーの定理～具体例からわかりやすく解説！　剰余項の由来はコーシーの平均値の定理！？～"
-												},
-												"children": []
-											}
-										]
-									},
 									{
 										"data": {
 											"id": "cu8vc40w5pc0",
@@ -4475,6 +4491,51 @@
 																	"hyperlinkTitle": "ロピタルの定理【証明と例題】"
 																},
 																"children": []
+															}
+														]
+													},
+													{
+														"data": {
+															"id": "cvka0vhtgps0",
+															"created": 1694860836539,
+															"text": "テイラーの定理\n(Taylor's theorem)",
+															"font-family": "sans-serif",
+															"hyperlink": "https://ramenhuhu.com/math-taylorstheorem",
+															"hyperlinkTitle": "テイラーの定理の証明と応用"
+														},
+														"children": [
+															{
+																"data": {
+																	"id": "cskxxaperds0",
+																	"created": 1683959787510,
+																	"text": "テイラー展開\n(Taylor expansion)",
+																	"font-family": "sans-serif",
+																	"hyperlink": "https://controlabo.com/taylor-series/",
+																	"hyperlinkTitle": "超分かるテイラー展開。イメージ・意味・使い方を具体例で解説！",
+																	"note": "テイラー展開の公式集\n【よく使う関数の展開式一覧】\nhttps://shoma-life-blog.com/%E3%83%86%E3%82%A4%E3%83%A9%E3%83%BC%E5%B1%95%E9%96%8B%E3%81%AE%E5%85%AC%E5%BC%8F%E9%9B%86/\n"
+																},
+																"children": [
+																	{
+																		"data": {
+																			"id": "cskxxusjyf40",
+																			"created": 1683959831236,
+																			"text": "マクローリン展開\n(Maclaurin expansion)",
+																			"font-family": "sans-serif"
+																		},
+																		"children": []
+																	},
+																	{
+																		"data": {
+																			"id": "cua3jzsqeu80",
+																			"created": 1690170829049,
+																			"text": "剰余項\n(Lagrange remainder)",
+																			"font-family": "sans-serif",
+																			"hyperlink": "https://mathsuke.jp/taylor-theorem/",
+																			"hyperlinkTitle": "テイラーの定理～具体例からわかりやすく解説！　剰余項の由来はコーシーの平均値の定理！？～"
+																		},
+																		"children": []
+																	}
+																]
 															}
 														]
 													}
@@ -4763,7 +4824,39 @@
 											"hyperlink": "https://physkorimath.xyz/cauchy/",
 											"hyperlinkTitle": "コーシーの積分定理"
 										},
-										"children": []
+										"children": [
+											{
+												"data": {
+													"id": "cvka8o6wqy80",
+													"created": 1694861447555,
+													"text": "コーシーの積分公式\n(Cauchy's integral expression)",
+													"font-family": "sans-serif",
+													"hyperlink": "https://www.krrk0.com/cauchys-integral-formula/",
+													"hyperlinkTitle": "コーシーの積分公式を分かりやすく解説！【なんとなくわかる複素解析】"
+												},
+												"children": [
+													{
+														"data": {
+															"id": "cvka9i3lk280",
+															"created": 1694861512658,
+															"text": "ローラン級数展開\n(Laurent series)",
+															"font-family": "sans-serif"
+														},
+														"children": [
+															{
+																"data": {
+																	"id": "cvkb3wbxbj40",
+																	"created": 1694863894562,
+																	"text": "留数定理\n(residue theorem)",
+																	"font-family": "sans-serif"
+																},
+																"children": []
+															}
+														]
+													}
+												]
+											}
+										]
 									}
 								]
 							}
