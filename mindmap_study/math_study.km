@@ -523,7 +523,17 @@
 											"hyperlink": "http://sammaya.garyoutensei.com/math_phys/math1/math1-3/math1-3.html",
 											"hyperlinkTitle": "第3回：実数とは何か"
 										},
-										"children": []
+										"children": [
+											{
+												"data": {
+													"id": "cvmkpre1gm80",
+													"created": 1695094117720,
+													"text": "完備化\n(completion)",
+													"font-family": "sans-serif"
+												},
+												"children": []
+											}
+										]
 									},
 									{
 										"data": {
@@ -1827,7 +1837,9 @@
 															"id": "cv7dizmut400",
 															"created": 1693550439998,
 															"text": "<--> 逆像 / 原像\n(inverse image / preimage)",
-															"font-family": "sans-serif"
+															"font-family": "sans-serif",
+															"hyperlink": "https://university-note.com/image-inverseimage/",
+															"hyperlinkTitle": "入門線形代数】像と逆像-線形写像-"
 														},
 														"children": []
 													}
@@ -2175,9 +2187,68 @@
 											"id": "cv8xzhq4irs0",
 											"created": 1693709715360,
 											"text": "距離空間\n(metric space)",
-											"font-family": "sans-serif"
+											"font-family": "sans-serif",
+											"expandState": "expand",
+											"hyperlink": "https://www.sciencetime.jp/note/120",
+											"hyperlinkTitle": "距離空間と位相"
 										},
-										"children": []
+										"children": [
+											{
+												"data": {
+													"id": "cv7ed0skznc0",
+													"created": 1693552793447,
+													"text": "連続写像\n(continuous map)",
+													"font-family": "sans-serif",
+													"hyperlink": "https://minazumi.com/math/note/pre/ch02sec02.html",
+													"hyperlinkTitle": "2.2 連続写像",
+													"note": "距離空間の間の連続写像\nhttps://www.sciencetime.jp/note/128\n"
+												},
+												"children": [
+													{
+														"data": {
+															"id": "cvml2zx8z800",
+															"created": 1695095155030,
+															"text": "一様連続\n(uniformly continuous)",
+															"font-family": "sans-serif"
+														},
+														"children": [
+															{
+																"data": {
+																	"id": "cvml0ehhou00",
+																	"created": 1695094951637,
+																	"text": "リプシッツ連続\n(Lipschitz continuous)",
+																	"font-family": "sans-serif",
+																	"hyperlink": "https://math-pirka.com/lipschitz/",
+																	"hyperlinkTitle": "リプシッツ連続の定義とその性質",
+																	"expandState": "expand"
+																},
+																"children": [
+																	{
+																		"data": {
+																			"id": "cvm0doght540",
+																			"created": 1695036748770,
+																			"text": "縮小写像\n(contraction mapping)",
+																			"font-family": "sans-serif"
+																		},
+																		"children": [
+																			{
+																				"data": {
+																					"id": "cvm0ll9nhfc0",
+																					"created": 1695037368739,
+																					"text": "バナッハの不動点定理\n(Banach's fixed-point theorem)",
+																					"font-family": "sans-serif"
+																				},
+																				"children": []
+																			}
+																		]
+																	}
+																]
+															}
+														]
+													}
+												]
+											}
+										]
 									}
 								]
 							}
@@ -2393,17 +2464,6 @@
 										]
 									}
 								]
-							},
-							{
-								"data": {
-									"id": "cv7ed0skznc0",
-									"created": 1693552793447,
-									"text": "連続写像\n(continuous map)",
-									"font-family": "sans-serif",
-									"hyperlink": "https://minazumi.com/math/note/pre/ch02sec02.html",
-									"hyperlinkTitle": "2.2 連続写像"
-								},
-								"children": []
 							},
 							{
 								"data": {
@@ -2970,7 +3030,8 @@
 											"text": "イデアル\n(ideal)",
 											"font-family": "sans-serif",
 											"hyperlink": "https://keito.luxe/2021/01/20/ideal/",
-											"hyperlinkTitle": "イデアルとは何か。定義と例と発展的なイデアルの紹介"
+											"hyperlinkTitle": "イデアルとは何か。定義と例と発展的なイデアルの紹介",
+											"note": "●自明なイデアル\n(trivial ideal)\n\n●真のイデアル\n(proper ideal)\n\n●有限生成イデアル\n(finitely generated ideal)\n"
 										},
 										"children": [
 											{
@@ -3005,6 +3066,28 @@
 															"created": 1692608406447,
 															"text": "商環 / 剰余環\n(quotient ring / factor ring)",
 															"font-family": "sans-serif"
+														},
+														"children": []
+													}
+												]
+											},
+											{
+												"data": {
+													"id": "cvlxlasgsxc0",
+													"created": 1695028882602,
+													"text": "主イデアル / 単項イデアル\n(principal ideal)",
+													"font-family": "sans-serif"
+												},
+												"children": [
+													{
+														"data": {
+															"id": "cvlxli9jcoo0",
+															"created": 1695028898872,
+															"text": "単項イデアル整域 PID\n(Principal Integral Domain)",
+															"font-family": "sans-serif",
+															"hyperlink": "https://www.slideshare.net/HanpenRobot/zpid",
+															"hyperlinkTitle": "整数環Zがpidである事の証明",
+															"note": "整数全体Zが単項イデアル整域\nhttps://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q12112363007\n"
 														},
 														"children": []
 													}
