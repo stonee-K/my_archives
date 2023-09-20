@@ -1816,7 +1816,6 @@
 											"created": 1694955827827,
 											"text": "定義域\n(domain of definition)",
 											"font-family": "sans-serif",
-											"expandState": "expand",
 											"hyperlink": "https://ja.wikipedia.org/wiki/%E5%AE%9A%E7%BE%A9%E5%9F%9F",
 											"hyperlinkTitle": "定義域"
 										},
@@ -1828,8 +1827,7 @@
 													"text": "<--> 像 / 値域\n(image / range)",
 													"font-family": "sans-serif",
 													"hyperlink": "https://ja.wikipedia.org/wiki/%E5%83%8F_(%E6%95%B0%E5%AD%A6)",
-													"hyperlinkTitle": "像 (数学)",
-													"expandState": "expand"
+													"hyperlinkTitle": "像 (数学)"
 												},
 												"children": [
 													{
@@ -2188,7 +2186,6 @@
 											"created": 1693709715360,
 											"text": "距離空間\n(metric space)",
 											"font-family": "sans-serif",
-											"expandState": "expand",
 											"hyperlink": "https://www.sciencetime.jp/note/120",
 											"hyperlinkTitle": "距離空間と位相"
 										},
@@ -2219,8 +2216,7 @@
 																	"text": "リプシッツ連続\n(Lipschitz continuous)",
 																	"font-family": "sans-serif",
 																	"hyperlink": "https://math-pirka.com/lipschitz/",
-																	"hyperlinkTitle": "リプシッツ連続の定義とその性質",
-																	"expandState": "expand"
+																	"hyperlinkTitle": "リプシッツ連続の定義とその性質"
 																},
 																"children": [
 																	{
@@ -2566,6 +2562,25 @@
 											"font-family": "sans-serif"
 										},
 										"children": [
+											{
+												"data": {
+													"id": "cvmuoke1mc80",
+													"created": 1695122235217,
+													"text": "原始多項式\n(primitive polynomial)",
+													"font-family": "sans-serif"
+												},
+												"children": [
+													{
+														"data": {
+															"id": "cvmulcvt7mo0",
+															"created": 1695121983785,
+															"text": "モニック多項式\n(monic polynomial)",
+															"font-family": "sans-serif"
+														},
+														"children": []
+													}
+												]
+											},
 											{
 												"data": {
 													"id": "cv2j4n96wfc0",
@@ -4210,7 +4225,20 @@
 															"hyperlink": "https://www.f.waseda.jp/ksuga/2005chap16.pdf",
 															"hyperlinkTitle": "第16章 陰関数定理"
 														},
-														"children": []
+														"children": [
+															{
+																"data": {
+																	"id": "cuy0v9cjxkg0",
+																	"created": 1692600687475,
+																	"text": "ラグランジュの未定乗数法\n(method of Lagrange multiplier)",
+																	"note": "【例題あり】ラグランジュの未定乗数法を徹底解説！｜３ステップで必ず解ける\nhttps://dreamer-uma.com/method-of-lagrange-multiplier/\n\n等式条件下におけるラグランジュの未定乗数法の解説\nhttps://laid-back-scientist.com/lagrange-multiplier\n",
+																	"font-family": "sans-serif",
+																	"hyperlink": "https://eman-physics.net/analytic/lag_method.html",
+																	"hyperlinkTitle": "ラグランジュの未定乗数法"
+																},
+																"children": []
+															}
+														]
 													}
 												]
 											}
