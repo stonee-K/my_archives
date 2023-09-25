@@ -327,6 +327,18 @@
 														]
 													}
 												]
+											},
+											{
+												"data": {
+													"id": "cvrml8696w00",
+													"created": 1695607204437,
+													"text": "拡大実数\n(extended real number)",
+													"font-family": "sans-serif",
+													"note": "または\nアフィン拡大実数\n(affinely extended real number)\n",
+													"hyperlink": "https://wiis.info/math/real-number/definition-of-real-number/extended-real-number-system/",
+													"hyperlinkTitle": "拡大実数系と不定形"
+												},
+												"children": []
 											}
 										]
 									},
@@ -1059,38 +1071,114 @@
 								"children": [
 									{
 										"data": {
-											"id": "cvj95hl0g4o0",
-											"created": 1694756817011,
-											"text": "節点 / 頂点 / 点\n(node / vertex / point)",
-											"font-family": "sans-serif"
-										},
-										"children": []
-									},
-									{
-										"data": {
-											"id": "cvj95wktiyo0",
-											"created": 1694756849651,
-											"text": "辺 / 線\n(edge / line)",
-											"font-family": "sans-serif"
-										},
-										"children": []
-									},
-									{
-										"data": {
-											"id": "cvj92qht4200",
-											"created": 1694756601316,
-											"text": "無向グラフ\n(indirected graph)",
-											"font-family": "sans-serif"
+											"id": "cvngmekt4mw0",
+											"created": 1695184130255,
+											"text": "構成要素",
+											"font-family": "sans-serif",
+											"background": "#eaf1dd"
 										},
 										"children": [
 											{
 												"data": {
-													"id": "cvj92ujqj4w0",
-													"created": 1694756610140,
-													"text": "<--> 有向グラフ\n(directed graph)",
+													"id": "cvj95hl0g4o0",
+													"created": 1694756817011,
+													"text": "節点 / 頂点 / 点\n(node / vertex / point)",
+													"font-family": "sans-serif"
+												},
+												"children": [
+													{
+														"data": {
+															"id": "cvnf6eslsrs0",
+															"created": 1695180055790,
+															"text": "次数\n(degree / valency)",
+															"font-family": "sans-serif",
+															"note": "点に繋がる辺の数\n",
+															"hyperlink": "https://ja.wikipedia.org/wiki/%E6%AC%A1%E6%95%B0_(%E3%82%B0%E3%83%A9%E3%83%95%E7%90%86%E8%AB%96)",
+															"hyperlinkTitle": "次数 (グラフ理論)"
+														},
+														"children": [
+															{
+																"data": {
+																	"id": "cvnf7ljjco00",
+																	"created": 1695180148844,
+																	"text": "入次数\n(indegree)",
+																	"font-family": "sans-serif",
+																	"note": "入次数が0 = 供給点 (source)\n"
+																},
+																"children": []
+															},
+															{
+																"data": {
+																	"id": "cvnf7wxrr3c0",
+																	"created": 1695180173649,
+																	"text": "出次数\n(outdegree)",
+																	"font-family": "sans-serif",
+																	"note": "出次数が0 = 需要点 (sink)\n"
+																},
+																"children": []
+															}
+														]
+													}
+												]
+											},
+											{
+												"data": {
+													"id": "cvj95wktiyo0",
+													"created": 1694756849651,
+													"text": "辺 / 線\n(edge / line)",
 													"font-family": "sans-serif"
 												},
 												"children": []
+											}
+										]
+									},
+									{
+										"data": {
+											"id": "cvo7bjlwfww0",
+											"created": 1695259449167,
+											"text": "種類",
+											"font-family": "sans-serif",
+											"background": "#eaf1dd"
+										},
+										"children": [
+											{
+												"data": {
+													"id": "cvj92qht4200",
+													"created": 1694756601316,
+													"text": "無向グラフ\n(indirected graph)",
+													"font-family": "sans-serif"
+												},
+												"children": [
+													{
+														"data": {
+															"id": "cvo7b5oq52o0",
+															"created": 1695259418863,
+															"text": "木\n(tree)",
+															"font-family": "sans-serif"
+														},
+														"children": []
+													}
+												]
+											},
+											{
+												"data": {
+													"id": "cvj92ujqj4w0",
+													"created": 1694756610140,
+													"text": "有向グラフ\n(directed graph)",
+													"font-family": "sans-serif"
+												},
+												"children": [
+													{
+														"data": {
+															"id": "cvo79458y3k0",
+															"created": 1695259258780,
+															"text": "有向非循環グラフ DAG\n(Directed Acyclic Graph)",
+															"font-family": "sans-serif",
+															"note": "閉路のない有向グラフ\n"
+														},
+														"children": []
+													}
+												]
 											}
 										]
 									}
@@ -2567,7 +2655,9 @@
 													"id": "cvmuoke1mc80",
 													"created": 1695122235217,
 													"text": "原始多項式\n(primitive polynomial)",
-													"font-family": "sans-serif"
+													"font-family": "sans-serif",
+													"hyperlink": "https://ja.wikipedia.org/wiki/%E5%A4%9A%E9%A0%85%E5%BC%8F%E3%81%AE%E5%86%85%E5%AE%B9%E3%81%A8%E5%8E%9F%E5%A7%8B%E5%A4%9A%E9%A0%85%E5%BC%8F",
+													"hyperlinkTitle": "多項式の内容と原始多項式"
 												},
 												"children": [
 													{
@@ -2909,7 +2999,27 @@
 													"text": "正規部分群\n(normal subgroup)",
 													"font-family": "sans-serif"
 												},
-												"children": []
+												"children": [
+													{
+														"data": {
+															"id": "cvrslwcbaaw0",
+															"created": 1695624183705,
+															"text": "正規列\n(normal series)",
+															"font-family": "sans-serif"
+														},
+														"children": [
+															{
+																"data": {
+																	"id": "cvrqerusbm80",
+																	"created": 1695617983169,
+																	"text": "組成列\n(composition series)",
+																	"font-family": "sans-serif"
+																},
+																"children": []
+															}
+														]
+													}
+												]
 											}
 										]
 									},
@@ -2942,7 +3052,9 @@
 											"id": "cuil8qj55940",
 											"created": 1691033206504,
 											"text": "単純群\n(simple group)",
-											"font-family": "sans-serif"
+											"font-family": "sans-serif",
+											"hyperlink": "https://ja.wikipedia.org/wiki/%E5%8D%98%E7%B4%94%E7%BE%A4",
+											"hyperlinkTitle": "単純群"
 										},
 										"children": []
 									},
@@ -3122,20 +3234,32 @@
 								"children": [
 									{
 										"data": {
-											"id": "cvj6z03k6lc0",
-											"created": 1694750666546,
-											"text": "部分体\n(subfield)",
-											"font-family": "sans-serif"
+											"id": "cvj6z4y2o9s0",
+											"created": 1694750677098,
+											"text": "拡大体\n(extended field / extension field)",
+											"font-family": "sans-serif",
+											"hyperlink": "https://ufcpp.net/study/math/group/extensionfield/",
+											"hyperlinkTitle": "体の拡大"
 										},
 										"children": [
 											{
 												"data": {
-													"id": "cvj6z4y2o9s0",
-													"created": 1694750677098,
-													"text": "<--> 拡大体\n(extended field / extension field)",
+													"id": "cvj6z03k6lc0",
+													"created": 1694750666546,
+													"text": "<--> 部分体\n(subfield)",
 													"font-family": "sans-serif"
 												},
-												"children": []
+												"children": [
+													{
+														"data": {
+															"id": "cvrnrnu4dv40",
+															"created": 1695610529826,
+															"text": "中間体\n(intermediate field)",
+															"font-family": "sans-serif"
+														},
+														"children": []
+													}
+												]
 											}
 										]
 									}
@@ -3770,6 +3894,27 @@
 																"children": []
 															}
 														]
+													}
+												]
+											},
+											{
+												"data": {
+													"id": "cvpgfaqmr8g0",
+													"created": 1695386693265,
+													"text": "線型写像 / 線型変換\n(linear mapping / linear transformation)",
+													"font-family": "sans-serif",
+													"hyperlink": "https://oguemon.com/study/linear-algebra/whats-linear-mapping/",
+													"hyperlinkTitle": "【線形写像編】線形写像って何？\"核\"や\"同型\"と一緒に解説"
+												},
+												"children": [
+													{
+														"data": {
+															"id": "cvpgrir6gyg0",
+															"created": 1695387651082,
+															"text": "表現行列\n(representational matrix)",
+															"font-family": "sans-serif"
+														},
+														"children": []
 													}
 												]
 											}
@@ -4702,10 +4847,10 @@
 											"id": "cr71vrand3c0",
 											"created": 1678892953501,
 											"text": "定積分\n(definite integral)",
-											"note": "または\nリーマン積分 (Riemann integral)\n",
+											"note": "または\nリーマン積分 (Riemann integral)\n\n定積分の定義  リンク切れ\nhttp://aozoragakuen.sakura.ne.jp/taiwa/taiwaNch01/sekibun/node1.html\n\n積分法の源流\nhttps://kozu-osaka.jp/cms/wp-content/uploads/2020/03/ebb5b50f0729c237b48f73ecdebef991.pdf\n",
 											"font-family": "sans-serif",
-											"hyperlink": "http://aozoragakuen.sakura.ne.jp/taiwa/taiwaNch01/sekibun/node1.html",
-											"hyperlinkTitle": "定積分の定義"
+											"hyperlink": "https://hermes-ir.lib.hit-u.ac.jp/hermes/ir/re/28454/jinbun0001101300.pdf",
+											"hyperlinkTitle": "数学の歴史的流れと教育的意義との 兼ね合いについて"
 										},
 										"children": [
 											{
@@ -4762,17 +4907,29 @@
 											"text": "重積分\n(multiple integral)",
 											"font-family": "sans-serif",
 											"hyperlink": "https://math-journal.bear-fruit.online/multiple-integral/",
-											"hyperlinkTitle": "重積分のやり方を基本から丁寧に！積分範囲や重積分のイメージも図解！"
+											"hyperlinkTitle": "重積分のやり方を基本から丁寧に！積分範囲や重積分のイメージも図解！",
+											"note": "重積分（累次積分と順序交換）\nhttps://math-juken.com/sikaku/ruijisekibun/\n"
 										},
 										"children": [
 											{
 												"data": {
-													"id": "cv0rid2o6gg0",
-													"created": 1692878966731,
-													"text": "フビニの定理\n(Fubini's theorem)",
-													"font-family": "sans-serif"
+													"id": "cvrm0r1nc3s0",
+													"created": 1695605599869,
+													"text": "逐次積分 / 繰り返し積分\n(iterated integral / repeated integral)",
+													"font-family": "sans-serif",
+													"note": "または 累次積分\n"
 												},
-												"children": []
+												"children": [
+													{
+														"data": {
+															"id": "cv0rid2o6gg0",
+															"created": 1692878966731,
+															"text": "フビニの定理\n(Fubini's theorem)",
+															"font-family": "sans-serif"
+														},
+														"children": []
+													}
+												]
 											},
 											{
 												"data": {
