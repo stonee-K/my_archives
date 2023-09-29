@@ -1049,9 +1049,19 @@
 							"created": 1694752370874,
 							"text": "整数論\n(number theory)",
 							"font-family": "sans-serif",
-							"note": "\nググった限りでは、正の整数については\ntheory of positive integers\nのような名称が充てられている\n"
+							"note": "\nググった限りでは、正の整数については\ntheory of positive integers\nのような名称が充てられている\n\n●フェルマーの小定理\n(Fermat's little theorem)\n\n●ディオファントス方程式\n(Diophantine equation)\n●中国剰余定理\n(Chinese remainder theorem)\n"
 						},
-						"children": []
+						"children": [
+							{
+								"data": {
+									"id": "cvu49ezfsy00",
+									"created": 1695860178784,
+									"text": "整数の合同 / 合同式\n(congruence of integers)",
+									"font-family": "sans-serif"
+								},
+								"children": []
+							}
+						]
 					},
 					{
 						"data": {
@@ -2620,7 +2630,7 @@
 							"created": 1691034714701,
 							"text": "方程式\n(equation)",
 							"font-family": "sans-serif",
-							"note": "●次数 (degree)\n●定数項 (constant term)\n"
+							"note": "●次数 (degree)\n●定数項 (constant term)\n●恒等式 (identity)\n"
 						},
 						"children": [
 							{
@@ -2707,15 +2717,47 @@
 							},
 							{
 								"data": {
-									"id": "ctusjx46br40",
-									"created": 1688616391651,
-									"text": "平方完成\n(completing the square)",
+									"id": "cvu4soysodc0",
+									"created": 1695861689432,
+									"text": "演算",
 									"font-family": "sans-serif",
-									"note": "【2次方程式】解の公式証明(平方完成の式)\nhttps://denheki-suri.com/solution-formula-proof/\n",
-									"hyperlink": "https://suuhaji.com/complete-square/",
-									"hyperlinkTitle": "”平方完成”の意味や手順・やり方について ※解の公式や判別式より重要です"
+									"background": "#eaf1dd"
 								},
-								"children": []
+								"children": [
+									{
+										"data": {
+											"id": "cvu4syppnt40",
+											"created": 1695861710650,
+											"text": "剰余定理\n(polynomial remainder theorem)",
+											"font-family": "sans-serif",
+											"hyperlink": "https://juken-mikata.net/how-to/mathematics/theorem-of-remainder.html",
+											"hyperlinkTitle": "剰余の定理とは？証明＆必ず解いておきたい問題付き"
+										},
+										"children": [
+											{
+												"data": {
+													"id": "cvu4t72nqk80",
+													"created": 1695861728848,
+													"text": "因数定理\n(factor theorem)",
+													"font-family": "sans-serif"
+												},
+												"children": []
+											}
+										]
+									},
+									{
+										"data": {
+											"id": "ctusjx46br40",
+											"created": 1688616391651,
+											"text": "平方完成\n(completing the square)",
+											"font-family": "sans-serif",
+											"note": "【2次方程式】解の公式証明(平方完成の式)\nhttps://denheki-suri.com/solution-formula-proof/\n",
+											"hyperlink": "https://suuhaji.com/complete-square/",
+											"hyperlinkTitle": "”平方完成”の意味や手順・やり方について ※解の公式や判別式より重要です"
+										},
+										"children": []
+									}
+								]
 							}
 						]
 					},
@@ -2912,7 +2954,9 @@
 															"created": 1692679778629,
 															"text": "ラグランジュの定理\n(Lagrange's theorem)",
 															"font-family": "sans-serif",
-															"note": "\n有限群の部分群について、位数はもとの位数の約数になる\n\nラグランジュの定理 | 有限群の位数についての定理\nhttps://iwai-math-blog.com/index.php/ragurannjunoteiri-lagrange-theorem/\n"
+															"note": "\n有限群の部分群について、位数はもとの位数の約数になる\n\nラグランジュの定理 | 有限群の位数についての定理\nhttps://iwai-math-blog.com/index.php/ragurannjunoteiri-lagrange-theorem/\n",
+															"hyperlink": "https://pebble8888.hatenablog.com/entry/2018/06/14/213243",
+															"hyperlinkTitle": "群論におけるラグランジュの定理"
 														},
 														"children": [
 															{
@@ -3097,7 +3141,92 @@
 											"text": "部分環\n(subring)",
 											"font-family": "sans-serif"
 										},
-										"children": []
+										"children": [
+											{
+												"data": {
+													"id": "cuxaocogdgw0",
+													"created": 1692526797318,
+													"text": "イデアル\n(ideal)",
+													"font-family": "sans-serif",
+													"hyperlink": "https://keito.luxe/2021/01/20/ideal/",
+													"hyperlinkTitle": "イデアルとは何か。定義と例と発展的なイデアルの紹介",
+													"note": "●自明なイデアル (trivial ideal)\n  ●零イデアル (zero ideal)\n\n●真のイデアル (proper ideal)\n\n●有限生成イデアル\n(finitely generated ideal)\n"
+												},
+												"children": [
+													{
+														"data": {
+															"id": "cuy3lagpuuw0",
+															"created": 1692608369591,
+															"text": "左イデアル\n(left ideal)",
+															"font-family": "sans-serif"
+														},
+														"children": []
+													},
+													{
+														"data": {
+															"id": "cuy3ldr4gio0",
+															"created": 1692608376751,
+															"text": "右イデアル\n(right ideal)",
+															"font-family": "sans-serif"
+														},
+														"children": []
+													},
+													{
+														"data": {
+															"id": "cuy3lh0hk3c0",
+															"created": 1692608383847,
+															"text": "両側イデアル\n(two-sided ideal)",
+															"font-family": "sans-serif"
+														},
+														"children": [
+															{
+																"data": {
+																	"id": "cuy3lre8ktc0",
+																	"created": 1692608406447,
+																	"text": "商環 / 剰余環\n(quotient ring / factor ring)",
+																	"font-family": "sans-serif"
+																},
+																"children": []
+															}
+														]
+													},
+													{
+														"data": {
+															"id": "cvlxlasgsxc0",
+															"created": 1695028882602,
+															"text": "主イデアル / 単項イデアル\n(principal ideal)",
+															"font-family": "sans-serif"
+														},
+														"children": [
+															{
+																"data": {
+																	"id": "cvlxli9jcoo0",
+																	"created": 1695028898872,
+																	"text": "単項イデアル整域 PID\n(Principal Integral Domain)",
+																	"font-family": "sans-serif",
+																	"hyperlink": "https://www.slideshare.net/HanpenRobot/zpid",
+																	"hyperlinkTitle": "整数環Zがpidである事の証明",
+																	"note": "整数全体Zが単項イデアル整域\nhttps://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q12112363007\n"
+																},
+																"children": [
+																	{
+																		"data": {
+																			"id": "cvuy7kvnq1s0",
+																			"created": 1695944668185,
+																			"text": "ユークリッド整域 ED\n(Euclidean Domain)",
+																			"font-family": "sans-serif",
+																			"hyperlink": "https://tsujimotter.hatenablog.com/entry/ED-implies-PID",
+																			"hyperlinkTitle": "「ユークリッド整域」ならば「単項イデアル整域」の証明"
+																		},
+																		"children": []
+																	}
+																]
+															}
+														]
+													}
+												]
+											}
+										]
 									},
 									{
 										"data": {
@@ -3143,78 +3272,6 @@
 															"created": 1693051504805,
 															"text": "極大イデアル\n(maximal ideal)",
 															"font-family": "sans-serif"
-														},
-														"children": []
-													}
-												]
-											}
-										]
-									},
-									{
-										"data": {
-											"id": "cuxaocogdgw0",
-											"created": 1692526797318,
-											"text": "イデアル\n(ideal)",
-											"font-family": "sans-serif",
-											"hyperlink": "https://keito.luxe/2021/01/20/ideal/",
-											"hyperlinkTitle": "イデアルとは何か。定義と例と発展的なイデアルの紹介",
-											"note": "●自明なイデアル\n(trivial ideal)\n\n●真のイデアル\n(proper ideal)\n\n●有限生成イデアル\n(finitely generated ideal)\n"
-										},
-										"children": [
-											{
-												"data": {
-													"id": "cuy3lagpuuw0",
-													"created": 1692608369591,
-													"text": "左イデアル\n(left ideal)",
-													"font-family": "sans-serif"
-												},
-												"children": []
-											},
-											{
-												"data": {
-													"id": "cuy3ldr4gio0",
-													"created": 1692608376751,
-													"text": "右イデアル\n(right ideal)",
-													"font-family": "sans-serif"
-												},
-												"children": []
-											},
-											{
-												"data": {
-													"id": "cuy3lh0hk3c0",
-													"created": 1692608383847,
-													"text": "両側イデアル\n(two-sided ideal)",
-													"font-family": "sans-serif"
-												},
-												"children": [
-													{
-														"data": {
-															"id": "cuy3lre8ktc0",
-															"created": 1692608406447,
-															"text": "商環 / 剰余環\n(quotient ring / factor ring)",
-															"font-family": "sans-serif"
-														},
-														"children": []
-													}
-												]
-											},
-											{
-												"data": {
-													"id": "cvlxlasgsxc0",
-													"created": 1695028882602,
-													"text": "主イデアル / 単項イデアル\n(principal ideal)",
-													"font-family": "sans-serif"
-												},
-												"children": [
-													{
-														"data": {
-															"id": "cvlxli9jcoo0",
-															"created": 1695028898872,
-															"text": "単項イデアル整域 PID\n(Principal Integral Domain)",
-															"font-family": "sans-serif",
-															"hyperlink": "https://www.slideshare.net/HanpenRobot/zpid",
-															"hyperlinkTitle": "整数環Zがpidである事の証明",
-															"note": "整数全体Zが単項イデアル整域\nhttps://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q12112363007\n"
 														},
 														"children": []
 													}
@@ -3570,15 +3627,6 @@
 											"font-family": "sans-serif"
 										},
 										"children": []
-									},
-									{
-										"data": {
-											"id": "cv6qrmq6qag0",
-											"created": 1693486231651,
-											"text": "普遍性\n(universal property / universality)",
-											"font-family": "sans-serif"
-										},
-										"children": []
 									}
 								]
 							}
@@ -3655,6 +3703,75 @@
 							"hyperlinkTitle": "圏論の三つの根本概念 「圏」「関手」「自然変換」"
 						},
 						"children": []
+					},
+					{
+						"data": {
+							"id": "cv6qrmq6qag0",
+							"created": 1693486231651,
+							"text": "普遍性\n(universal property / universality)",
+							"font-family": "sans-serif"
+						},
+						"children": [
+							{
+								"data": {
+									"id": "cvsjj449mt40",
+									"created": 1695700135508,
+									"text": "積\n(product)",
+									"font-family": "sans-serif"
+								},
+								"children": [
+									{
+										"data": {
+											"id": "cvsjlcjyx340",
+											"created": 1695700310600,
+											"text": "<--> 余積 (coproduct)",
+											"font-family": "sans-serif"
+										},
+										"children": []
+									},
+									{
+										"data": {
+											"id": "cvsjjazvyvk0",
+											"created": 1695700150481,
+											"text": "錐\n(cone)",
+											"font-family": "sans-serif",
+											"hyperlink": "https://zenn.dev/taketo1024/books/850b20937af93b/viewer/12-0",
+											"hyperlinkTitle": "12.0 極限と余極限"
+										},
+										"children": [
+											{
+												"data": {
+													"id": "cvsjl1l4r800",
+													"created": 1695700286726,
+													"text": "<--> 余錐 (co-cone)",
+													"font-family": "sans-serif"
+												},
+												"children": []
+											},
+											{
+												"data": {
+													"id": "cvsjji30ej40",
+													"created": 1695700165907,
+													"text": "極限\n(limit)",
+													"font-family": "sans-serif"
+												},
+												"children": [
+													{
+														"data": {
+															"id": "cvsjls5npu00",
+															"created": 1695700344563,
+															"text": "<--> 余極限 (colimit)",
+															"font-family": "sans-serif"
+														},
+														"children": []
+													}
+												]
+											}
+										]
+									}
+								]
+							}
+						]
 					}
 				]
 			},
@@ -4223,45 +4340,76 @@
 												"children": [
 													{
 														"data": {
-															"id": "cq65h4z17340",
-															"created": 1675145373854,
-															"text": "固有値\n(eigenvalue)",
-															"font-family": "sans-serif",
-															"hyperlink": "https://mathlandscape.com/eigenvalue/",
-															"hyperlinkTitle": "固有値の定義と求め方をていねいに～計算の手順～"
+															"id": "cvtpd8excc80",
+															"created": 1695818161291,
+															"text": "固有多項式\n(characteristic polynomial)",
+															"font-family": "sans-serif"
 														},
 														"children": [
 															{
 																"data": {
-																	"id": "cul83v47t9k0",
-																	"created": 1691300830106,
-																	"text": "対角化\n(diagonalization)",
+																	"id": "cq65h4z17340",
+																	"created": 1675145373854,
+																	"text": "固有値\n(eigenvalue)",
 																	"font-family": "sans-serif",
-																	"hyperlink": "https://oguemon.com/study/linear-algebra/diagonalization/",
-																	"hyperlinkTitle": "【固有値編】行列の対角化と具体的な計算例"
+																	"hyperlink": "https://mathlandscape.com/eigenvalue/",
+																	"hyperlinkTitle": "固有値の定義と求め方をていねいに～計算の手順～",
+																	"note": "固有多項式=0 の解\n"
 																},
 																"children": [
 																	{
 																		"data": {
-																			"id": "cul829ie2ko0",
-																			"created": 1691300704709,
-																			"text": "ジョルダン標準形\n(Jordan normal form)",
+																			"id": "cul83v47t9k0",
+																			"created": 1691300830106,
+																			"text": "対角化\n(diagonalization)",
 																			"font-family": "sans-serif",
-																			"note": "ジョルダン標準形への変形\nhttps://darts25.com/jordan-normal-form/\n",
-																			"hyperlink": "https://www.headboost.jp/jordan-normal-form/",
-																			"hyperlinkTitle": "ジョルダン標準形とは？意義と求め方を具体的に解説"
+																			"hyperlink": "https://oguemon.com/study/linear-algebra/diagonalization/",
+																			"hyperlinkTitle": "【固有値編】行列の対角化と具体的な計算例"
 																		},
 																		"children": [
 																			{
 																				"data": {
-																					"id": "cul82hcw0dc0",
-																					"created": 1691300721791,
-																					"text": "ジョルダン細胞\n(Jordan cell / Jordan block)",
-																					"font-family": "sans-serif"
+																					"id": "cul829ie2ko0",
+																					"created": 1691300704709,
+																					"text": "ジョルダン標準形\n(Jordan normal form)",
+																					"font-family": "sans-serif",
+																					"note": "ジョルダン標準形への変形\nhttps://darts25.com/jordan-normal-form/\n",
+																					"hyperlink": "https://www.headboost.jp/jordan-normal-form/",
+																					"hyperlinkTitle": "ジョルダン標準形とは？意義と求め方を具体的に解説",
+																					"expandState": "collapse"
 																				},
-																				"children": []
+																				"children": [
+																					{
+																						"data": {
+																							"id": "cul82hcw0dc0",
+																							"created": 1691300721791,
+																							"text": "ジョルダン細胞\n(Jordan cell / Jordan block)",
+																							"font-family": "sans-serif"
+																						},
+																						"children": []
+																					}
+																				]
 																			}
 																		]
+																	}
+																]
+															},
+															{
+																"data": {
+																	"id": "cvtpo1bateo0",
+																	"created": 1695819007840,
+																	"text": "ケイリー・ハミルトンの定理\n(Cayley-Hamilton theorem)",
+																	"font-family": "sans-serif"
+																},
+																"children": [
+																	{
+																		"data": {
+																			"id": "cvtpkxyeu8w0",
+																			"created": 1695818765438,
+																			"text": "最小多項式\n(minimal polynomial)",
+																			"font-family": "sans-serif"
+																		},
+																		"children": []
 																	}
 																]
 															}
@@ -4455,7 +4603,7 @@
 													"created": 1678106853425,
 													"text": "三角関数\n(trigonometric functions)",
 													"font-family": "sans-serif",
-													"note": "\n●三角関数の加法定理\nhttps://opencourse.doshisha.ac.jp/bj01/math-intro/PC/trigono3.html\n",
+													"note": "\n三角関数の加法定理\nhttps://opencourse.doshisha.ac.jp/bj01/math-intro/PC/trigono3.html\n\n【三角関数：積和の公式&和積の公式】忘れていたら即チェック！\nhttps://juken-mikata.net/how-to/mathematics/sekiwa-waseki.html\n",
 													"hyperlink": "https://ja.wikipedia.org/wiki/%E4%B8%89%E8%A7%92%E9%96%A2%E6%95%B0",
 													"hyperlinkTitle": "三角関数"
 												},
