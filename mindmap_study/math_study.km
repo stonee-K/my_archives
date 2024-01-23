@@ -435,7 +435,17 @@
 																	"hyperlink": "https://ramune-physics.blogspot.com/2021/03/math5.html",
 																	"hyperlinkTitle": "絶対収束、一様収束、各点収束の違い"
 																},
-																"children": []
+																"children": [
+																	{
+																		"data": {
+																			"id": "cw0ak74kyl40",
+																			"created": 1696487310086,
+																			"text": "概一様収束\n(almost uniform convergence)",
+																			"font-family": "sans-serif"
+																		},
+																		"children": []
+																	}
+																]
 															}
 														]
 													}
@@ -1138,7 +1148,19 @@
 													"text": "辺 / 線\n(edge / line)",
 													"font-family": "sans-serif"
 												},
-												"children": []
+												"children": [
+													{
+														"data": {
+															"id": "cw07rnh3sug0",
+															"created": 1696479430891,
+															"text": "道\n(path)",
+															"note": "●歩道 (walk)\n●小道 (trail)\n●回路 (circuit)\n●閉路 (cycle)\n",
+															"hyperlink": "https://ja.wikipedia.org/wiki/%E9%81%93_(%E3%82%B0%E3%83%A9%E3%83%95%E7%90%86%E8%AB%96)",
+															"hyperlinkTitle": "道 (グラフ理論)"
+														},
+														"children": []
+													}
+												]
 											}
 										]
 									},
@@ -1935,7 +1957,7 @@
 															"text": "<--> 逆像 / 原像\n(inverse image / preimage)",
 															"font-family": "sans-serif",
 															"hyperlink": "https://university-note.com/image-inverseimage/",
-															"hyperlinkTitle": "入門線形代数】像と逆像-線形写像-"
+															"hyperlinkTitle": "【入門線形代数】像と逆像-線形写像-"
 														},
 														"children": []
 													}
@@ -2341,6 +2363,17 @@
 														]
 													}
 												]
+											},
+											{
+												"data": {
+													"id": "cxom7d391g00",
+													"created": 1702613755051,
+													"text": "全有界\n(totally bounded)",
+													"font-family": "sans-serif",
+													"hyperlink": "https://www.nomuramath.com/cbb3tlim/",
+													"hyperlinkTitle": "距離空間の有界・直径と全有界の定義"
+												},
+												"children": []
 											}
 										]
 									}
@@ -2451,52 +2484,83 @@
 														]
 													}
 												]
+											},
+											{
+												"data": {
+													"id": "ctrn9fjw8i80",
+													"created": 1688296784359,
+													"text": "<--> 閉集合\n(closed set)",
+													"hyperlink": "https://teachamath.com/%e4%bd%8d%e7%9b%b8%e3%81%ab%e3%81%8a%e3%81%91%e3%82%8b%e9%96%89%e9%9b%86%e5%90%88%e3%80%81%e5%86%85%e9%83%a8%e3%80%81%e5%a4%96%e9%83%a8%e3%80%81%e5%a2%83%e7%95%8c%e3%80%81%e9%96%89%e5%8c%85/",
+													"hyperlinkTitle": "位相における閉集合、内部、外部、境界、閉包",
+													"font-family": "sans-serif"
+												},
+												"children": [
+													{
+														"data": {
+															"id": "ctwquwarrc00",
+															"created": 1688814729573,
+															"text": "閉包\n(closure)",
+															"font-family": "sans-serif",
+															"hyperlink": "https://www.sciencetime.jp/note/127",
+															"hyperlinkTitle": "内部、境界、閉包"
+														},
+														"children": [
+															{
+																"data": {
+																	"id": "cuo28i3xq3s0",
+																	"created": 1691588946822,
+																	"text": "内部 / 開核\n(interior / open kernel)",
+																	"font-family": "sans-serif"
+																},
+																"children": []
+															},
+															{
+																"data": {
+																	"id": "cuo28l7tun40",
+																	"created": 1691588953588,
+																	"text": "境界\n(boundary / frontier)",
+																	"font-family": "sans-serif"
+																},
+																"children": []
+															},
+															{
+																"data": {
+																	"id": "cuo28o7e7uw0",
+																	"created": 1691588960092,
+																	"text": "外部\n(exterior)",
+																	"font-family": "sans-serif"
+																},
+																"children": []
+															}
+														]
+													}
+												]
 											}
 										]
 									},
 									{
 										"data": {
-											"id": "ctrn9fjw8i80",
-											"created": 1688296784359,
-											"text": "閉集合\n(closed set)",
-											"hyperlink": "https://teachamath.com/%e4%bd%8d%e7%9b%b8%e3%81%ab%e3%81%8a%e3%81%91%e3%82%8b%e9%96%89%e9%9b%86%e5%90%88%e3%80%81%e5%86%85%e9%83%a8%e3%80%81%e5%a4%96%e9%83%a8%e3%80%81%e5%a2%83%e7%95%8c%e3%80%81%e9%96%89%e5%8c%85/",
-											"hyperlinkTitle": "位相における閉集合、内部、外部、境界、閉包",
-											"font-family": "sans-serif"
+											"id": "cxoml7k868w0",
+											"created": 1702614840115,
+											"text": "位相\n(topology)",
+											"font-family": "sans-serif",
+											"hyperlink": "http://proofcafe.org/k27c8/math/math/topological_space/",
+											"hyperlinkTitle": "位相"
 										},
 										"children": [
 											{
 												"data": {
-													"id": "ctwquwarrc00",
-													"created": 1688814729573,
-													"text": "閉包\n(closure)",
-													"font-family": "sans-serif",
-													"hyperlink": "https://www.sciencetime.jp/note/127",
-													"hyperlinkTitle": "内部、境界、閉包"
+													"id": "cxomm0c5eyw0",
+													"created": 1702614902753,
+													"text": "開基\n(basis)",
+													"font-family": "sans-serif"
 												},
 												"children": [
 													{
 														"data": {
-															"id": "cuo28i3xq3s0",
-															"created": 1691588946822,
-															"text": "内部 / 開核\n(interior / open kernel)",
-															"font-family": "sans-serif"
-														},
-														"children": []
-													},
-													{
-														"data": {
-															"id": "cuo28l7tun40",
-															"created": 1691588953588,
-															"text": "境界\n(boundary / frontier)",
-															"font-family": "sans-serif"
-														},
-														"children": []
-													},
-													{
-														"data": {
-															"id": "cuo28o7e7uw0",
-															"created": 1691588960092,
-															"text": "外部\n(exterior)",
+															"id": "cxomqdj4ce80",
+															"created": 1702615244929,
+															"text": "準開基\n(subbase)",
 															"font-family": "sans-serif"
 														},
 														"children": []
@@ -2675,7 +2739,8 @@
 															"id": "cvmulcvt7mo0",
 															"created": 1695121983785,
 															"text": "モニック多項式\n(monic polynomial)",
-															"font-family": "sans-serif"
+															"font-family": "sans-serif",
+															"note": "モニック方程式【最高次が１である高次方程式】【2019年度 東京学芸大学ほか】\nhttps://mathclinic314.com/%E3%83%A2%E3%83%8B%E3%83%83%E3%82%AF%E6%96%B9%E7%A8%8B%E5%BC%8F/\n"
 														},
 														"children": []
 													}
@@ -2698,7 +2763,18 @@
 													"text": "交代式\n(alternating polynomial)",
 													"font-family": "sans-serif"
 												},
-												"children": []
+												"children": [
+													{
+														"data": {
+															"id": "cxtn4r9vu680",
+															"created": 1703124171727,
+															"text": "差積\n(difference product)",
+															"font-family": "sans-serif",
+															"note": "または\nヴァンデルモンドの行列式\n(Vandermonde's determinant)\n"
+														},
+														"children": []
+													}
+												]
 											},
 											{
 												"data": {
@@ -3150,7 +3226,7 @@
 													"font-family": "sans-serif",
 													"hyperlink": "https://keito.luxe/2021/01/20/ideal/",
 													"hyperlinkTitle": "イデアルとは何か。定義と例と発展的なイデアルの紹介",
-													"note": "●自明なイデアル (trivial ideal)\n  ●零イデアル (zero ideal)\n\n●真のイデアル (proper ideal)\n\n●有限生成イデアル\n(finitely generated ideal)\n"
+													"note": "●自明なイデアル\n(trivial ideal)\n\n●零イデアル\n(zero ideal)\n\n●真のイデアル\n(proper ideal)\n\n●有限生成イデアル\n(finitely generated ideal)\n"
 												},
 												"children": [
 													{
@@ -3317,6 +3393,44 @@
 														"children": []
 													}
 												]
+											}
+										]
+									},
+									{
+										"data": {
+											"id": "cxcn0okjoso0",
+											"created": 1701397333122,
+											"text": "有限体 / ガロア体\n(finite field / Galois field)",
+											"font-family": "sans-serif",
+											"note": "有限体 | 標数が0でなければ素数【位数は素数ベキ】\nhttps://iwai-math-blog.com/index.php/yuugenntai-hyousuu/\n\n有限体の基本的な性質まとめ。標数や要素数について\nhttps://it1.jp/?p=1050\n"
+										},
+										"children": []
+									},
+									{
+										"data": {
+											"id": "cxcn12gf51k0",
+											"created": 1701397363347,
+											"text": "標数\n(characteristic)",
+											"font-family": "sans-serif"
+										},
+										"children": []
+									},
+									{
+										"data": {
+											"id": "cym0ueu1qk80",
+											"created": 1706006535332,
+											"text": "斜体 / 可除環\n(skew field / division ring)",
+											"font-family": "sans-serif"
+										},
+										"children": [
+											{
+												"data": {
+													"id": "cym0yk776n40",
+													"created": 1706006860468,
+													"text": "ウェダーバーンの小定理\n(Wedderburn's little theorem)",
+													"font-family": "sans-serif"
+												},
+												"children": []
 											}
 										]
 									}
@@ -3531,11 +3645,33 @@
 										"data": {
 											"id": "cujlmf8hozs0",
 											"created": 1691135838970,
-											"text": "合成射 (composite)",
-											"font-family": "sans-serif",
-											"note": "●可換図式\n(commutative diagram)\n\n可換図式\nhttps://dic.nicovideo.jp/a/%E5%8F%AF%E6%8F%9B%E5%9B%B3%E5%BC%8F\n\n圏を可換図式で定義したい\nhttps://mathlog.info/articles/942\n\n●ファイバー積 / 引き戻し\n(fibered product / pullback)\n\n圏論「引き戻し」と「積」の関係\nhttp://math.artet.net/?eid=1422467\n"
+											"text": "合成射\n(composite)",
+											"font-family": "sans-serif"
 										},
-										"children": []
+										"children": [
+											{
+												"data": {
+													"id": "cvf0s1n7c480",
+													"created": 1694326954875,
+													"text": "可換図式\n(commutative diagram)",
+													"font-family": "sans-serif",
+													"note": "\n\n圏を可換図式で定義したい\nhttps://mathlog.info/articles/942\n",
+													"hyperlink": "https://dic.nicovideo.jp/a/%E5%8F%AF%E6%8F%9B%E5%9B%B3%E5%BC%8F",
+													"hyperlinkTitle": "可換図式"
+												},
+												"children": []
+											},
+											{
+												"data": {
+													"id": "cvf0stk2hsw0",
+													"created": 1694327015635,
+													"text": "ファイバー積 / 引き戻し\n(fibered product / pullback)",
+													"font-family": "sans-serif",
+													"note": "圏論「引き戻し」と「積」の関係\nhttp://math.artet.net/?eid=1422467\n"
+												},
+												"children": []
+											}
+										]
 									},
 									{
 										"data": {
@@ -3958,7 +4094,19 @@
 													"hyperlink": "https://mathwords.net/bubunkukan",
 													"hyperlinkTitle": "部分空間の定義と、部分空間であることの証明"
 												},
-												"children": []
+												"children": [
+													{
+														"data": {
+															"id": "cy1o9u59htk0",
+															"created": 1703939870563,
+															"text": "直和\n(direct sum)",
+															"font-family": "sans-serif",
+															"hyperlink": "https://scisys-math.com/la/4/4/sum-of-subspace-1/",
+															"hyperlinkTitle": "部分空間の直和（1）"
+														},
+														"children": []
+													}
+												]
 											},
 											{
 												"data": {
@@ -4029,6 +4177,26 @@
 															"id": "cvpgrir6gyg0",
 															"created": 1695387651082,
 															"text": "表現行列\n(representational matrix)",
+															"font-family": "sans-serif"
+														},
+														"children": []
+													},
+													{
+														"data": {
+															"id": "cxokbt8nqg80",
+															"created": 1702608461443,
+															"text": "像\n(image)",
+															"font-family": "sans-serif",
+															"hyperlink": "https://university-note.com/image-kernel/",
+															"hyperlinkTitle": "【問題解説動画付】像(Image)と核(Kernel)-線形写像-"
+														},
+														"children": []
+													},
+													{
+														"data": {
+															"id": "cxokbzjsnhk0",
+															"created": 1702608475177,
+															"text": "核 / 退化空間\n(kernel / null space)",
 															"font-family": "sans-serif"
 														},
 														"children": []
@@ -4741,6 +4909,15 @@
 															"hyperlinkTitle": "ガンマ関数の導出｜階乗を一般化した関数とは？【スターリングの公式】特殊関数入門①"
 														},
 														"children": []
+													},
+													{
+														"data": {
+															"id": "cwo2uhwrl000",
+															"created": 1698902987280,
+															"text": "ベータ関数\n(beta function)",
+															"font-family": "sans-serif"
+														},
+														"children": []
 													}
 												]
 											}
@@ -4989,6 +5166,18 @@
 												]
 											}
 										]
+									},
+									{
+										"data": {
+											"id": "cxs3mlv2y9k0",
+											"created": 1702967588349,
+											"text": "リーマン=スティルチェス積分\n(Riemann-Stieltjes integral)",
+											"font-family": "sans-serif",
+											"note": "統計学の勉強中に急にスティルチェス積分が出てきたときのために概要を理解しておこう\nhttps://qiita.com/tabintone/items/19b9f40a73d4900b7d16\n\n積分を特徴付ける3つの性質　-測度を定める汎関数-\nhttps://www.sci.u-toyama.ac.jp/topics/math/202302.html\n",
+											"hyperlink": "https://kotobank.jp/word/%E3%83%AA%E3%83%BC%E3%83%9E%E3%83%B3%3D%E3%82%B9%E3%83%86%E3%82%A3%E3%83%AB%E3%83%81%E3%82%A7%E3%82%B9%E7%A9%8D%E5%88%86-1436590",
+											"hyperlinkTitle": "リーマン=スティルチェス積分"
+										},
+										"children": []
 									},
 									{
 										"data": {
@@ -5264,7 +5453,9 @@
 																	"id": "cvkb3wbxbj40",
 																	"created": 1694863894562,
 																	"text": "留数定理\n(residue theorem)",
-																	"font-family": "sans-serif"
+																	"font-family": "sans-serif",
+																	"hyperlink": "https://yomoriki.com/physical-mathematics/complex-analysis/41666/",
+																	"hyperlinkTitle": "留数・留数定理とは？｜導出と例題【複素解析】【複素関数論】"
 																},
 																"children": []
 															}
@@ -5338,6 +5529,17 @@
 									"hyperlinkTitle": "ルベーグ非可測集合の具体例｜「ヴィタリ集合」の定義と存在"
 								},
 								"children": []
+							},
+							{
+								"data": {
+									"id": "cw4dcpbgago0",
+									"created": 1696901425926,
+									"text": "ジョルダン測度\n(Peano-Jordan measure / Jordan content)",
+									"font-family": "sans-serif",
+									"hyperlink": "https://okimath.com/jorudan",
+									"hyperlinkTitle": "リーマン積分(ジョルダン測度)の限界"
+								},
+								"children": []
 							}
 						]
 					},
@@ -5356,8 +5558,9 @@
 								"data": {
 									"id": "cufb3eu2wso0",
 									"created": 1690699898254,
-									"text": "外測度\n(outer measure / exterior measure)",
-									"font-family": "sans-serif"
+									"text": "ルベーグ外測度\n(Lebesgue outer measure)",
+									"font-family": "sans-serif",
+									"note": "または\n外測度\n(outer measure / \nexterior measure)\n"
 								},
 								"children": [
 									{
