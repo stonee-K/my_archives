@@ -566,7 +566,43 @@
 											"hyperlink": "https://takemita.hatenadiary.org/entry/20100201/p4",
 											"hyperlinkTitle": "「有界な単調数列は収束する」の証明"
 										},
-										"children": []
+										"children": [
+											{
+												"data": {
+													"id": "czbcozkh1uo0",
+													"created": 1708578962516,
+													"text": "区間縮小法\n(method of diminishing interval)",
+													"font-family": "sans-serif",
+													"hyperlink": "https://excelmath.atelierkobato.com/wierstrass/",
+													"hyperlinkTitle": "区間縮小法とボルツァノ-ワイエルシュトラスの定理"
+												},
+												"children": [
+													{
+														"data": {
+															"id": "cux9u756yps0",
+															"created": 1692524434344,
+															"text": "ボルツァーノ＝ワイエルシュトラスの定理\n(Bolzano-Weierstrass theorem)",
+															"font-family": "sans-serif",
+															"hyperlink": "https://math-note.com/bolzano-weierstrass-theorem/",
+															"hyperlinkTitle": "ボルツァーノ・ワイエルシュトラスの定理の証明（解析学 第I章 実数と連続6）"
+														},
+														"children": [
+															{
+																"data": {
+																	"id": "cucxee72o3c0",
+																	"created": 1690458143417,
+																	"text": "コーシー列\n(Cauchy sequence)",
+																	"font-family": "sans-serif",
+																	"hyperlink": "https://math-note.com/cauchy-convergence-condition/",
+																	"hyperlinkTitle": "コーシーの収束条件（解析学 第I章 実数と連続7）"
+																},
+																"children": []
+															}
+														]
+													}
+												]
+											}
+										]
 									}
 								]
 							},
@@ -611,29 +647,6 @@
 									"note": "または\ngeometric sequence\n"
 								},
 								"children": []
-							},
-							{
-								"data": {
-									"id": "cux9u756yps0",
-									"created": 1692524434344,
-									"text": "ボルツァーノ＝ワイエルシュトラスの定理\n(Bolzano-Weierstrass theorem)",
-									"font-family": "sans-serif",
-									"hyperlink": "https://math-note.com/bolzano-weierstrass-theorem/",
-									"hyperlinkTitle": "ボルツァーノ・ワイエルシュトラスの定理の証明（解析学 第I章 実数と連続6）"
-								},
-								"children": [
-									{
-										"data": {
-											"id": "cucxee72o3c0",
-											"created": 1690458143417,
-											"text": "コーシー列\n(Cauchy sequence)",
-											"font-family": "sans-serif",
-											"hyperlink": "https://math-note.com/cauchy-convergence-condition/",
-											"hyperlinkTitle": "コーシーの収束条件（解析学 第I章 実数と連続7）"
-										},
-										"children": []
-									}
-								]
 							},
 							{
 								"data": {
@@ -1059,7 +1072,7 @@
 							"created": 1694752370874,
 							"text": "整数論\n(number theory)",
 							"font-family": "sans-serif",
-							"note": "\nググった限りでは、正の整数については\ntheory of positive integers\nのような名称が充てられている\n\n●フェルマーの小定理\n(Fermat's little theorem)\n\n●ディオファントス方程式\n(Diophantine equation)\n●中国剰余定理\n(Chinese remainder theorem)\n"
+							"note": "\nググった限りでは、正の整数については\ntheory of positive integers\nのような名称が充てられている\n\n●フェルマーの小定理\n(Fermat's little theorem)\n\n●ディオファントス方程式\n(Diophantine equation)\n\nディオファントス方程式 (Diophantine Equation)\nhttp://www.tamagaki.com/math/DiophantineEquation.html\n\n●中国剰余定理\n(Chinese remainder theorem)\n"
 						},
 						"children": [
 							{
@@ -1882,9 +1895,9 @@
 													"created": 1688342427972,
 													"text": "σ-加法族\n(sigma-algebra / sigma-field)",
 													"font-family": "sans-serif",
-													"hyperlink": "https://keito.luxe/2021/02/03/borel-function/",
-													"hyperlinkTitle": "σ-加法族(sigma-algebra, sigma-field)と可測集合(measurable set)",
-													"note": "または\n完全加法族\n(completely additive class)\n"
+													"hyperlink": "https://starpentagon.net/analytics/1_2_kolmogorov_axioms/",
+													"hyperlinkTitle": "1.2. コルモゴロフの公理",
+													"note": "または\n完全加法族\n(completely additive class)\n\n●コルモゴロフの公理\n(Kolmogorov axioms of probability)\n"
 												},
 												"children": [
 													{
@@ -2675,6 +2688,28 @@
 										"children": []
 									}
 								]
+							},
+							{
+								"data": {
+									"id": "czt6q5jfb2g0",
+									"created": 1710390206438,
+									"text": "結び目理論\n(knot theory)",
+									"font-family": "sans-serif",
+									"priority": null,
+									"hyperlink": "https://www.kitasato-u.ac.jp/sci/resea/buturi/hisenkei/nakamula/KnotAizawa2018.pdf",
+									"hyperlinkTitle": "結び目理論入門 レジュメ"
+								},
+								"children": [
+									{
+										"data": {
+											"id": "czt6qdiqd9c0",
+											"created": 1710390223811,
+											"text": "絡み目\n(link)",
+											"font-family": "sans-serif"
+										},
+										"children": []
+									}
+								]
 							}
 						]
 					}
@@ -2815,7 +2850,9 @@
 													"id": "cvu4t72nqk80",
 													"created": 1695861728848,
 													"text": "因数定理\n(factor theorem)",
-													"font-family": "sans-serif"
+													"font-family": "sans-serif",
+													"hyperlink": "https://yama-taku.science/mathematics/polynomial/factor-theorem-and-remainder-theorem/",
+													"hyperlinkTitle": "多項式８ 因数定理・剰余の定理は当たり前！"
 												},
 												"children": []
 											}
@@ -2986,7 +3023,8 @@
 															"id": "ctvjm85mwug0",
 															"created": 1688692742380,
 															"text": "束\n(lattice)",
-															"font-family": "sans-serif"
+															"font-family": "sans-serif",
+															"note": "●半順序集合\n(partially ordered set / poset)\n"
 														},
 														"children": []
 													}
@@ -3443,7 +3481,8 @@
 									"text": "束論\n(lattice theory)",
 									"font-family": "sans-serif",
 									"hyperlink": "https://www.cs-study.com/koga/lattice/index.html",
-									"hyperlinkTitle": "束論を勉強しよう (Let's Study Lattice Theory)"
+									"hyperlinkTitle": "束論を勉強しよう (Let's Study Lattice Theory)",
+									"note": "●完備束 (complete lattice)\n●有界束 (bounded lattice)\n"
 								},
 								"children": [
 									{
@@ -3482,34 +3521,45 @@
 												"children": [
 													{
 														"data": {
-															"id": "cvgkd78gzkw0",
-															"created": 1694483773738,
-															"text": "ブール束 / ブール代数\n(boolean lattice / boolean algebra)",
+															"id": "czt18lav4kg0",
+															"created": 1710374724645,
+															"text": "ハイティング代数\n(Heyting algebra)",
 															"font-family": "sans-serif",
-															"note": "【入門】ブール代数まとめ【スッキリ見やすい】\nhttps://www.virtualinvader.com/bool-algebra-matome/\n\nブール代数と冪集合\nhttps://tnomura9.exblog.jp/28704847/\n",
-															"hyperlink": "https://ameblo.jp/karaokegurui/entry-12758464396.html",
-															"hyperlinkTitle": "束論入門3"
+															"note": "\n直観主義命題論理で成り立たない論理式とその証明2\nhttps://ameblo.jp/karaokegurui/entry-12761789579.html\n\nハイティング代数の性質\nhttps://mizunashi-mana.github.io/blog/posts/2020/10/heyting-algebra-properties/\n\nHeyting代数 ～排中律が成り立たない世界～\nhttps://www.akanekodou.net/math/MAC2018/day1.html\n\n\n●擬補元 (pseudo-complement)\n●相対擬補元 (relative pseudo-complement)\n"
 														},
 														"children": [
 															{
 																"data": {
-																	"id": "cuxaiygf23s0",
-																	"created": 1692526374536,
-																	"text": "ベン図\n(Venn diagram)",
-																	"hyperlink": "https://visualizing.jp/euler-venn-diagram/",
-																	"hyperlinkTitle": "オイラー図とベン図（Euler Diagram & Venn Diagram）",
-																	"font-family": "sans-serif"
+																	"id": "cvgkd78gzkw0",
+																	"created": 1694483773738,
+																	"text": "ブール束 / ブール代数\n(boolean lattice / boolean algebra)",
+																	"font-family": "sans-serif",
+																	"note": "【入門】ブール代数まとめ【スッキリ見やすい】\nhttps://www.virtualinvader.com/bool-algebra-matome/\n\nブール代数と冪集合\nhttps://tnomura9.exblog.jp/28704847/\n",
+																	"hyperlink": "https://ameblo.jp/karaokegurui/entry-12758464396.html",
+																	"hyperlinkTitle": "束論入門3"
 																},
 																"children": [
 																	{
 																		"data": {
-																			"id": "cukj95hh3400",
-																			"created": 1691230716748,
-																			"text": "ド・モルガンの法則\n(De Morgan's laws)",
-																			"font-family": "sans-serif",
-																			"note": "プログラミングに役立つ 「ド・モルガンの法則」\nhttps://xtech.nikkei.com/it/article/Watcher/20070806/279127/\n"
+																			"id": "cuxaiygf23s0",
+																			"created": 1692526374536,
+																			"text": "ベン図\n(Venn diagram)",
+																			"hyperlink": "https://visualizing.jp/euler-venn-diagram/",
+																			"hyperlinkTitle": "オイラー図とベン図（Euler Diagram & Venn Diagram）",
+																			"font-family": "sans-serif"
 																		},
-																		"children": []
+																		"children": [
+																			{
+																				"data": {
+																					"id": "cukj95hh3400",
+																					"created": 1691230716748,
+																					"text": "ド・モルガンの法則\n(De Morgan's laws)",
+																					"font-family": "sans-serif",
+																					"note": "プログラミングに役立つ 「ド・モルガンの法則」\nhttps://xtech.nikkei.com/it/article/Watcher/20070806/279127/\n"
+																				},
+																				"children": []
+																			}
+																		]
 																	}
 																]
 															}
@@ -3526,7 +3576,18 @@
 											"text": "可補束 / 相補束\n(complemented lattice)",
 											"font-family": "sans-serif"
 										},
-										"children": []
+										"children": [
+											{
+												"data": {
+													"id": "czt892ftwzs0",
+													"created": 1710394509720,
+													"text": "補元\n(complement)",
+													"font-family": "sans-serif",
+													"note": null
+												},
+												"children": []
+											}
+										]
 									}
 								]
 							}
@@ -3655,7 +3716,7 @@
 													"created": 1694326954875,
 													"text": "可換図式\n(commutative diagram)",
 													"font-family": "sans-serif",
-													"note": "\n\n圏を可換図式で定義したい\nhttps://mathlog.info/articles/942\n",
+													"note": "\n圏を可換図式で定義したい\nhttps://mathlog.info/articles/942\n",
 													"hyperlink": "https://dic.nicovideo.jp/a/%E5%8F%AF%E6%8F%9B%E5%9B%B3%E5%BC%8F",
 													"hyperlinkTitle": "可換図式"
 												},
@@ -4202,6 +4263,17 @@
 														"children": []
 													}
 												]
+											},
+											{
+												"data": {
+													"id": "czo6x67ic080",
+													"created": 1709882956661,
+													"text": "テンソル積\n(tensor product)",
+													"font-family": "sans-serif",
+													"hyperlink": "http://neqmath.blogspot.com/2018/07/blog-post.html",
+													"hyperlinkTitle": "テンソル積について"
+												},
+												"children": []
 											}
 										]
 									}
@@ -4219,7 +4291,7 @@
 										"data": {
 											"id": "cq5zc2ar3eo0",
 											"created": 1675128049552,
-											"text": "行列の種類",
+											"text": "行列の呼称",
 											"font-family": "sans-serif",
 											"hyperlink": "https://mathlandscape.com/matrixes/",
 											"hyperlinkTitle": "さまざまな行列48個一覧",
@@ -4350,7 +4422,7 @@
 																	"id": "cul797iqkpk0",
 																	"created": 1691298427816,
 																	"text": "実対称行列\n(real symmetric matrix)",
-																	"note": "成分がすべて実数な対象行列\n"
+																	"note": "成分がすべて実数な対称行列\n"
 																},
 																"children": []
 															},
@@ -4447,6 +4519,16 @@
 														"children": []
 													}
 												]
+											},
+											{
+												"data": {
+													"id": "czha4wuuk080",
+													"created": 1709181106850,
+													"text": "部分行列 / 小行列\n(submatrix)",
+													"font-family": "sans-serif",
+													"note": "●小行列式 (minor determinant)\n●首座小行列 (principal submatrix)\n"
+												},
+												"children": []
 											}
 										]
 									},
@@ -5282,7 +5364,9 @@
 													"id": "cv1o60l15880",
 													"created": 1692971095800,
 													"text": "ヤコビ行列\n(Jacobian matrix)",
-													"font-family": "sans-serif"
+													"font-family": "sans-serif",
+													"hyperlink": "https://math-juken.com/sikaku/jacobian/",
+													"hyperlinkTitle": "ヤコビ行列・ヤコビアンの計算方法"
 												},
 												"children": [
 													{
@@ -5291,7 +5375,9 @@
 															"created": 1692971147223,
 															"text": "ヤコビアン\n(Jacobian determinant)",
 															"font-family": "sans-serif",
-															"note": "ヤコビ行列 の行列式\n"
+															"note": "ヤコビ行列 の行列式\n",
+															"hyperlink": "https://qiita.com/bellbind/items/bd0411957e2363456ea1",
+															"hyperlinkTitle": "高校数学からヤコビアンに至るまで"
 														},
 														"children": []
 													}
@@ -5580,7 +5666,9 @@
 									"created": 1691234900304,
 									"text": "ボレル集合\n(Borel set)",
 									"font-family": "sans-serif",
-									"note": "ルベーグ積分の公式集2：ボレル測度とルベーグ測度\nhttps://su-butsu-kikaigakusyuu.hatenablog.com/entry/2020/05/29/210637\n"
+									"note": "ルベーグ積分の公式集2：ボレル測度とルベーグ測度\nhttps://su-butsu-kikaigakusyuu.hatenablog.com/entry/2020/05/29/210637\n",
+									"hyperlink": "https://keito.luxe/2021/02/03/borel-function/",
+									"hyperlinkTitle": "ボレル集合とボレル関数の定義"
 								},
 								"children": []
 							}
