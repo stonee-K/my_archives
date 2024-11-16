@@ -51,14 +51,14 @@ DIFF_ORZ.Compare = function(s1, s2, flgIgnoreBlank) {
 	if (flgIgnoreBlank != 0) { [v1, v2] = skip_white(v1, v2); }
 	return (v1.done && v2.done);
 }
-DIFF_ORZ.CalcIndent = function(s1) {
-	for (let i = 0, nDepth = 0, len1 = s1.length; i < len1; i++) {
-		switch (s1.charCodeAt(i)) {
+DIFF_ORZ.CalcIndent = function(s, TABWIDTH = 8) {
+	for (let i = 0, nDepth = 0, len1 = s.length; i < len1; i++) {
+		switch (s.charCodeAt(i)) {
 			case 0x20:
 				nDepth += 1;
 				break;
 			case 0x9:
-				nDepth += (8 - (nDepth % 8));
+				nDepth += (TABWIDTH - (nDepth % TABWIDTH));
 				break;
 			case 0xD:
 			case 0xA:
@@ -82,7 +82,7 @@ DIFF_ORZ.do_diff = function() {
 	const int2str = v => ((v == 0) ? "" : (v + ""));
 	const do_lineDiff = (oDiff, x, y) => {
 		let oLDiff = new LineDiffEngine(oDiff, x, y), o, sOut_L = "", sOut_R = "", sWork = "", sWork2 = "";
-		for (let v = oLDiff.Diff(), i = 0; o = v[i]; ) {
+		for (let i = 0, v = oLDiff.Diff(); o = v[i]; ) {
 			if (o.op == "-") {
 				for (sWork2 = "<del>"; v[i]?.op == "-"; i++) {
 					sWork2 += this.EscapeHTML(oLDiff.vLeft[v[i].x]);
@@ -106,8 +106,8 @@ DIFF_ORZ.do_diff = function() {
 	const status_map = {'-':'minus', '+':'plus', '=':'equal', '!':'similar'};
 	if ($("chkSideBySide").checked) {
 		vTable.push('<colgroup>');
-		vTable.push('<col class="lnum" /><col /><col style="min-width:250px;max-width:600px;" />');
-		vTable.push('<col class="lnum" /><col /><col style="min-width:250px;max-width:600px;" />');
+		vTable.push('<col class="lnum" /><col /><col style="min-width:250px;width:calc(50% - 60px);" />');
+		vTable.push('<col class="lnum" /><col /><col style="min-width:250px;width:calc(50% - 60px);" />');
 		vTable.push('</colgroup>');
 		for (const o of vResult) {
 			let [sLine_L, sLine_R] = (o.op == "!") ? do_lineDiff(oDiff, o.x, o.y)
@@ -139,6 +139,15 @@ DIFF_ORZ.do_diff = function() {
 	}
 	vTable.push('</table>');
 	$("result").innerHTML = vTable.join("\n");
+}
+function IsLoopEnd(s) {
+	for (let i = 0; i <= s.length - 1; i++) {
+		let n = s.charCodeAt(i);
+		if ((n === 0x9) || (n === 0x20)) { continue; }
+		if ((n === 0x7D) || (n === 0x29) || (n === 0x5D) || (n === 0x3E)) { return true; }
+		break;
+	}
+	return false;
 }
 //==================================================================================================
 class Hunks {
@@ -182,9 +191,9 @@ class Hunks {
 		} while (this.vList[this.current].isBlankLines);
 		return (this.pos = (this.vList[this.current].start + 1));
 	}
-	searchNeighborHunk(o_L) {
-		return {start:(this.vList[Math.max(0, o_L.current - 2)].start + 1), 
-				end:(this.vList[Math.min(this.vList.length - 1, o_L.current + 2)].end - 1)};
+	searchNeighborHunk(i) {
+		return {start:(this.vList[Math.max(0, i - 2)].start + 1), 
+				end:(this.vList[Math.min(this.vList.length - 1, i + 2)].end - 1)};
 	}
 	cleanup() {
 		for (let o of this.vList) {
@@ -219,7 +228,7 @@ const DiffEngine = {
 		if (this.bIgnoreCase) { [s1, s2] = [s1.toLowerCase(), s2.toLowerCase()]; }
 		if ((this.vInfo_L[x].hash == this.vInfo_R[y].hash) && DIFF_ORZ.Compare(s1, s2, this.flgIgnoreBlank)) { return 2; }
 		if (bStrict || (this.vInfo_L[x].UniquePair >= 0) || (this.vInfo_R[y].UniquePair >= 0)) { return 0; }
-		[s1, s2] = [s1.replace(this.BLANK_PATTERN, ""), s2.replace(this.BLANK_PATTERN, "")];
+		[s1, s2] = [s1.trim().replace(this.BLANK_PATTERN, ""), s2.trim().replace(this.BLANK_PATTERN, "")];
 		const len1 = s1.length, len2 = s2.length;
 		return ((len1 > len2) ? this.CalcScore(s2, s1, len2, len1) : this.CalcScore(s1, s2, len1, len2));
 	},
@@ -227,12 +236,12 @@ const DiffEngine = {
 		const len12 = len1 + len2;
 		let t_temp = this.threshold;
 		if (len12 > 1024) {
-			t_temp -= ((Math.min(len12, 4096) - 1024) * (t_temp - this.threshold_min) / 3072)
+			t_temp -= ((Math.min(len12, 4096) - 1024) * (t_temp - this.threshold_min) / 3072);
 		}
 		const pmax = len1 + 1 - t_temp * len2, _max = Math.max;
 		if (pmax < 1) { return 0; }		//optimize
 		let y, p = 0, fp = (new Int32Array(len1 + len2 + 3)).fill(-1);
-		for (; (p < pmax) && (fp[len2 + 1] != len2); p++) {
+		for (; (p <= pmax) && (fp[len2 + 1] != len2); p++) {
 			for (let k = len1 - p; k < len2; k++) {
 				for (y = _max(fp[k] + 1, fp[k + 2]);
 					(y < k) && (s1.charCodeAt(y - k + len1) == s2.charCodeAt(y));
@@ -321,12 +330,12 @@ const DiffEngine = {
 
 		for (const o of vResult) {
 			if ((o.op != "+") && (o.op != "-") && (vWork.length > 0)) {
-				vResult2 = vResult2.concat(vWork);
+				Array.prototype.push.apply(vResult2, vWork);
 				vWork = [];
 			}
 			((o.op == "+") ? vWork : vResult2).push(o);
 		}
-		if (vWork.length > 0) { vResult2 = vResult2.concat(vWork); }
+		if (vWork.length > 0) { Array.prototype.push.apply(vResult2, vWork); }
 		return vResult2;
 	},
 	Diff_(len1, len2, bReverse) {
@@ -408,7 +417,9 @@ const DiffEngine = {
 					let indent_prev = DIFF_ORZ.CalcIndent(this.vLeft[x1 + 1]);
 					for (let indent = 0; (x1 > x) && !(this.vInfo_L[x1].isBlank); x1--, indent_prev = indent) {
 						if ((indent = DIFF_ORZ.CalcIndent(this.vLeft[x1])) > indent_prev) { break; }
+						if ((indent == indent_prev) && IsLoopEnd(this.vLeft[x1])) { break; }
 						o_L.vList[n].shift = o_L.vList[n].start - x1 + 1;
+						o_R.vList[n].shift = o_L.vList[n].shift + 1;
 					}
 				}
 			}
@@ -422,7 +433,9 @@ const DiffEngine = {
 					let indent_prev = DIFF_ORZ.CalcIndent(this.vRight[y1 + 1]);
 					for (let indent = 0; (y1 > y) && !(this.vInfo_R[y1].isBlank); y1--, indent_prev = indent) {
 						if ((indent = DIFF_ORZ.CalcIndent(this.vRight[y1])) > indent_prev) { break; }
+						if ((indent == indent_prev) && IsLoopEnd(this.vRight[y1])) { break; }
 						o_R.vList[n].shift = o_R.vList[n].start - y1 + 1;
+						o_L.vList[n].shift = o_R.vList[n].shift;
 					}
 				}
 			}
@@ -436,7 +449,7 @@ const DiffEngine = {
 				if (o_R.pos < o.y) { o_R.nextPos(); }
 				if (((shift = o_R.currentHunk().shift) > 0) && ((o_R.pos - o_R.currentHunk().start) <= shift)) {
 					let hunk_size = o_R.hunk_size(o_R.current), i_max = i + hunk_size;
-					for (i = i_max - shift; i < i_max; i++, o_R.nextPos()) {
+					for (i += hunk_size - shift; i < i_max; i++, o_R.nextPos()) {
 						let [x, y] = [vResult[i - hunk_size].x, vResult[i].y];
 						if ((x < 0) || (y < 0)) { i = i_max; break; }
 						[vResult[i - hunk_size].op, vResult[i - hunk_size].x] = ["+", -1];
@@ -450,7 +463,7 @@ const DiffEngine = {
 				if (o_L.pos < o.x) { o_L.nextPos(); }
 				if (((shift = o_L.currentHunk().shift) > 0) && ((o_L.pos - o_L.currentHunk().start) <= shift)) {
 					let hunk_size = o_L.hunk_size(o_L.current), i_max = i + hunk_size;
-					for (i = i_max - shift; i < i_max; i++, o_L.nextPos()) {
+					for (i += hunk_size - shift; i < i_max; i++, o_L.nextPos()) {
 						let [x, y] = [vResult[i].x, vResult[i - hunk_size].y];
 						if ((x < 0) || (y < 0)) { i = i_max; break; }
 						[vResult[i - hunk_size].op, vResult[i - hunk_size].y] = ["-", -1];
@@ -496,7 +509,7 @@ const DiffEngine = {
 		for (x = o_L.resetPos(); x > -1; x = o_L.nextPos()) {
 			if (this.vInfo_L[x].status != "+") {
 			} else if (!this.vInfo_L[x].isBlank) {
-				let oHunk = o_R.searchNeighborHunk(o_L);
+				let oHunk = o_R.searchNeighborHunk(o_L.current);
 				if (oHunk.start < 0) { continue; }
 				for (y = o_R.setPos(oHunk.start, true); y > -1; y = o_R.nextPos()) {
 					if ((this.vInfo_R[y].status == "+") && this.CompareStr(x, y, true)) {
@@ -527,6 +540,7 @@ LineDiffEngine.CHAR_BLOCK = {
 	, BREAK : 3
 	, LATIN : 4
 	, LEFT_BRACKET : 5
+	, RIGHT_BRACKET : 6
 	, HIRAGANA : 11
 	, KATAKANA : 12
 	, INHERITED_KANA : 13	//ー゛゜
@@ -574,14 +588,14 @@ LineDiffEngine.DetectCharBlock = function(c) {
 		if ((0xFF10 <= n && n < 0xFF1A) || (0xFF21 <= n && n < 0xFF3B) || (0xFF41 <= n && n < 0xFF5B)) {
 			return CB.KANJI;	//０-９Ａ-Ｚａ-ｚ
 		}
-		return (0xFFA0 < n && n < 0xFFE0) ? CB.HANGUL : CB.BREAK;	//FFA0 hungul space
+		return (0xFFA0 < n && n < 0xFFE0) ? CB.HANGUL : CB.BREAK;	//FFA0 hangul space
 	} else if (0xD800 <= n && n < 0xDC00) {		//surrogate pair
 		const trail = c.charCodeAt(1);
 		if (trail < 0xDC00 || 0xDFFF < trail) { return CB.LETTER; }	//illegal
 		const cp = (((n - 0xD800) << 10) + (trail - 0xDC00) + 0x10000);
 		if (0xD840 <= n && n < 0xD880) {
 			if (cp == 0x2A708) { return CB.KATAKANA; }	//片仮名合字「トモ」
-			return CB.KANJI;	//20000-2FFFF CJK Unified Ideographs Extension B-F, CJK Compatibility Ideographs Supplement
+			return CB.KANJI;	//20000-2FFFF CJK Unified Ideographs Extension B-F, I, CJK Compatibility Ideographs Supplement
 		} else if ((n == 0xDB40) && (0xDD00 <= trail && trail < 0xDDF0)) {
 			return CB.VARIATION;	//E0100-E01EF Variation Selectors Supplement
 		} else if ((n == 0xD82C) && (trail < 0xDD30)) {
@@ -589,7 +603,8 @@ LineDiffEngine.DetectCharBlock = function(c) {
 		}
 		if (0x1B150 <= cp && cp <= 0x1B152) { return CB.HIRAGANA; }	//「ゐゑを」小文字
 		if (0x1B164 <= cp && cp <= 0x1B167) { return CB.KATAKANA; }	//「ヰヱヲン」小文字
-		if (0x30000 <= cp && cp <= 0x3134F) { return CB.KANJI; }	//CJK Unified Ideographs Extension G
+		if (0x30000 <= cp && cp <= 0x323AF) { return CB.KANJI; }	//CJK Unified Ideographs Extension G, H
+		if (0x10EC0 <= cp && cp <= 0x10EFF) { return CB.ARABIC; }	//Arabic Extended-C
 		return ((0x1F000 <= cp && cp < 0x1FC00) ? CB.BREAK : CB.LETTER);	//1F000-1FBFF Pictographs etc.
 	} else if ((0x1100 <= n && n < 0x1200) || (0xA960 <= n && n < 0xD800 && (n < 0xA980 || 0xAC00 <= n))) {
 		return CB.HANGUL;
@@ -601,8 +616,8 @@ LineDiffEngine.DetectCharBlock = function(c) {
 		return ((n == 0x05C0) || (n == 0x05C3) || (n == 0x05C6) || (n == 0x05F3) || (n == 0x05F4)) ? CB.BREAK : CB.HEBREW;
 	} else if (0xFE00 <= n && n < 0xFE70) {
 		return ((n < 0xFE10) ? CB.VARIATION : CB.BREAK);
-	} else if ((0x0600 <= n && n < 0x0780 && (n < 0x0700 || 0x074F < n)) || (0x08A0 <= n && n < 0x0900) || (0xFB50 <= n && n < 0xFF00)) {
-		return ((n == 0x060C) || (n == 0x060D) || (n == 0x061B) || (n == 0x061E) || (n == 0x061F) || (0x066A <= n && n <= 0x066D) || (n == 0x06D4)) ?
+	} else if ((0x0600 <= n && n < 0x0780 && (n < 0x0700 || 0x074F < n)) || (0x0870 <= n && n < 0x0900) || (0xFB50 <= n && n < 0xFF00)) {
+		return ((n == 0x060C) || (n == 0x060D) || (0x061B <= n && n <= 0x061F) || (0x066A <= n && n <= 0x066D) || (n == 0x06D4)) ?
 			CB.BREAK : CB.ARABIC;
 	} else if ((0x1DC0 <= n && n < 0x1F00) || (0xA720 <= n && n < 0xAB70 && (n < 0xA800 || 0xAB30 <= n)) || (0xFB00 <= n && n < 0xFB07)
 	|| (0x0300 <= n && n < 0x0370)) {
@@ -673,10 +688,11 @@ LineDiffEngine.prototype.Diff = function() {
 	let len1 = this.vLeft.length, len2 = this.vRight.length, vResult = [], vWork = [], vWork2 = [], cb;
 	let o = ((len1 > len2) ? this.Diff_(len2, len1, true) : this.Diff_(len1, len2, false));
 	const CB = this.constructor.CHAR_BLOCK;
-	const DetectCB_ = function(s) {
-		if (s.length != 1) { return this.CHAR_BLOCK.LETTER; }
-		return (("<([{【「＜『［｛".indexOf(s) >= 0) ? this.CHAR_BLOCK.LEFT_BRACKET : this.DetectCharBlock(s));
-	}.bind(LineDiffEngine);
+	const DetectCB_ = function(CB, s) {
+		if (s.length != 1) { return (s == "</") ? CB.LEFT_BRACKET : CB.LETTER; }
+		if (">)]}】」＞』］｝".indexOf(s) >= 0) { return CB.RIGHT_BRACKET; }
+		return (("<([{【「＜『［｛".indexOf(s) >= 0) ? CB.LEFT_BRACKET : this.DetectCharBlock(s));
+	}.bind(LineDiffEngine, CB);
 	if (!this.bWord || !this.bSemanticCleanup) {
 		for ( ; o; o = o.prev) {
 			vResult.unshift(o);
@@ -707,6 +723,7 @@ LineDiffEngine.prototype.Diff = function() {
 			if (vWork.length > 0) {
 				for (let i = vWork.length - 1; (o?.op == "=") && (this.vLeft[o.x] == this.vLeft[vWork[i].x]); o = o.prev) {
 					if ((cb = DetectCB_(this.vLeft[vWork[i].x])) == CB.BREAK) { break; }
+					if ((cb == CB.RIGHT_BRACKET) && (DetectCB_(this.vLeft[vWork[0].x]) == CB.LEFT_BRACKET)) { break; }
 					if (cb == CB.WHITE) {
 						if ((i <= 0) || !o.prev) { break; }
 						if ((o.prev.op == "=") && (this.vLeft[o.prev.x] != this.vLeft[vWork[i - 1].x])) { break; }
@@ -840,8 +857,8 @@ window.onload = function() {
 			if (CRLF.indexOf(sContents.charCodeAt(start - 1)) >= 0) { break; }
 		}
 		let v = sContents.substring(start, end).split("\n");
-		for (let i = 0; i < v.length; i++) {
-			if (v[i] == "") { continue; }
+		for (let i = 0, len1 = v.length; i < len1; i++) {
+			if (v[i] === "") { continue; }
 			if (!ev.shiftKey) {		//indent
 				v[i] = str + v[i];
 			} else {				//unindent
@@ -879,16 +896,16 @@ window.onload = function() {
  label { margin-right:0px; }
  input[type="radio"] { margin-left:0px; }
  input[type="button"] { margin-left:0px;margin-right:1px;display:block;float:left; }
- td.lnum { width:30px;text-align:right;padding-right:3px;background-color:#eeeeee; }
+ td.lnum { width:40px;text-align:right;padding-right:3px;background-color:#eeeeee; }
  tr.minus > td.L, tr.minus > td.M:not(.moved) { background-color:#ddddff; }
  tr.plus > td.R, tr.plus > td.M:not(.moved) { background-color:#ffdddd; }
  tr.minus > td.moved.L, tr.plus > td.moved.R, td.moved.M { background-color:#ead7a4; }
  tr.equal > td.L, tr.equal > td.R, tr.equal > td.M { color:initial; }
  tr.similar > td.L, tr.similar > td.R, tr.similar > td.M { background-color:#ddffdd; }
  tr.plus td.L, tr.minus td.R { background-color:#eeeeee; }
+ #result { background-color:ivory;width:100%; }
  #result > table { width:100%;table-layout:fixed; }
  #result .op { width:20px;text-align:center; }
- #result { background-color:ivory; }
  #result pre { padding:0px;margin:0px;word-break:break-all;white-space:pre-wrap;tab-size:4; }
  #result ins { color:#cc2222; }
  #result del { background-color:#cccccc; }
